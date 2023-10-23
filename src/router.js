@@ -30,7 +30,7 @@ export const routes = [
   {
     path: '/portfolio',
     name: 'Our Work',
-    component: loadPage('OurWork')
+    component: loadPage('PortfolioPage')
   },
   {
     path: '/services',
@@ -59,11 +59,6 @@ export const routes = [
           component: loadView('DesignView')
         },
         {
-          path: 'app-development',
-          name: 'App Development',
-          component: loadView('AppView')
-        },
-        {
           path: 'ecommerce',
           name: 'E-Commerce',
           component: loadView('EcommerceView')
@@ -83,13 +78,35 @@ export const routes = [
   {
     path: '/blog',
     name: 'Blog',
+    // children:
+    //   [
+    //     {
+    //       path: 'app-development',
+    //       name: 'App Development',
+    //       component: loadView('AppView')
+    //     }
+    //   ]
+  },
+  {
+    path: '/apps',
+    name: 'Apps',
     children:
       [
         {
           path: 'app-development',
           name: 'App Development',
           component: loadView('AppView')
-        }
+        },
+        {
+          path: 'electra-messaging',
+          name: 'electra',
+          component: loadView('ElectraView')
+        },
+        {
+          path: 'maia-appointments',
+          name: 'maia',
+          component: loadView('ElectraView')
+        },
       ]
   }
 ]

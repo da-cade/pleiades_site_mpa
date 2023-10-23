@@ -1,16 +1,16 @@
 <template>
   <div class="eclipse">
     <img id="logo" src="../assets/img/white-logo-no-background.png" alt="" />
-    <div id="moon" class="space-circle"></div>
-    <div id="moon2" class="space-circle-2"></div>
+    <!-- <div id="lightMoon" class="light-circle"></div> -->
+    <div id="darkMoon" class="dark-circle"></div>
   </div>
 </template>
 
 <script>
 export default {
   mounted() {
-    let moon1 = document.getElementById("moon");
-    let moon2 = document.getElementById("moon2");
+    // let lightMoon = document.getElementById("lightMoon");
+    let darkMoon = document.getElementById("darkMoon");
     let logo = document.getElementById("logo");
 
     window.addEventListener("scroll", function (e) {
@@ -20,22 +20,22 @@ export default {
         document.body.scrollTop ||
         0;
 
-      moon1.style.opacity = Math.max(0, Math.min(1, -scroll / 500 + 1));
-      moon2.style.opacity = Math.max(0, Math.min(1, -scroll / 2500 + 1));
+      // lightMoon.style.opacity = Math.max(0, Math.min(1, -scroll / 500 + 1));
+      darkMoon.style.opacity = Math.max(0, Math.min(1, -scroll / 2500 + 1));
       logo.style.opacity = Math.max(0, Math.min(1, -scroll / 300 + 1));
 
       let moonheight = scroll * 0.75;
-      moon2.style.marginTop = moonheight.toString() + "px";
+      darkMoon.style.marginTop = moonheight.toString() + "px";
     });
   },
 };
 </script>
 
 <style lang="scss" scoped>
-.space-circle,
-.space-circle-2 {
-  width: 35vw;
-  height: 35vw;
+.light-circle,
+.dark-circle {
+  width: 90vw;
+  height: 90vw;
   border-radius: 50% 50% 50% 50%;
   z-index: -1;
   background-color: white;
@@ -76,8 +76,8 @@ export default {
   // @media (min-width: 1025px) and (max-width: 1280px) {
   // }
 }
-.space-circle-2 {
-  background-color: black;
+.dark-circle {
+  background-color: white;
   //   transition: all 1000ms;
   //   transition: margin 200ms;
 }
@@ -86,6 +86,7 @@ export default {
   display: flex;
   width: 100vw;
   height: 100vh;
+  position: relative;
   // offset: right 1px;
 }
 
@@ -96,7 +97,7 @@ export default {
   left: 50%;
   transform: translate(-50%, -50%);
   opacity: 1;
-  z-index: 2;
+  z-index: -2;
   //   transition: all 0.25s;
   width: 33%;
   border-radius: 25px;

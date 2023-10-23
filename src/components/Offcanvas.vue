@@ -1,20 +1,20 @@
 <template>
   <div
-    class="offcanvas d-flex justify-content-center align-items-center offcanvas-end"
+    class="offcanvas d-flex justify-center items-center offcanvas-end"
     tabindex="-1"
     id="offcanvasDarkNavbar"
     aria-labelledby="offcanvasDarkNavbarLabel"
   >
     <!-- <button
       type="button"
-      class="btn-close d-flex justify-content-center align-items-center mb-5"
+      class="btn-close d-flex justify-center items-center mb-5"
       data-bs-dismiss="offcanvas"
       aria-label="Close"
     ></button> -->
-    <div class="container justify-content-center align-items-center d-flex">
-      <div class="row justify-content-center align-items-center w-100 g-0">
+    <div class="container justify-center items-center d-flex">
+      <div class="row justify-center items-center w-100 g-0">
         <div
-          class="col-12 contact-info justify-content-center align-items-center d-flex flex-column mb-5"
+          class="col-12 contact-info justify-center items-center d-flex flex-column mb-5"
         >
           <span>Pleiades Projectworks LLC</span>
           <p><b>Email: </b>info@pleiadesprojectworks.com</p>
@@ -22,7 +22,7 @@
           <p>9 - 5</p>
         </div>
         <div
-          class="col-12 contact-form d-flex justify-content-center align-items-center d-flex flex-column w-100"
+          class="col-12 contact-form d-flex justify-center items-center d-flex flex-column w-100"
         >
           <contact-form />
         </div>

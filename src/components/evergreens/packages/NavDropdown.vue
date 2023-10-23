@@ -21,6 +21,7 @@
 
 <script>
 import NavItem from "./NavItem.vue";
+import { generateGridItems } from "../../composables/generateGridItems.js";
 import { computed } from "vue";
 export default {
   components: {
@@ -38,11 +39,8 @@ export default {
         ? props.routeTree.children
         : props.routeTree;
     });
-    const generatedGridRows = computed(() => {
-      return `grid-template-rows: repeat(${
-        routeChildren.value.length ? routeChildren.value.length : ""
-      }, minmax(0, 1fr));`;
-    });
+
+    const generatedGridRows = generateGridItems("rows", routeChildren.value);
 
     return { routeChildren, generatedGridRows };
   },

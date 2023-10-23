@@ -1,0 +1,35 @@
+b {
+  font-size: 3em;
+  position: relative;
+  color: black;
+  z-index: 2;
+  padding: 0.2em;
+  text-align: center;
+
+  @media (max-width: 280px) {
+    font-size: 2em;
+  }
+}
+
+.body-text {
+  color: black;
+  padding-top: 2.5vh;
+}
+
+.rounded-left {
+  border-radius: 25px 0px 0px 25px;
+}
+.rounded-right {
+  border-radius: 0px 25px 25px 0px;
+}
+
+.content-width {
+  padding: 0 6rem;
+}
+
+.dark-side {
+  background-color: black;
+  color: white;
+  border-radius: 25px;
+  max-width: 100%;
+}

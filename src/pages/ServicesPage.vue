@@ -1,6 +1,7 @@
 <template>
-  <h1>Services</h1>
-  <router-view></router-view>
+  <h1 class="text-3xl">{{ $route.name }}</h1>
+  <div class="servicesMenu" v-if="$route.name == 'Services'"></div>
+  <router-view v-else></router-view>
 </template>
 
 

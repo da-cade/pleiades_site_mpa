@@ -2,13 +2,10 @@
   <div id="contact" class="row g-0" v-scrollanimation>
     <div class="col-12"><h1>contact us today</h1></div>
   </div>
-  <div
-    class="container justify-content-center align-items-center d-flex"
-    v-scrollanimation
-  >
+  <div class="container justify-center items-center d-flex" v-scrollanimation>
     <div class="row">
       <div
-        class="col-lg-6 contact-info justify-content-center align-items-center d-flex flex-column"
+        class="col-lg-6 contact-info justify-center items-center d-flex flex-column"
         v-scrollanimation
       >
         <h5>Pleiades Projectworks LLC</h5>
@@ -17,7 +14,7 @@
         <p>9 - 5</p>
       </div>
       <div
-        class="col-lg-6 contact-form d-flex justify-content-center align-items-center d-flex flex-column p-5"
+        class="col-lg-6 contact-form d-flex justify-center items-center d-flex flex-column p-5"
         v-scrollanimation
       >
         <contact-form />

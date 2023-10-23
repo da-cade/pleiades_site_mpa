@@ -2,13 +2,13 @@
   <div id="works" class="container" v-scrollanimation>
     <div class="row">
       <div
-        class="col-12 justify-content-center align-items-center d-flex flex-column left-side"
+        class="col-12 justify-center items-center d-flex flex-column left-side"
       >
         <h1 class="text-center">Our Work</h1>
         <p class="text-center">Check out our past work.</p>
       </div>
       <div
-        class="col-12 justify-content-center bg-black align-items-center d-flex w-md-100 g-0"
+        class="col-12 justify-center bg-black items-center d-flex w-md-100 g-0"
       >
         <swiper
           :spaceBetween="30"
@@ -19,14 +19,12 @@
           class="mySwiper"
         >
           <swiper-slide class="">
-            <div
-              class="row justify-content-center align-items-center card-slide"
-            >
+            <div class="row justify-center items-center card-slide">
               <div class="col-md-6 img-brand">
                 <img src="/src/assets/img/portsches-logo.webp" alt="" />
               </div>
               <div
-                class="col-md-6 d-flex justify-content-center align-items-center flex-column"
+                class="col-md-6 d-flex justify-center items-center flex-column"
               >
                 <ul>
                   <li>Custom Web Design</li>
@@ -44,14 +42,12 @@
           </swiper-slide>
 
           <swiper-slide>
-            <div
-              class="row justify-content-center align-items-center card-slide"
-            >
+            <div class="row justify-center items-center card-slide">
               <div class="col-md-6 img-brand deb">
                 <img src="/src/assets/img/debdye.png" alt="" />
               </div>
               <div
-                class="col-md-6 d-flex justify-content-center align-items-center flex-column"
+                class="col-md-6 d-flex justify-center items-center flex-column"
               >
                 <ul>
                   <li>Static Webpage</li>
@@ -68,9 +64,7 @@
             </div>
             <div class="deb-bg"></div> </swiper-slide
           ><swiper-slide>
-            <div
-              class="d-flex flex-column justify-content-center align-items-center"
-            >
+            <div class="d-flex flex-column justify-center items-center">
               <b>Want to show up here? </b
               ><a class="contact-link" href="#contact"> Contact Us</a>
               <b>to get started!</b>
@@ -82,7 +76,7 @@
         <h2>Check out our profiles on:</h2>
         <div class="">
           <a
-            class="d-flex align-items-center p-3"
+            class="d-flex items-center p-3"
             target="blank"
             rel="nofollow"
             href="https://www.designrush.com/agency/profile/pleiades-projectworks"

@@ -48,6 +48,11 @@
 }
 
 @font-face {
+  font-family: modak;
+  src: url('./assets/fonts/Modak-Regular.ttf');
+}
+
+@font-face {
   font-family: geo-light;
   src: url('./assets/fonts/geomanist-light-webfont.ttf');
 }
@@ -60,6 +65,10 @@
 @font-face {
   font-family: roboto-slab;
   src: url('./assets/fonts/RobotoSlab-VariableFont_wght.ttf');
+}
+
+.hideNav {
+  top: -100% !important;
 }
 
 h1,
@@ -98,7 +107,6 @@ html {
 }
 
 body {
-
   background-color: transparent;
   color: var(--color-text);
   transition: color 0.5s, background-color 0.5s;
@@ -119,8 +127,6 @@ body {
   }
 }
 
-
-
 p {
   margin: 0;
 }
@@ -128,6 +134,8 @@ p {
 main {
   overflow-x: hidden;
 }
+
+
 
 /* REVIEW maybe you're looking for this>???!! background, background-image, searchbar fix, background image resizing resize */
 
@@ -163,23 +171,4 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
-}
-
-.card {
-  padding: 2em;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-
-  a:hover {
-    color: #747bff;
-  }
-
-  button {
-    background-color: #f9f9f9;
-  }
 }

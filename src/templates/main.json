@@ -1,0 +1,29 @@
+{
+  "technologies": [
+    {
+      "name": "Vue 3",
+      "image": "../src/assets/img/vue.png",
+      "alt": "Vue 3 - The Fastest Javascript Framework"
+    },
+    {
+      "name": "Shopify",
+      "image": "../src/assets/img/shopify.png",
+      "alt": "Shopify - An Out-of-the-Box Ecommerce Solution"
+    },
+    {
+      "name": "Google Ads",
+      "image": "../src/assets/img/google_ads.svg.png",
+      "alt": "Google Ads - High-Powered Search Engine Marketing"
+    },
+    {
+      "name": "Firebase",
+      "image": "../src/assets/img/firebase.png",
+      "alt": "Firebase - Google Cloud App and Web Hosting"
+    },
+    {
+      "name": "Azure",
+      "image": "../src/assets/img/azure.png",
+      "alt": "Azure - The Cloud Ecosystem from Microsoft"
+    }
+  ]
+}

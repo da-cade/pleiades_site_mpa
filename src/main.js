@@ -1,5 +1,6 @@
 import { createApp } from 'vue'
 import './styles.css'
+import './main.scss'
 import { router } from './router'
 import { scrollAnimate } from './directives/Scrollanimate'
 import App from './App.vue'

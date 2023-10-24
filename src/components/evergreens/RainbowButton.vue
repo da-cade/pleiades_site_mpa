@@ -1,5 +1,5 @@
 <template>
-  <button class="rainbow rainbow-5">{{ displayMessage }}</button>
+  <a class="rainbow rainbow-5">{{ displayMessage }}</a>
 </template>
 
 
@@ -20,12 +20,20 @@ export default {
 
 <style lang="scss" scoped>
 @keyframes slidebg {
+  from {
+    background-position: 0;
+  }
   to {
-    background-position: 20vw;
+    background-position: var(--w);
   }
 }
 
 .rainbow {
+  --w: 10rem;
+  width: var(--w);
+  display: flex;
+  justify-content: center;
+  min-width: fit-content;
   background-color: #343a40;
   border-radius: 4px;
   color: #fff;

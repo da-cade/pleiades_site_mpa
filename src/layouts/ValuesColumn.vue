@@ -1,11 +1,11 @@
 <template>
   <div class="pitch-column flex flex-col content-between items-center px-8">
     <div
-      class="col-md-12 mb-5 d-flex flex-column justify-center items-center"
+      class="col-md-12 mb-5 flex flex-column justify-center items-center"
       v-scrollanimation
     >
-      <div class="d-flex flex-wrap">
-        <b>The Right </b>
+      <div class="flex flex-wrap">
+        <b class="text-dark">The Right </b>
         <b class="dark-side">Prices</b>
       </div>
       <p class="body-text">
@@ -21,13 +21,13 @@
       </p>
     </div>
     <div
-      class="col-md-12 mb-5 d-flex flex-column justify-center items-center"
+      class="col-md-12 mb-5 flex flex-column justify-center items-center"
       v-scrollanimation
     >
-      <div class="d-flex flex-wrap">
-        <b>A</b>
+      <div class="flex flex-wrap">
+        <b class="text-dark">A</b>
         <b class="dark-side">Tailored</b>
-        <b>Experience</b>
+        <b class="text-dark">Experience</b>
       </div>
 
       <p class="body-text">
@@ -44,11 +44,11 @@
       </p>
     </div>
     <div
-      class="col-md-12 d-flex flex-column justify-center items-center"
+      class="col-md-12 flex flex-column justify-center items-center"
       v-scrollanimation
     >
-      <div class="d-flex flex-wrap">
-        <b class="">The</b>
+      <div class="flex flex-wrap">
+        <b class="text-dark">The</b>
         <b class="dark-side">Customer</b>
         <b>First</b>
       </div>

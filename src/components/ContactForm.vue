@@ -10,8 +10,8 @@
       <span>We'll get back to you right quick 🚀</span>
     </div>
     <div class="form-elems" v-if="!submitted">
-      <div class="d-flex justify-content-between">
-        <div class="d-flex flex-column w-48">
+      <div class="flex justify-content-between">
+        <div class="flex flex-column w-48">
           <label for="name" class="invisible">Name input</label>
           <input
             v-model.lazy="form.name"
@@ -21,7 +21,7 @@
             required
           />
         </div>
-        <div class="d-flex flex-column w-48">
+        <div class="flex flex-column w-48">
           <label for="email" class="invisible">Email Input</label>
           <input
             v-model.lazy="form.email"
@@ -53,7 +53,7 @@
 <script>
 import { reactive, ref } from "vue";
 import axios from "axios";
-import RainbowButton from "./RainbowButton.vue";
+import RainbowButton from "./evergreens/RainbowButton.vue";
 export default {
   components: { RainbowButton },
   setup() {

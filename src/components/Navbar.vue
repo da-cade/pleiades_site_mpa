@@ -4,7 +4,7 @@
     class="bg-black fixed top-0 right-0 left-0 z-50 flex w-full h-auto"
   >
     <div class="image-container max-w-sm">
-      <router-link id="navlogo" class="d-md-flex" :to="{ name: 'home' }">
+      <router-link id="navlogo" class="d-mflex" :to="{ name: 'home' }">
         <img
           class="navbar-brand"
           src="../assets/img/white-logo-no-background.png"

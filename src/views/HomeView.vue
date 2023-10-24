@@ -2,8 +2,8 @@
   <Banner />
   <!-- <Eclipse /> -->
   <ServicesColumn />
-  <Sale />
-  <Projects />
+  <TechValuesCard />
+  <Portfolio />
   <Contact />
 </template>
 
@@ -11,8 +11,8 @@
 <script setup>
 import Eclipse from "../components/Eclipse.vue";
 import ServicesColumn from "../layouts/ServicesColumn.vue";
-import Sale from "../components/Sale.vue";
-import Projects from "../components/Projects.vue";
+import TechValuesCard from "../layouts/TechValuesCard.vue";
+import Portfolio from "../components/Portfolio.vue";
 import Contact from "../components/Contact.vue";
 import Banner from "../components/Banner.vue";
 </script>

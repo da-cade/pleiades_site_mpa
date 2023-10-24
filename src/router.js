@@ -7,10 +7,10 @@ function loadView(view) {
   return () => import(`./views/${view}.vue`)
 }
 function loadLayout(layout) {
-  return () => import(`./components/layouts/${layout}.vue`)
+  return () => import(`./layouts/${layout}.vue`)
 }
 function loadComponent(component) {
-  return () => import(`./components/components/${component}.vue`)
+  return () => import(`./components/${component}.vue`)
 }
 function loadComposable(composable) {
   return () => import(`./components/composables/${composable}.vue`)
@@ -24,60 +24,52 @@ export const routes = [
   },
   {
     path: '/about',
-    name: 'About',
-    component: loadPage('AboutPage')
-  },
-  {
-    path: '/portfolio',
-    name: 'Our Work',
-    component: loadPage('PortfolioPage')
+    name: 'about',
+    component: loadPage('AboutPage'),
   },
   {
     path: '/services',
-    name: 'Services',
+    name: 'services',
     component: loadPage('ServicesPage'),
     children:
       [
         {
-          path: 'seo',
-          name: 'SEO',
-          component: loadView('SeoView')
+          path: '/services/all',
+          name: 'Our Services',
+          component: loadLayout('ServicesList')
         },
         {
-          path: 'hosting',
-          name: 'Domains & Hosting',
-          component: loadView('HostingView')
+          path: '/services/:instance',
+          name: 'service',
+          props: true,
+          component: loadView('ServiceView')
         },
-        {
-          path: 'google-ads',
-          name: 'Google Ads',
-          component: loadView('AdsView')
-        },
-        {
-          path: 'website-design',
-          name: 'Website Design',
-          component: loadView('DesignView')
-        },
-        {
-          path: 'ecommerce',
-          name: 'E-Commerce',
-          component: loadView('EcommerceView')
-        },
-        // {
-        //   path: 'logo-design',
-        //   name: 'Logos and Assets',
-        //   component: loadView('LogoView')
-        // },
-        {
-          path: 'everything-else',
-          name: 'Odd Jobs',
-          component: loadView('MiscServicesView')
-        },
+
       ]
   },
   {
+    path: '/apps',
+    name: 'apps',
+    components: loadPage('AppPage'),
+    children:
+      [
+        {
+          path: "/apps/all",
+          name: "Our Apps",
+          component: loadLayout('AppsList')
+        },
+        {
+          path: "/apps/:instance",
+          name: "app",
+          props: true,
+          component: loadView('AppView')
+        }
+      ]
+  },
+
+  {
     path: '/blog',
-    name: 'Blog',
+    name: 'blog',
     // children:
     //   [
     //     {
@@ -87,28 +79,26 @@ export const routes = [
     //     }
     //   ]
   },
-  {
-    path: '/apps',
-    name: 'Apps',
-    children:
-      [
-        {
-          path: 'app-development',
-          name: 'App Development',
-          component: loadView('AppView')
-        },
-        {
-          path: 'electra-messaging',
-          name: 'electra',
-          component: loadView('ElectraView')
-        },
-        {
-          path: 'maia-appointments',
-          name: 'maia',
-          component: loadView('ElectraView')
-        },
-      ]
-  }
+  // {
+  //   path: '/portfolio',
+  //   name: 'portfolio',
+  //   component: loadPage('PortfolioPage'),
+  //   children:
+  //     [
+  //       {
+  //         path: "/all",
+  //         name: "all portfolio",
+  //         component: loadLayout('AppsList')
+  //       },
+  //       {
+  //         path: "/:instance",
+  //         name: "portfolio piece",
+  //         component: loadView('AppView')
+  //       }
+  //     ]
+  // },
+
+
 ]
 
 

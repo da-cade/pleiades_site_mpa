@@ -1,17 +1,18 @@
 <template>
   <div class="dropDownContainer relative flex content-center justify-center">
-    <router-link class="group" :to="{ name: routeTree.name }"
-      >{{ routeTree.name }}
+    <router-link class="group" :to="computedDestination"
+      >{{ formattedName }}
 
       <div
-        v-if="routeChildren.length"
+        v-if="subroutes.length"
         class="routeContainer group-hover:grid left-0 right-0 absolute h-fit hidden"
         :style="generatedGridRows"
       >
         <NavItem
-          v-for="route in routeChildren"
-          :key="route.path + '-key'"
+          v-for="route in subroutes"
+          :key="route.name + '-routekey'"
           :route="route"
+          :routeFamily="routeName"
         />
       </div>
     </router-link>
@@ -28,21 +29,27 @@ export default {
     NavItem,
   },
   props: {
-    routeTree: {
-      type: Object,
+    subroutes: {
+      type: Array,
+      required: true,
+    },
+    routeName: {
+      type: String,
       required: true,
     },
   },
   setup(props) {
-    const routeChildren = computed(() => {
-      return props.routeTree.children
-        ? props.routeTree.children
-        : props.routeTree;
+    const formattedName = computed(() => {
+      return props.routeName.charAt(0).toUpperCase() + props.routeName.slice(1);
     });
 
-    const generatedGridRows = generateGridItems("rows", routeChildren.value);
-
-    return { routeChildren, generatedGridRows };
+    const computedDestination = computed(() => {
+      return props.subroutes.length
+        ? `/${props.routeName}/all`
+        : "/" + props.routeName;
+    });
+    const generatedGridRows = generateGridItems("rows", props.subroutes);
+    return { generatedGridRows, computedDestination, formattedName };
   },
 };
 </script>

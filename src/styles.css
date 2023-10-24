@@ -67,6 +67,18 @@
   src: url('./assets/fonts/RobotoSlab-VariableFont_wght.ttf');
 }
 
+.modak {
+  font-family: modak;
+}
+
+.alata {
+  font-family: alata
+}
+
+.roboto-slab {
+  font-family: roboto-slab
+}
+
 .hideNav {
   top: -100% !important;
 }
@@ -108,6 +120,7 @@ html {
 
 body {
   background-color: transparent;
+  height: 100vh;
   color: var(--color-text);
   transition: color 0.5s, background-color 0.5s;
   line-height: 1.6;
@@ -127,11 +140,16 @@ body {
   }
 }
 
+#app {
+  height: 100%;
+}
+
 p {
   margin: 0;
 }
 
 main {
+  height: 100%;
   overflow-x: hidden;
 }
 

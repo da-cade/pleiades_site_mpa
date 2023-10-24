@@ -1,47 +1,32 @@
 <template>
-  <div id="contact" class="row g-0" v-scrollanimation>
-    <div class="col-12"><h1>contact us today</h1></div>
-  </div>
-  <div class="container justify-center items-center d-flex" v-scrollanimation>
-    <div class="row">
-      <div
-        class="col-lg-6 contact-info justify-center items-center d-flex flex-column"
-        v-scrollanimation
-      >
-        <h5>Pleiades Projectworks LLC</h5>
-        <p><b>Email: </b> info@pleiadesprojectworks.com</p>
-        <p>Monday - Friday</p>
-        <p>9 - 5</p>
-      </div>
-      <div
-        class="col-lg-6 contact-form d-flex justify-center items-center d-flex flex-column p-5"
-        v-scrollanimation
-      >
-        <contact-form />
-        <!-- <div class="form-elems">
-            <div class="d-flex justify-content-between">
-              <div class="d-flex flex-column w-48">
-                <label for="name" class="visibility-hidden"></label>
-                <input
-                  type="text"
-                  placeholder="Your name"
-                  name="name"
-                  required
-                />
-              </div>
-              <div class="d-flex flex-column w-48">
-                <label for="email" class="visibility-hidden"></label>
-                <input type="email" placeholder="Email" name="email" required />
-              </div>
-            </div>
-            <label for="message" class="visibility-hidden"></label>
-            <textarea
-              class="message"
-              placeholder="Your message"
-              name="message"
-              required
-            />
-          </div> -->
+  <div class="block mb-4">
+    <div
+      id="contact"
+      class="flex justify-center mb-4 text-6xl"
+      v-scrollanimation
+    >
+      <h2>contact us today</h2>
+    </div>
+    <div class="justify-center items-center flex w-full" v-scrollanimation>
+      <div class="grid md:grid-cols-2 w-full">
+        <div
+          class="contact-info justify-center items-center flex flex-column w-full"
+          v-scrollanimation
+        >
+          <h5>Pleiades Projectworks LLC</h5>
+          <p>
+            <span class="text-white">Email: </span>
+            info@pleiadesprojectworks.com
+          </p>
+          <p>Monday - Friday</p>
+          <p>9 - 5</p>
+        </div>
+        <div
+          class="contact-form flex justify-center items-center flex-column p-5 w-full"
+          v-scrollanimation
+        >
+          <ContactForm />
+        </div>
       </div>
     </div>
   </div>
@@ -82,10 +67,10 @@ export default {
 }
 
 h1 {
-  margin-top: 7vh;
-  margin-bottom: 30px;
+  // margin-top: 7vh;
+  // margin-bottom: 30px;
   color: white;
-  font-size: 8em;
+  // font-size: 8em;
   text-align: center;
 
   @media (max-width: 480px) {
@@ -109,7 +94,7 @@ p {
 .contact-form {
   background-color: white;
   padding: 2em;
-  width: 50%;
+  // width: 50%;
   height: 70vh;
   border-radius: 0px 25px 25px 0px;
   @media (max-width: 500px) {
@@ -143,13 +128,13 @@ p {
 }
 
 #contact h1 {
-  @media (max-width: 300px) {
-    font-size: 5em;
-    margin-bottom: 38.5vh;
-  }
-  @media (max-width: 740px) {
-    margin-bottom: 3rem;
-  }
+  // @media (max-width: 300px) {
+  //   font-size: 5em;
+  //   margin-bottom: 38.5vh;
+  // }
+  // @media (max-width: 740px) {
+  //   margin-bottom: 3rem;
+  // }
 }
 
 .row {
@@ -158,7 +143,7 @@ p {
 
 @media (max-width: 380px) {
   #contact {
-    margin-bottom: 5em;
+    // margin-bottom: 5em;
   }
 }
 </style>

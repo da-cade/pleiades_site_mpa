@@ -1,5 +1,5 @@
 <template>
-  <div id="whyus" class="container d-block d-lg-flex justify-center">
+  <div id="whyus" class="block lg:flex justify-center">
     <div class="wrapper flex">
       <TechColumn />
       <ValuesColumn />
@@ -8,8 +8,8 @@
 </template>
 
 <script setup>
-import TechColumn from "../layouts/TechColumn.vue";
-import ValuesColumn from "../layouts/ValuesColumn.vue";
+import TechColumn from "./TechColumn.vue";
+import ValuesColumn from "./ValuesColumn.vue";
 </script>
 
 <style lang="scss" scoped>
@@ -23,12 +23,6 @@ import ValuesColumn from "../layouts/ValuesColumn.vue";
   opacity: 1;
   transition-delay: 0.3s;
   transform: translatex(0);
-}
-
-.container {
-  // height: 100vh;
-  // min-height: fit-content;
-  margin-top: 15vh;
 }
 
 p {

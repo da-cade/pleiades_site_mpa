@@ -2,15 +2,20 @@
   <div
     class="w-full banner-headline-wrapper bubble-edge flex flex-col justify-center items-star p-36"
   >
-    <span class="banner-headline text-9xl">Big Solutions</span>
-    <span class="text-9xl">For Small Business</span>
-    <h2></h2>
+    <span class="modak text-9xl">Big Solutions</span>
+    <span class="alata text-7xl">For Small Business</span>
+    <div class="buttonRow flex gap-4">
+      <RainbowButton class="mt-3" :displayMessage="'Find out more!'" />
+      <RainbowButton class="mt-3" :displayMessage="'Send a Message'" />
+    </div>
   </div>
 </template>
 
 
 <script>
+import RainbowButton from "./evergreens/RainbowButton.vue";
 export default {
+  components: { RainbowButton },
   setup() {
     return {};
   },
@@ -33,10 +38,5 @@ export default {
     radial-gradient(44px, #000 98%, #0000) bottom/81.40px 88px;
   -webkit-mask: var(--mask);
   mask: var(--mask);
-}
-
-.banner-headline {
-  font-family: modak;
-  // border-bottom: solid 3px white;
 }
 </style>

@@ -5,6 +5,12 @@
   <div class="about-section" v-scrollanimation>
     <div class="p-5">
       <ServiceCard
+        v-for="(service, i) in services"
+        :key="service.name"
+        :direction="i % 2 == 0 ? 'left' : 'right'"
+        :service="service"
+      />
+      <!-- <ServiceCard
         :title="'Web Design'"
         :description="`At Pleiades, we start with good design. Using industry best
               practices in UX and SEO, Pleiades Projectworks crafts websites
@@ -42,21 +48,19 @@
       />
       <ServiceCard
         :title="'Ads and Marketing'"
-        :description="`Pleiades is comprised of software engineers who have fun making
-              things. What that means is that not only are we literate in the
-              technologies that comprise the web, we can use them to create
-              things that are entirely new. We've already created a few apps for
-              our clients, and have lots more planned. We specialize in
-              cost-effective, highly expandable web apps that live in the cloud.`"
+        :description="`bla bla bla`"
         :image="'../src/assets/img/coding.png'"
         :direction="'right'"
-      />
+      /> -->
     </div>
   </div>
 </template>
 
 <script setup>
+import { computed } from "vue";
 import ServiceCard from "../components/ServiceCard.vue";
+import * as template from "../templates/main.json";
+const services = computed(() => template.routes.services.slice(0, 4));
 </script>
 
 <style lang="scss" scoped>

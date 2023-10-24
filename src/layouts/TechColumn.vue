@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-grow flex-col">
     <div class="text-dark flex mb-4">
-      <b>We</b>
+      <b class="text-dark">We</b>
       <b class="dark-side">Use</b>
     </div>
     <div class="tech-column flex h-full flex-col justify-between content-start">
@@ -21,7 +21,7 @@
 import * as template from "../templates/main.json";
 import { computed } from "vue";
 import Technology from "../components/Technology.vue";
-const technologies = computed(() => template.technologies);
+const technologies = computed(() => template.details.technologies);
 </script>
 
 

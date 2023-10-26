@@ -16,7 +16,7 @@ function loadComposable(composable) {
   return () => import(`./components/composables/${composable}.vue`)
 }
 
-export const routes = [
+const routes = [
   {
     path: '/',
     name: 'home',
@@ -25,12 +25,24 @@ export const routes = [
   {
     path: '/about',
     name: 'about',
-    component: loadPage('AboutPage'),
+    component: loadPage('StandardPage'),
+    children: [
+      {
+        path: '/about/so-you-want-to-know-about-us-huh',
+        name: "What's Our Deal",
+        component: loadView('AboutUsView')
+      },
+      {
+        path: '/about/frequently-asked-questions',
+        name: 'FAQ',
+        component: loadView('FAQView')
+      },
+    ]
   },
   {
     path: '/services',
     name: 'services',
-    component: loadPage('ServicesPage'),
+    component: loadPage('StandardPage'),
     children:
       [
         {
@@ -50,7 +62,7 @@ export const routes = [
   {
     path: '/apps',
     name: 'apps',
-    components: loadPage('AppPage'),
+    component: loadPage('StandardPage'),
     children:
       [
         {
@@ -70,35 +82,13 @@ export const routes = [
   {
     path: '/blog',
     name: 'blog',
-    // children:
-    //   [
-    //     {
-    //       path: 'app-development',
-    //       name: 'App Development',
-    //       component: loadView('AppView')
-    //     }
-    //   ]
+    component: loadPage('StandardPage')
   },
-  // {
-  //   path: '/portfolio',
-  //   name: 'portfolio',
-  //   component: loadPage('PortfolioPage'),
-  //   children:
-  //     [
-  //       {
-  //         path: "/all",
-  //         name: "all portfolio",
-  //         component: loadLayout('AppsList')
-  //       },
-  //       {
-  //         path: "/:instance",
-  //         name: "portfolio piece",
-  //         component: loadView('AppView')
-  //       }
-  //     ]
-  // },
-
-
+  {
+    path: '/contact',
+    name: 'contact',
+    component: loadPage('ContactPage'),
+  },
 ]
 
 

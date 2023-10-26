@@ -1,5 +1,5 @@
 <template>
-  <div class="pageWrapper mt-32 mb-20">
+  <div class="pageWrapper my-20">
     <router-view />
   </div>
 </template>

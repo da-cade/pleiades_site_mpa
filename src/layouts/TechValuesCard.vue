@@ -1,6 +1,6 @@
 <template>
-  <div id="whyus" class="block lg:flex justify-center">
-    <div class="wrapper flex">
+  <div id="whyus" class="block xl:flex justify-center">
+    <div class="wrapper bg-off-white flex gap-4">
       <TechColumn />
       <ValuesColumn />
     </div>
@@ -37,7 +37,6 @@ p {
   padding: 3em;
   border-radius: 25px;
   height: 100%;
-  background-color: rgb(255, 255, 255);
   display: flex;
   justify-content: center;
   // align-items: center;

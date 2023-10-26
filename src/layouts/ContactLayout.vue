@@ -5,13 +5,12 @@
       class="flex justify-center mb-4 text-6xl"
       v-scrollanimation
     >
-      <h2>contact us today</h2>
+      <h2 class="text-white">contact us today</h2>
     </div>
     <div class="justify-center items-center flex w-full" v-scrollanimation>
       <div class="grid md:grid-cols-2 w-full">
         <div
           class="contact-info justify-center items-center flex flex-column w-full"
-          v-scrollanimation
         >
           <h5>Pleiades Projectworks LLC</h5>
           <p>
@@ -23,7 +22,6 @@
         </div>
         <div
           class="contact-form flex justify-center items-center flex-column p-5 w-full"
-          v-scrollanimation
         >
           <ContactForm />
         </div>
@@ -33,7 +31,7 @@
 </template>
   
   <script>
-import ContactForm from "./ContactForm.vue";
+import ContactForm from "../components/ContactForm.vue";
 export default {
   components: { ContactForm },
   name: "App",
@@ -67,10 +65,7 @@ export default {
 }
 
 h1 {
-  // margin-top: 7vh;
-  // margin-bottom: 30px;
   color: white;
-  // font-size: 8em;
   text-align: center;
 
   @media (max-width: 480px) {
@@ -124,26 +119,6 @@ p {
   @media (max-width: 1020px) {
     height: auto;
     padding: 2rem 0;
-  }
-}
-
-#contact h1 {
-  // @media (max-width: 300px) {
-  //   font-size: 5em;
-  //   margin-bottom: 38.5vh;
-  // }
-  // @media (max-width: 740px) {
-  //   margin-bottom: 3rem;
-  // }
-}
-
-.row {
-  width: 100vw;
-}
-
-@media (max-width: 380px) {
-  #contact {
-    // margin-bottom: 5em;
   }
 }
 </style>

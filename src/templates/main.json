@@ -1,12 +1,31 @@
 {
-  "routes": {
-    "about": [],
+  "pages": {
+    "about": [
+      {
+        "name": "What's Our Deal?",
+        "routeName": "so-you-want-to-know-about-us-huh",
+        "shortDescription": "",
+        "longDescription": "",
+        "bodyBlocks": [],
+        "coverImg": "",
+        "imgAlt": ""
+      },
+      {
+        "name": "FAQ",
+        "routeName": "frequently-asked-questions",
+        "shortDescription": "",
+        "longDescription": "",
+        "bodyBlocks": [],
+        "coverImg": "",
+        "imgAlt": ""
+      }
+    ],
     "services": [
       {
         "name": "Website Design",
         "routeName": "website-design",
-        "shortDescription": "At Pleiades, we start with good design. Using industry best practices in UX and SEO, Pleiades Projectworks crafts websites that are both stylish and functional, which organically rank high on searches and unobtrusively communicate your brand to your customers. We take into consideration factors such as user experience, website speed, and mobile responsiveness, and we provide ongoing supportiption and maintenance to ensure that your store is always running smoothly.",
-        "longDescription": "At Pleiades, we start with good design. Using industry best practices in UX and SEO, Pleiades Projectworks crafts websites that are both stylish and functional, which organically rank high on searches and unobtrusively communicate your brand to your customers. We take into consideration factors such as user experience, website speed, and mobile responsiveness, and we provide ongoing supportiption and maintenance to ensure that your store is always running smoothly. At Pleiades, we start with good design. Using industry best practices in UX and SEO, Pleiades Projectworks crafts websites that are both stylish and functional, which organically rank high on searches and unobtrusively communicate your brand to your customers. We take into consideration factors such as user experience, website speed, and mobile responsiveness, and we provide ongoing supportiption and maintenance to ensure that your store is always running smoothly. At Pleiades, we start with good design. Using industry best practices in UX and SEO, Pleiades Projectworks crafts websites that are both stylish and functional, which organically rank high on searches and unobtrusively communicate your brand to your customers. We take into consideration factors such as user experience, website speed, and mobile responsiveness, and we provide ongoing supportiption and maintenance to ensure that your store is always running smoothly.",
+        "shortDescription": "At Pleiades, we start with good design. Using industry best practices in UX and SEO, Pleiades Projectworks crafts websites that are both stylish and functional, which are formatted to organically rank high on searches and unobtrusively communicate your brand to your customers. We take into consideration factors such as user experience, website speed, and mobile responsiveness, and we provide ongoing support and maintenance to ensure that your store is always running smoothly.",
+        "longDescription": "At Pleiades, we start with good design. Using industry best practices in UX and SEO, Pleiades Projectworks crafts websites that are both stylish and functional, which organically rank high on searches and unobtrusively communicate your brand to your customers. We take into consideration factors such as user experience, website speed, and mobile responsiveness, and we provide ongoing supportiption and maintenance to ensure that your store is always running smoothly. At Pleiades, we start with good design. Using industry best practices in UX and SEO, Pleiades Projectworks crafts websites that are both stylish and functional, which organically rank high on searches and unobtrusively communicate your brand to your customers. We take into consideration factors such as user experience, website speed, and mobile responsiveness, and we provide ongoing supportiption and maintenance to ensure that your store is always running smoothly. At Pleiades, we start with good design. Using industry best practices in UX and SEO, Pleiades Projectworks crafts websites that are both stylish and functional, which organically rank high on searches and unobtrusively communicate your brand to your customers. We take into consideration factors such as user experience, website speed, and mobile responsiveness, and we provide ongoing support and maintenance to ensure that your store is always running smoothly.",
         "image": "../src/assets/img/custom.png",
         "imageAlt": ""
       },
@@ -72,7 +91,7 @@
         "source": ""
       },
       {
-        "name": "Electra WebChat",
+        "name": "Electra Webchat",
         "routeName": "electra-chat",
         "coverImg": "../src/assets/img/coding.png",
         "coverImgAlt": "",
@@ -94,7 +113,8 @@
         "source": ""
       }
     ],
-    "blog": []
+    "blog": [],
+    "contact": []
   },
   "details": {
     "technologies": [
@@ -176,6 +196,7 @@
         ],
         "callToAction": "Discover Affordable Apps"
       }
-    ]
+    ],
+    "values": []
   }
 }

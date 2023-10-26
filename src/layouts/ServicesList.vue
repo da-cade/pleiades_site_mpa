@@ -1,8 +1,19 @@
 <template>
-  <h1 class="text-6xl mb-3">{{ $route.name }}</h1>
-  <div class="servicesMenu flex flex-col gap-4">
+  <h1 class="text-6xl mb-3 text-white">{{ $route.name }}</h1>
+  <div class="servicesMenu flex flex-col gap-4 bg-off-white p-4 rounded-3xl">
+    <div class="rounded-3xl p-12 flex w-full bg-white bubble-edge">
+      <p class="text-lg alata">
+        We offer a lot of services at Pleiades, because there's a lot that
+        people need. We go above and beyond in everything that we do; that means
+        meaningful results for you in anything that can be measured. We'll work
+        with your budget to craft a menu of solutions that's right for both you
+        and your goals, and talk to you every step of the way so that you know
+        what's happening under the hood. If you're just getting started on the
+        web, *schedule a call* with us to talk about where you want to go.
+      </p>
+    </div>
     <ServiceCard
-      class="bg-white rounded-3xl"
+      class=""
       v-for="(service, i) in services"
       :key="service.name"
       :service="service"
@@ -22,7 +33,7 @@ export default {
   },
   setup() {
     return {
-      services: computed(() => template.routes.services),
+      services: computed(() => template.pages.services),
     };
   },
 };
@@ -30,4 +41,18 @@ export default {
 
 
 <style lang="scss" scoped>
+.card-holder {
+  padding: 2em;
+  border-radius: 25px;
+  display: flex;
+  justify-content: space-around;
+  @media (max-width: 480px) {
+    padding: 0;
+  }
+  @media (max-width: 1020px) {
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+  width: 100%;
+}
 </style>

@@ -1,7 +1,9 @@
 <template>
-  <div class="pitch-column flex flex-col content-between items-center px-8">
+  <div
+    class="pitch-column rounded-3xl bg-white flex flex-col content-between items-center md:p-4 xl:p-8 gap-4"
+  >
     <div
-      class="col-md-12 mb-5 flex flex-column justify-center items-center"
+      class="col-md-12 xl:px-24 xl:p-8 mb-4 flex flex-column justify-center items-center"
       v-scrollanimation
     >
       <div class="flex flex-wrap">
@@ -11,17 +13,20 @@
       <p class="body-text">
         At Pleiades, we charge a fair price for our services. The complexity of
         online marketing is often intentionally exaggerated by agencies offering
-        SEO and SEM services --- we don't do that. Our monthly reports tell you
+        SEO and SEM services — we don't do that. Our monthly reports tell you
         everything that we're doing and how it works, so that you can be a part
-        of the process. When designing websites and apps, we're happy to work
-        with your budget and your needs, whether that's creating a work of art
-        online or giving you something quick and clean that you can run
-        yourself.
-        <a href="#contact">Find out more.</a>
+        of the process.
+      </p>
+      <br />
+      <p>
+        When designing websites and apps, we're happy to work with your budget
+        and your needs, whether that's creating a work of art online or giving
+        you something quick and clean that you can run yourself.
+        <a href="/services/all">Find out more.</a>
       </p>
     </div>
     <div
-      class="col-md-12 mb-5 flex flex-column justify-center items-center"
+      class="col-md-12 xl:px-24 xl:p-8 mb-5 flex flex-column justify-center items-center"
       v-scrollanimation
     >
       <div class="flex flex-wrap">
@@ -44,7 +49,7 @@
       </p>
     </div>
     <div
-      class="col-md-12 flex flex-column justify-center items-center"
+      class="col-md-12 xl:px-24 xl:p-8 flex flex-column justify-center items-center"
       v-scrollanimation
     >
       <div class="flex flex-wrap">

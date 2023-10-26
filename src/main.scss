@@ -1,3 +1,25 @@
+body {
+  @media (max-width: 1999px){
+    font-size: calc(0.45em + 1vmin);
+  }
+  @media (max-width: 1600px){
+    font-size: calc(0.4em + 1vmin);
+  }
+  
+  @media (max-width: 1200px){
+    font-size: calc(0.6em + 1vmin);
+  }
+  @media (max-width: 800px){
+    font-size: calc(0.8em + 1vmin);
+  }
+  @media (max-width: 400px){
+    font-size: calc(0.7em + 1vmin);
+  }
+  @media (min-width: 2000px) {
+    font-size: calc(0.4em + 1vmin);
+  }
+}
+
 b {
   font-size: 3em;
   position: relative;

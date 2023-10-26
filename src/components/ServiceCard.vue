@@ -1,10 +1,10 @@
 <template>
   <router-link
     :to="{ name: 'service', params: { instance: service.routeName } }"
-    class="cardBorder"
+    class="cardBorder hover:shadow-lg hover:-translate-y-2 duration-300 ease-out"
   >
     <div
-      class="card-holder"
+      class="card-holder bg-white"
       :class="[direction == 'left' ? 'flex-row' : 'flex-row-reverse']"
     >
       <div class="text-wrapper">
@@ -59,13 +59,13 @@ export default {
 //   }
 // }
 
-// .cardBorder {
-//   display: block;
-//   --borderWidth: 5px;
-//   background: white;
-//   position: relative;
-//   border-radius: 25px;
-// }
+.cardBorder {
+  display: block;
+
+  background: white;
+  position: relative;
+  border-radius: 25px;
+}
 
 // .cardBorder::after {
 //   content: "";

@@ -15,7 +15,7 @@ export default {
     const route = useRoute();
     console.log(route.params);
     const service = computed(() => {
-      return template.routes.services.find(
+      return template.pages.services.find(
         (s) => s.routeName == route.params.instance
       );
     });

@@ -1,57 +1,17 @@
 <template>
-  <div id="services" class="m-0" v-scrollanimation>
-    <div class=""><h1>Experts on the Web</h1></div>
-  </div>
-  <div class="about-section" v-scrollanimation>
-    <div class="p-5">
-      <ServiceCard
-        v-for="(service, i) in services"
-        :key="service.name"
-        :direction="i % 2 == 0 ? 'left' : 'right'"
-        :service="service"
-      />
-      <!-- <ServiceCard
-        :title="'Web Design'"
-        :description="`At Pleiades, we start with good design. Using industry best
-              practices in UX and SEO, Pleiades Projectworks crafts websites
-              that are both stylish and functional, which organically rank high
-              on searches and unobtrusively communicate your brand to your
-              customers. We take into consideration factors such as user
-              experience, website speed, and mobile responsiveness, and we
-              provide ongoing support and maintenance to ensure that your store
-              is always running smoothly.`"
-        :image="'../src/assets/img/custom.png'"
-        :direction="'left'"
-      />
-      <ServiceCard
-        :title="'SEO'"
-        :description="`Running a business online can be complicated, and it works at its
-              best when operating under one, cohesive plan. At Pleiades, we can
-              handle anything from SEO to SEM, adwords, strategy, and
-              brand-planning. We also specialize in Google Ads, and can create
-              campaigns at nearly any budget. We work at your level, making sure
-              you stay competitive in your areas of operation while also
-              discovering new avenues that your competitors don't utilize.`"
-        :image="'../src/assets/img/seo.png'"
-        :direction="'right'"
-      />
-      <ServiceCard
-        :title="'App Development'"
-        :description="`Pleiades is comprised of software engineers who have fun making
-              things. What that means is that not only are we literate in the
-              technologies that comprise the web, we can use them to create
-              things that are entirely new. We've already created a few apps for
-              our clients, and have lots more planned. We specialize in
-              cost-effective, highly expandable web apps that live in the cloud.`"
-        :image="'../src/assets/img/coding.png'"
-        :direction="'left'"
-      />
-      <ServiceCard
-        :title="'Ads and Marketing'"
-        :description="`bla bla bla`"
-        :image="'../src/assets/img/coding.png'"
-        :direction="'right'"
-      /> -->
+  <div class="about-wrapper bg-off-white rounded-3xl p-8">
+    <div id="services" class="text-6xl sm:mb-4 xl:mb-8" v-scrollanimation>
+      <span class="text-black alata">We Can Do That</span>
+    </div>
+    <div class="about-section">
+      <div class="grid md:grid-cols-1 xl:grid-cols-2 gap-4">
+        <ServiceCard
+          v-for="(service, i) in services"
+          :key="service.name"
+          :direction="i % 2 == 0 ? 'left' : 'right'"
+          :service="service"
+        />
+      </div>
     </div>
   </div>
 </template>
@@ -60,24 +20,10 @@
 import { computed } from "vue";
 import ServiceCard from "../components/ServiceCard.vue";
 import * as template from "../templates/main.json";
-const services = computed(() => template.routes.services.slice(0, 4));
+const services = computed(() => template.pages.services.slice(0, 4));
 </script>
 
 <style lang="scss" scoped>
-h1 {
-  color: white;
-  font-size: 10em;
-  padding-bottom: 5vh;
-  text-align: center;
-  @media (max-width: 480px) {
-    font-size: 5em;
-  }
-  /* Media Query for Tablets Ipads portrait mode */
-  @media (min-width: 768px) and (max-width: 1024px) {
-    font-size: 7em;
-  }
-}
-
 @keyframes slideIn {
   0% {
     transform: translateX(50%);
@@ -94,7 +40,6 @@ h1 {
 }
 
 .about-section {
-  background: white;
   border-radius: 25px;
 }
 

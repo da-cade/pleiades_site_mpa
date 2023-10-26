@@ -15,6 +15,7 @@
           <label for="name" class="invisible">Name input</label>
           <input
             v-model.lazy="form.name"
+            autocomplete="name"
             type="text"
             placeholder="Your name"
             name="name"
@@ -25,6 +26,7 @@
           <label for="email" class="invisible">Email Input</label>
           <input
             v-model.lazy="form.email"
+            autocomplete="email"
             type="email"
             placeholder="Email"
             name="email"

@@ -1,6 +1,6 @@
 <template>
-  <div class="flex flex-grow flex-col">
-    <div class="text-dark flex mb-4">
+  <div class="flex flex-grow flex-col rounded-3xl bg-white">
+    <div class="text-dark flex justify-center my-4">
       <b class="text-dark">We</b>
       <b class="dark-side">Use</b>
     </div>

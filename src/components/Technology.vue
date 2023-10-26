@@ -35,11 +35,13 @@ export default {
   // align-items: center;
   width: auto;
   height: auto;
-  max-height: 15vh;
-  max-width: 25vh;
+  max-height: 10em;
+  max-width: 15em;
   // margin-top: 2em;
   @media (max-width: 900px) {
-    max-height: 7vh;
+    max-height: 7rem;
+  }
+  @media (min-width: 1800px) {
   }
 }
 

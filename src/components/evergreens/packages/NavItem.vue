@@ -1,9 +1,9 @@
 <template>
   <router-link
     class="navItem flex content-center justify-center p-1 h-fit max-w-full"
-    :to="`/${routeFamily}/${route.routeName}`"
+    :to="routePath"
   >
-    <span>{{ route.name }}</span>
+    <span>{{ routeName }}</span>
   </router-link>
 </template>
 
@@ -11,11 +11,11 @@
 <script>
 export default {
   props: {
-    route: {
-      type: Object,
+    routePath: {
+      type: String,
       required: true,
     },
-    routeFamily: {
+    routeName: {
       type: String,
       required: true,
     },

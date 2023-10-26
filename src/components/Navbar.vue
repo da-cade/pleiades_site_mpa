@@ -1,7 +1,7 @@
 <template>
   <nav
     id="nav"
-    class="bg-black fixed top-0 right-0 left-0 z-50 flex w-full h-auto"
+    class="bg-black sticky top-0 right-0 left-0 z-50 flex w-full h-auto"
   >
     <div class="image-container max-w-sm">
       <router-link id="navlogo" class="d-mflex" :to="{ name: 'home' }">
@@ -19,23 +19,18 @@
 
 <script>
 import { onMounted, ref } from "vue";
-import Offcanvas from "./Offcanvas.vue";
 import NavMenu from "./evergreens/packages/NavMenu.vue";
 import { navTuck } from "./composables/navTuck.js";
 export default {
-  components: { Offcanvas, NavMenu },
+  components: { NavMenu },
   name: "App",
   setup() {
-    let canvasOpen = ref(false);
-
     onMounted(() => {
       let nav = document.getElementById("nav");
       console.log(nav);
       navTuck(nav);
     });
-    return {
-      canvasOpen,
-    };
+    return {};
   },
 };
 </script>

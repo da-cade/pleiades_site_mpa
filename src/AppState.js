@@ -1,5 +1,5 @@
 import { ref } from "vue";
 
-export const AppState = ref({
-
+export const Appstate = ref({
+  offCanvasOpen: false
 })

@@ -42,6 +42,7 @@ export default {
 }
 
 .rainbow-5:hover {
+  color: black;
   background-image: linear-gradient(
     to right,
     #e7484f,

@@ -11,8 +11,8 @@
         <NavItem
           v-for="route in subroutes"
           :key="route.name + '-routekey'"
-          :route="route"
-          :routeFamily="routeName"
+          :routePath="`/${baseRoute}/${route.routeName}`"
+          :routeName="route.name"
         />
       </div>
     </router-link>
@@ -33,20 +33,28 @@ export default {
       type: Array,
       required: true,
     },
-    routeName: {
+    baseRoute: {
       type: String,
       required: true,
     },
   },
   setup(props) {
+    console.log(props.baseRoute);
     const formattedName = computed(() => {
-      return props.routeName.charAt(0).toUpperCase() + props.routeName.slice(1);
+      return props.baseRoute.charAt(0).toUpperCase() + props.baseRoute.slice(1);
     });
 
     const computedDestination = computed(() => {
-      return props.subroutes.length
-        ? `/${props.routeName}/all`
-        : "/" + props.routeName;
+      const path = `/${props.baseRoute}/`;
+      if (props.subroutes.length) {
+        if (props.baseRoute == "about") {
+          return path + props.subroutes[0].routeName;
+        } else {
+          return path + "all";
+        }
+      } else {
+        return path;
+      }
     });
     const generatedGridRows = generateGridItems("rows", props.subroutes);
     return { generatedGridRows, computedDestination, formattedName };

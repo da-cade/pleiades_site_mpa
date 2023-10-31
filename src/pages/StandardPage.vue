@@ -1,7 +1,5 @@
 <template>
-  <div class="pageWrapper">
-    <router-view />
-  </div>
+  <router-view />
 </template>
 
 

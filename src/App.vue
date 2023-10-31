@@ -6,12 +6,14 @@ import ContactForm from "./components/ContactForm.vue";
 
 import { ref } from "vue";
 import { Appstate } from "./AppState";
+import Footer from "./components/Footer.vue";
 export default {
   components: {
     Navbar,
     Fab,
     OffCanvas,
     ContactForm,
+    Footer,
   },
   setup() {
     return {
@@ -25,15 +27,16 @@ export default {
 
 <template>
   <Navbar />
-  <main>
-    <RouterView />
-  </main>
+  <!-- <main> -->
+  <RouterView />
+  <!-- </main> -->
   <Fab @click="toggleOffCanvas" />
-  <OffCanvas>
+  <!-- <OffCanvas>
     <template #offcanvas-content-slot>
       <ContactForm class="bg-white p-4 rounded-3xl" />
     </template>
-  </OffCanvas>
+  </OffCanvas> -->
+  <Footer />
 </template>
 
 

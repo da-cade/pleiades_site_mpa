@@ -1,5 +1,5 @@
 <template>
-  <div class="pageWrapper grid">
+  <div class="pageWrapper relative grid">
     <div class="bg-white w-full text-black relative bannerWrapper">
       <img :src="service.image" class="img-col" alt="" />
       <div class="absolute inset-0 p-5 h-full w-full">
@@ -29,7 +29,7 @@
         />
       </div>
     </div>
-    <DesignProcess />
+    <StepsLayout />
   </div>
 </template>
 
@@ -40,9 +40,9 @@ import { useRoute } from "vue-router";
 import * as template from "../templates/main.json";
 import PunchOutCard from "../components/PunchOutCard.vue";
 import { Vue3Marquee } from "vue3-marquee";
-import DesignProcess from "../layouts/DesignProcess.vue";
+import StepsLayout from "../layouts/StepsLayout.vue";
 export default {
-  components: { PunchOutCard, Vue3Marquee, DesignProcess },
+  components: { PunchOutCard, Vue3Marquee, StepsLayout },
   setup() {
     const route = useRoute();
 
@@ -69,12 +69,6 @@ export default {
   display: flex;
   justify-content: center;
   height: 90vh;
-}
-.detailsWrapper {
-  display: flex;
-  padding: 3rem;
-  // justify-content: center;
-  height: 100vh;
 }
 
 // .pageWrapper:nth-last-child(1) {

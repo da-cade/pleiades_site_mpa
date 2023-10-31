@@ -55,6 +55,11 @@
 }
 
 @font-face {
+  font-family: raleway;
+  src: url('./assets/fonts/Raleway-VariableFont_wght.ttf');
+}
+
+@font-face {
   font-family: modak;
   src: url('./assets/fonts/Modak-Regular.ttf');
 }
@@ -79,7 +84,11 @@
 }
 
 .alata {
-  font-family: alata
+  font-family: alata;
+}
+
+.raleway {
+  font-family: raleway;
 }
 
 .roboto-slab {
@@ -91,6 +100,15 @@
 }
 
 
+.img {
+  height: auto;
+  max-width: 100%;
+}
+
+.img-col {
+  max-height: 100%;
+  width: auto;
+}
 
 h1,
 h2,

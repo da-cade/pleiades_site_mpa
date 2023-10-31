@@ -24,31 +24,48 @@
       {
         "name": "Website Design",
         "routeName": "website-design",
-        "shortDescription": "At Pleiades, we start with good design. Using industry best practices in UX and SEO, Pleiades Projectworks crafts websites that are both stylish and functional, which are formatted to organically rank high on searches and unobtrusively communicate your brand to your customers. We take into consideration factors such as user experience, website speed, and mobile responsiveness, and we provide ongoing support and maintenance to ensure that your store is always running smoothly.",
-        "longDescription": "At Pleiades, we start with good design. Using industry best practices in UX and SEO, Pleiades Projectworks crafts websites that are both stylish and functional, which organically rank high on searches and unobtrusively communicate your brand to your customers. We take into consideration factors such as user experience, website speed, and mobile responsiveness, and we provide ongoing supportiption and maintenance to ensure that your store is always running smoothly. At Pleiades, we start with good design. Using industry best practices in UX and SEO, Pleiades Projectworks crafts websites that are both stylish and functional, which organically rank high on searches and unobtrusively communicate your brand to your customers. We take into consideration factors such as user experience, website speed, and mobile responsiveness, and we provide ongoing supportiption and maintenance to ensure that your store is always running smoothly. At Pleiades, we start with good design. Using industry best practices in UX and SEO, Pleiades Projectworks crafts websites that are both stylish and functional, which organically rank high on searches and unobtrusively communicate your brand to your customers. We take into consideration factors such as user experience, website speed, and mobile responsiveness, and we provide ongoing support and maintenance to ensure that your store is always running smoothly.",
+        "shortDescription": "At Pleiades, we start with good design. Using industry best practices in UX and SEO, Pleiades Projectworks crafts websites that are both stylish and functional, which are formatted to organically rank high on searches and unobtrusively communicate your brand to your customers.",
+        "longDescription": "When you work with Lounge Lizard, you get a custom web design that captures visitors’ imagination by telling your brand’s story in a unique and effective way. From our first discussions to learn about you and your company through the final testing and launch, our design team creates company web designs that are fresh, original, and, most importantly, produce results.",
+        "blocks": [
+          {
+            "title": "Good Fundamentals",
+            "subtitle": "Industry Best Practices in UX/UI/SEO",
+            "body": "Our websites are built to work well for both robots and people, with events that make analytics easy and a User Experience that leads visitors where you want them to go."
+          },
+          {
+            "title": "Ongoing Upkeep",
+            "subtitle": "Maintaining Your Site For You",
+            "body": "For a low monthly fee, we make sure that your site is free from problems and constantly optimized. We make sure that visual or operational issues never remain more than 24 hours."
+          },
+          {
+            "title": "Regular Updates",
+            "subtitle": "Saving You a New Website Every 5 Years",
+            "body": "We can provide seasonal or promotional changes to your webpage to emphasize important periods for your business. And if you're already paying for upkeep, we'll make sure your site doesn't go out of style."
+          }
+        ],
         "image": "../src/assets/img/custom.png",
         "imageAlt": ""
       },
       {
         "name": "SEO",
         "routeName": "seo",
-        "shortDescription": "Running a business online can be complicated, and it works at its best when operating under one, cohesive plan. At Pleiades, we can handle anything from SEO to SEM, adwords, strategy, and brand-planning. We also specialize in Google Ads, and can create campaigns at nearly any budget. We work at your level, making sure you stay competitive in your areas of operation while also discovering new avenuesiption that your competitors don't utilize.",
-        "longDescription": "",
+        "shortDescription": "Running a business online can be complicated, and it works at its best when operating under one, cohesive plan. At Pleiades, we can handle anything from SEO to SEM, adwords, strategy, and brand-planning.",
+        "longDescription": "Running a business online can be complicated, and it works at its best when operating under one, cohesive plan. At Pleiades, we can handle anything from SEO to SEM, adwords, strategy, and brand-planning. We also specialize in Google Ads, and can create campaigns at nearly any budget. We work at your level, making sure you stay competitive in your areas of operation while also discovering new avenuesiption that your competitors don't utilize.",
         "image": "../src/assets/img/seo.png",
         "imageAlt": ""
       },
       {
         "name": "App Development",
         "routeName": "app-development",
-        "shortDescription": "Pleiades is comprised of software engineers who have fun making things. What that means is that not only are we literate in the technologies that comprise the web, we can use them to create things that are entirely new. We've already created a few apps for our clients, and have lots more plannediption. We specialize in cost-effective, highly expandable web apps that live in the cloud.",
-        "longDescription": "",
+        "shortDescription": "Pleiades is comprised of software engineers who have fun making things. Not only are we literate in the technologies that comprise the web, we can use them to create things that are entirely new.",
+        "longDescription": "Pleiades is comprised of software engineers who have fun making things. What that means is that not only are we literate in the technologies that comprise the web, we can use them to create things that are entirely new. We've already created a few apps for our clients, and have lots more plannediption. We specialize in cost-effective, highly expandable web apps that live in the cloud.",
         "image": "../src/assets/img/coding.png",
         "imageAlt": ""
       },
       {
         "name": "Google Ads",
         "routeName": "google-ads-sem",
-        "shortDescription": "Bla bla bla, blabalabla. I blabla, and then I bla some more. It's a strange situation that the above multiline stinrg has something wrong with it. Basically if I type this out instead of copy/pasteiption its fine?",
+        "shortDescription": "Pleiades Projectworks specializes in Google Ads for small businesses. We work with you to create a strategy that fits your advertising budget and your goals for growth, and can show you meaningful results with analytics.",
         "longDescription": "",
         "image": "../src/assets/img/coding.png",
         "imageAlt": ""
@@ -56,7 +73,7 @@
       {
         "name": "Domains & Email",
         "routeName": "domains-email-hosting",
-        "shortDescription": "Bla bla bla",
+        "shortDescription": "Domains, hosting, email — it can be complicated. Pleiades Projectworks is here to help you register a domain name for cheap, and to set up professional email accounts that are usable and secure for you and your staff.",
         "longDescription": "",
         "image": "../src/assets/img/coding.png",
         "imageAlt": ""
@@ -64,7 +81,7 @@
       {
         "name": "E-Commerce",
         "routeName": "e-commerce",
-        "shortDescription": "Bla bla bla",
+        "shortDescription": "Taking your business into e-commerce comes with a hosts of challenges, and we've dont them all before. We can help train you and your staff to sell online, while helping you make the right decisions about what you'll need to start.",
         "longDescription": "",
         "image": "../src/assets/img/coding.png",
         "imageAlt": ""
@@ -72,7 +89,7 @@
       {
         "name": "Everything Else",
         "routeName": "everything-else",
-        "shortDescription": "Bla bla bla",
+        "shortDescription": "Pleiades does odd-jobs: its how we make friends. If you have a problem, talk to us and we'll tackle it.",
         "longDescription": "",
         "image": "../src/assets/img/coding.png",
         "imageAlt": ""
@@ -116,6 +133,7 @@
     "blog": [],
     "contact": []
   },
+  "components": {},
   "details": {
     "technologies": [
       {

@@ -4,7 +4,7 @@
       <span class="text-black alata">We Can Do That</span>
     </div>
     <div class="about-section">
-      <div class="grid md:grid-cols-1 xl:grid-cols-2 gap-4">
+      <div class="grid grid-cols-1 xl:grid-cols-2 gap-4">
         <ServiceCard
           v-for="(service, i) in services"
           :key="service.name"

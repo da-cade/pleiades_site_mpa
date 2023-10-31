@@ -37,6 +37,11 @@ const routes = [
         name: 'FAQ',
         component: loadView('FAQView')
       },
+      {
+        path: '/about/portfolio-and-more',
+        name: 'Porfolio',
+        component: loadView('FAQView')
+      },
     ]
   },
   {

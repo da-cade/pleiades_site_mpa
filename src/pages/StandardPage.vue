@@ -1,5 +1,5 @@
 <template>
-  <div class="pageWrapper my-20">
+  <div class="pageWrapper">
     <router-view />
   </div>
 </template>

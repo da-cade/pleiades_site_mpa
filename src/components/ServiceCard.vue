@@ -5,7 +5,7 @@
   >
     <div
       class="card-holder bg-white"
-      :class="[direction == 'left' ? 'flex-row' : 'flex-row-reverse']"
+      :class="[direction == 'left' ? 'desktop-row' : 'desktop-row-reverse']"
     >
       <div class="text-wrapper">
         <h2 class="text-black text-4xl mb-3">
@@ -67,6 +67,68 @@ export default {
   border-radius: 25px;
 }
 
+.card-holder {
+  flex-direction: row;
+  @media (min-width: 1280px) {
+    flex-direction: column;
+  }
+}
+
+.desktop-row {
+  @media (max-width: 1280px) {
+    flex-direction: row;
+  }
+}
+
+.desktop-row-reverse {
+  @media (max-width: 1280px) {
+    flex-direction: row-reverse;
+  }
+}
+
+.text-wrapper {
+  padding: 1em;
+  @media (max-width: 480px) {
+    padding: 0;
+  }
+  @media (min-width: 1280px) {
+    order: 2;
+  }
+}
+
+.img-wrapper {
+  display: flex;
+  flex-grow: 1;
+  // max-width: 60%;
+  align-items: center;
+  @media (min-width: 1280px) {
+    order: 1;
+  }
+}
+
+.card-holder {
+  padding: 2em;
+  border-radius: 25px;
+  display: flex;
+  justify-content: space-around;
+  @media (max-width: 480px) {
+    padding: 0;
+  }
+  @media (max-width: 1020px) {
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+  width: 100%;
+}
+
+// .dark-side {
+//   background-color: black;
+//   color: white;
+//   font-size: 0.2em;
+//   padding: 0.2em;
+//   border-radius: 25px;
+// }
+
 // .cardBorder::after {
 //   content: "";
 //   position: absolute;
@@ -101,55 +163,5 @@ export default {
 //   );
 //   // background-position: 0% 0%;
 //   animation: animatedgradient 5s linear 0s infinite;
-// }
-
-img {
-  height: auto;
-  max-width: 100%;
-}
-
-.text-wrapper {
-  padding: 1em;
-  @media (max-width: 480px) {
-    padding: 0;
-  }
-}
-
-.text-wrapper-order-1 {
-  order: 1;
-}
-
-.img-wrapper {
-  display: flex;
-  flex-grow: 1;
-  max-width: 60%;
-  align-items: center;
-}
-
-.img-wrapper-order-2 {
-  order: 2;
-}
-
-.card-holder {
-  padding: 2em;
-  border-radius: 25px;
-  display: flex;
-  justify-content: space-around;
-  @media (max-width: 480px) {
-    padding: 0;
-  }
-  @media (max-width: 1020px) {
-    flex-direction: column;
-    margin-bottom: 50px;
-  }
-  width: 100%;
-}
-
-// .dark-side {
-//   background-color: black;
-//   color: white;
-//   font-size: 0.2em;
-//   padding: 0.2em;
-//   border-radius: 25px;
 // }
 </style>

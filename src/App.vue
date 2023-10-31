@@ -25,7 +25,7 @@ export default {
 
 <template>
   <Navbar />
-  <main class="content-width flex flex-col gap-20">
+  <main>
     <RouterView />
   </main>
   <Fab @click="toggleOffCanvas" />

@@ -1,10 +1,12 @@
 <template>
-  <Banner />
-  <!-- <Eclipse /> -->
-  <ServicesColumn />
-  <TechValuesCard />
-  <Portfolio />
-  <ContactLayout />
+  <div class="content-width flex flex-col mt-8 gap-32">
+    <Banner />
+    <!-- <Eclipse /> -->
+    <ServicesColumn />
+    <TechValuesCard />
+    <Portfolio />
+    <ContactLayout />
+  </div>
 </template>
 
 

@@ -14,7 +14,7 @@
           </p>
         </div>
         <div class="detailsCard">
-          <img class="img" src="../assets/img/custom.png" alt="" />
+          <img class="img" src="../assets/img/coding.png" alt="" />
           <h1>Howdy</h1>
           <p>
             Here's come descriptive information and a lot of it, boy does it go
@@ -22,7 +22,7 @@
           </p>
         </div>
         <div class="detailsCard">
-          <img class="img" src="../assets/img/custom.png" alt="" />
+          <img class="img" src="../assets/img/seo.png" alt="" />
           <h1>Howdy</h1>
           <p>
             Here's come descriptive information and a lot of it, boy does it go
@@ -31,15 +31,15 @@
         </div>
       </div>
 
-      <div class="stepsCol gap-12">
+      <div class="stepsCol">
         <div class="punchOut">
           <h1 class="text-9xl raleway font-extrabold">1</h1>
         </div>
         <div class="punchOut">
-          <h1 class="text-9xl raleway font-extrabold">1</h1>
+          <h1 class="text-9xl raleway font-extrabold">2</h1>
         </div>
         <div class="punchOut">
-          <h1 class="text-9xl raleway font-extrabold">1</h1>
+          <h1 class="text-9xl raleway font-extrabold">3</h1>
         </div>
       </div>
     </div>
@@ -84,10 +84,10 @@ export default {
   align-items: center;
   justify-content: center;
   background: #d3dae2;
-  gap: 12rem;
   padding: 4rem;
   min-height: 90vh;
   width: 60%;
+  gap: 50vh;
 }
 
 .detailsCard {
@@ -104,25 +104,27 @@ export default {
 .stepsCol {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   position: relative;
+  align-items: center;
+  // justify-content: center;
+  padding: 4rem;
   min-height: 90vh;
+  width: 40%;
+  gap: 70vh;
   background: rgb(209 213 219);
   mix-blend-mode: screen;
-  width: 40%;
 }
 
 .punchOut {
   color: white;
-  top: 10%;
+  top: 25%;
   position: sticky;
   min-width: 20rem;
   min-height: 20rem;
   max-width: 20rem;
   max-height: 20rem;
   border-radius: 100%;
-  position: relative;
+
   background-color: black;
   display: flex;
   justify-content: center;

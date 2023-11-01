@@ -1,44 +1,50 @@
 <template>
   <div class="contentWrapper relative w-screen flex flex-col">
-    <div class="headerContainer rounded-e-3xl sticky w-3/5 z-30 bg-white">
+    <div class="headerContainer rounded-e-3xl w-3/5 z-10 bg-white">
       <h2 class="text-5xl text-black me-3">How It Works</h2>
     </div>
     <div class="contentColumn">
       <div class="detailsCol">
         <div class="detailsCard">
           <img class="img" src="../assets/img/custom.png" alt="" />
-          <h1>Howdy</h1>
-          <p>
-            Here's come descriptive information and a lot of it, boy does it go
-            on and on and on and on and on and on and on and on
-          </p>
+          <div class="detailsInfo">
+            <h1>Howdy</h1>
+            <p>
+              Here's come descriptive information and a lot of it, boy does it
+              go on and on and on and on and on and on and on and on
+            </p>
+          </div>
         </div>
         <div class="detailsCard">
-          <img class="img" src="../assets/img/coding.png" alt="" />
-          <h1>Howdy</h1>
-          <p>
-            Here's come descriptive information and a lot of it, boy does it go
-            on and on and on and on and on and on and on and on
-          </p>
+          <img class="img" src="../assets/img/custom.png" alt="" />
+          <div class="detailsInfo">
+            <h1>Howdy</h1>
+            <p>
+              Here's come descriptive information and a lot of it, boy does it
+              go on and on and on and on and on and on and on and on
+            </p>
+          </div>
         </div>
         <div class="detailsCard">
-          <img class="img" src="../assets/img/seo.png" alt="" />
-          <h1>Howdy</h1>
-          <p>
-            Here's come descriptive information and a lot of it, boy does it go
-            on and on and on and on and on and on and on and on
-          </p>
+          <img class="img" src="../assets/img/custom.png" alt="" />
+          <div class="detailsInfo">
+            <h1>Howdy</h1>
+            <p>
+              Here's come descriptive information and a lot of it, boy does it
+              go on and on and on and on and on and on and on and on
+            </p>
+          </div>
         </div>
       </div>
 
-      <div class="stepsCol">
-        <div class="punchOut">
+      <div class="stepsCol grid grid-rows-3">
+        <div class="punchOut my-auto">
           <h1 class="text-9xl raleway font-extrabold">1</h1>
         </div>
-        <div class="punchOut">
+        <div class="punchOut my-auto">
           <h1 class="text-9xl raleway font-extrabold">2</h1>
         </div>
-        <div class="punchOut">
+        <div class="punchOut my-auto">
           <h1 class="text-9xl raleway font-extrabold">3</h1>
         </div>
       </div>
@@ -71,6 +77,7 @@ export default {
   isolation: isolate;
   display: flex;
   justify-content: flex-end;
+  // margin-bottom: 10rem;
 }
 
 .contentColumn {
@@ -84,21 +91,35 @@ export default {
   align-items: center;
   justify-content: center;
   background: #d3dae2;
-  padding: 4rem;
-  min-height: 90vh;
-  width: 60%;
-  gap: 50vh;
+  padding: 8rem;
+  width: 70%;
+  gap: 70vh;
 }
 
 .detailsCard {
   position: sticky;
   background: white;
   width: 100%;
+  // max-height: 90vh;
   border-radius: 24px;
-  padding: 4rem 8rem;
   display: grid;
-  top: 10%;
+  top: 4rem;
+  height: fit-content;
+  max-height: 90vh;
   gap: 2rem;
+
+  img {
+    border-top-right-radius: 24px;
+    border-top-left-radius: 24px;
+  }
+
+  &:nth-last-child(1) {
+    z-index: 11;
+  }
+}
+
+.detailsInfo {
+  padding: 2rem;
 }
 
 .stepsCol {
@@ -106,10 +127,9 @@ export default {
   flex-direction: column;
   position: relative;
   align-items: center;
-  // justify-content: center;
-  padding: 4rem;
-  min-height: 90vh;
-  width: 40%;
+  padding-top: 8rem;
+  padding-bottom: 12rem;
+  width: 30%;
   gap: 70vh;
   background: rgb(209 213 219);
   mix-blend-mode: screen;
@@ -117,7 +137,7 @@ export default {
 
 .punchOut {
   color: white;
-  top: 25%;
+  top: 30%;
   position: sticky;
   min-width: 20rem;
   min-height: 20rem;

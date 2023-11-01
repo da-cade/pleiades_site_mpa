@@ -19,7 +19,7 @@
         <img class="h-12 w-12" src="../assets/img/single-star.png" alt="" />
       </div>
     </Vue3Marquee>
-    <div class="content-width my-32">
+    <div class="content-width my-64">
       <div class="rounded-3xl contentColumn p-5">
         <h2 class="text-5xl">What You Get</h2>
         <PunchOutCard
@@ -68,7 +68,7 @@ export default {
 .bannerWrapper {
   display: flex;
   justify-content: center;
-  height: 90vh;
+  height: 70vh;
 }
 
 // .pageWrapper:nth-last-child(1) {

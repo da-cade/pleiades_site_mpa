@@ -1,16 +1,28 @@
 <template>
-  <!-- <div class="contentColumn relative w-screen flex flex-col"> -->
-  <!-- <div class="background-image"></div> -->
-
-  <!-- <Step /> -->
-  <div class="contentColumn bg-gray-300 w-screen p-8 flex flex-col gap-40">
+  <div class="contentWrapper relative w-screen flex flex-col">
     <div class="headerContainer rounded-e-3xl sticky w-3/5 z-30 bg-white">
       <h2 class="text-5xl text-black me-3">How It Works</h2>
     </div>
-
-    <div class="stepsRow sticky flex w-full h-full gap-12">
-      <div class="details">
+    <div class="contentColumn">
+      <div class="detailsCol">
         <div class="detailsCard">
+          <img class="img" src="../assets/img/custom.png" alt="" />
+          <h1>Howdy</h1>
+          <p>
+            Here's come descriptive information and a lot of it, boy does it go
+            on and on and on and on and on and on and on and on
+          </p>
+        </div>
+        <div class="detailsCard">
+          <img class="img" src="../assets/img/custom.png" alt="" />
+          <h1>Howdy</h1>
+          <p>
+            Here's come descriptive information and a lot of it, boy does it go
+            on and on and on and on and on and on and on and on
+          </p>
+        </div>
+        <div class="detailsCard">
+          <img class="img" src="../assets/img/custom.png" alt="" />
           <h1>Howdy</h1>
           <p>
             Here's come descriptive information and a lot of it, boy does it go
@@ -18,14 +30,20 @@
           </p>
         </div>
       </div>
-      <div class="steps flex justify-center items-center">
+
+      <div class="stepsCol gap-12">
+        <div class="punchOut">
+          <h1 class="text-9xl raleway font-extrabold">1</h1>
+        </div>
+        <div class="punchOut">
+          <h1 class="text-9xl raleway font-extrabold">1</h1>
+        </div>
         <div class="punchOut">
           <h1 class="text-9xl raleway font-extrabold">1</h1>
         </div>
       </div>
     </div>
   </div>
-  <!-- </div> -->
 </template>
 
 
@@ -40,6 +58,8 @@ export default {
 
 <style lang="scss" scoped>
 .contentColumn {
+  display: flex;
+  // border: inset 20px rgb(209 213 219);
   // background: transparent;
   // background: rgb(107 114 128);
 }
@@ -54,42 +74,49 @@ export default {
 }
 
 .contentColumn {
-  mix-blend-mode: lighten;
+  // mix-blend-mode: lighten;
 }
 
-.stepsRow {
+.detailsCol {
   display: flex;
-  height: 90vh;
-  top: calc(10%);
-  mix-blend-mode: luminosity;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background: #d3dae2;
+  gap: 12rem;
+  padding: 4rem;
+  min-height: 90vh;
+  width: 60%;
 }
-.details {
+
+.detailsCard {
+  position: sticky;
+  background: white;
+  width: 100%;
+  border-radius: 24px;
+  padding: 4rem 8rem;
+  display: grid;
+  top: 10%;
+  gap: 2rem;
+}
+
+.stepsCol {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-top-left-radius: 24px;
-  border-top-right-radius: 24px;
-  // background: navy;
-  width: 60%;
-  mix-blend-mode: lighten;
-}
-
-.detailsCard {
+  position: relative;
+  min-height: 90vh;
   background: rgb(209 213 219);
-  padding: 3rem;
-  display: grid;
-  gap: 4rem;
-}
-
-.steps {
+  mix-blend-mode: screen;
   width: 40%;
 }
 
 .punchOut {
   color: white;
-  mix-blend-mode: lighten;
-
+  top: 10%;
+  position: sticky;
   min-width: 20rem;
   min-height: 20rem;
   max-width: 20rem;

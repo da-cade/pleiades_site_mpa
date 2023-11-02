@@ -1,6 +1,6 @@
 <template>
   <div
-    class="pitch-column rounded-3xl bg-white flex flex-col content-between items-center md:p-4 xl:p-8 gap-4"
+    class="pitch-column h-fit rounded-3xl bg-white flex flex-col content-between items-center md:p-4 xl:p-8 gap-4"
   >
     <div
       class="col-md-12 xl:px-24 xl:p-8 mb-4 flex flex-column justify-center items-center"

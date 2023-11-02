@@ -1,9 +1,9 @@
 <template>
   <router-link
-    class="navItem flex content-center justify-center p-1 h-fit max-w-full"
+    class="navItem ease-in duration-100 bg-opacity-90 flex content-center justify-center p-1 h-fit w-full max-w-full"
     :to="routePath"
   >
-    <span>{{ routeName }}</span>
+    <span class="">{{ routeName }}</span>
   </router-link>
 </template>
 
@@ -28,4 +28,13 @@ export default {
 
 
 <style lang="scss" scoped>
+.navItem {
+  color: white;
+  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+
+  &:hover {
+    color: black;
+    background: rgb(227, 227, 227);
+  }
+}
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div id="works" class="" v-scrollanimation>
-    <div class="">
+    <div class="py-12 bg-white rounded-3xl">
       <div
         class="col-12 justify-center items-center flex flex-column left-side"
       >
@@ -34,16 +34,6 @@
           </swiper-slide>
         </swiper>
       </div>
-      <div class="check-us-out w-100 bg-white text-dark p-5 right-side">
-        <h2>Check out our profiles on:</h2>
-        <div class="flex">
-          <Profile
-            v-for="(profile, i) in profiles"
-            :key="i"
-            :profile="profile"
-          />
-        </div>
-      </div>
     </div>
   </div>
 </template>
@@ -58,7 +48,6 @@ import "../styles.css";
 import { Pagination } from "swiper/modules";
 import * as template from "../templates/main.json";
 import PortfolioPiece from "./PortfolioPiece.vue";
-import Profile from "../components/evergreens/Profile.vue";
 import { computed } from "vue";
 
 export default {
@@ -66,13 +55,11 @@ export default {
     Swiper,
     SwiperSlide,
     PortfolioPiece,
-    Profile,
   },
   setup() {
     return {
       modules: [Pagination],
       portfolio: computed(() => template.details.portfolio),
-      profiles: computed(() => template.details.profiles),
     };
   },
 };

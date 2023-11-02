@@ -1,19 +1,21 @@
 <template>
   <div class="dropDownContainer relative flex content-center justify-center">
-    <router-link class="group" :to="computedDestination"
+    <router-link class="group navParentLabel p-2" :to="computedDestination"
       >{{ formattedName }}
 
       <div
         v-if="subroutes.length"
-        class="routeContainer group-hover:grid left-0 right-0 absolute h-fit hidden"
-        :style="generatedGridRows"
+        class="routeWrapper pt-4 group-hover:block left-0 right-0 absolute h-fit hidden"
       >
-        <NavItem
-          v-for="route in subroutes"
-          :key="route.name + '-routekey'"
-          :routePath="`/${baseRoute}/${route.routeName}`"
-          :routeName="route.name"
-        />
+        <div class="routeContainer 3xl:mx-24 grid" :style="generatedGridRows">
+          <NavItem
+            v-for="route in subroutes"
+            :key="route.name + '-routekey'"
+            class=""
+            :routePath="`/${baseRoute}/${route.routeName}`"
+            :routeName="route.name"
+          />
+        </div>
       </div>
     </router-link>
   </div>
@@ -64,4 +66,27 @@ export default {
 
 
 <style lang="scss" scoped>
+.navParentLabel {
+  border-radius: 12px;
+  &:hover {
+    background: rgb(227, 227, 227);
+  }
+}
+
+.routeContainer {
+  // top: 2rem;
+  // border: inset 3px black;
+  border-radius: 24px;
+
+  .navItem {
+    &:nth-child(1) {
+      border-top-left-radius: 24px;
+      border-top-right-radius: 24px;
+    }
+    &:nth-last-child(1) {
+      border-bottom-left-radius: 24px;
+      border-bottom-right-radius: 24px;
+    }
+  }
+}
 </style>

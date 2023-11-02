@@ -10,9 +10,9 @@
     <div class="justify-center items-center flex w-full" v-scrollanimation>
       <div class="grid md:grid-cols-2 w-full">
         <div
-          class="contact-info justify-center items-center flex flex-column w-full"
+          class="contact-info p-4 justify-center items-center flex flex-column w-full"
         >
-          <h5>Pleiades Projectworks LLC</h5>
+          <h5>Pleiades Projectworks</h5>
           <p>
             <span class="text-white">Email: </span>
             info@pleiadesprojectworks.com

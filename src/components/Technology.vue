@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-center items-center" v-scrollanimation>
+  <div class="flex justify-center items-center imgWrapper" v-scrollanimation>
     <img loading="lazy" class="img-fill" :src="pathToImage" :alt="imageAlt" />
   </div>
 </template>
@@ -29,6 +29,10 @@ export default {
 
 
 <style lang="scss" scoped>
+.imgWrapper {
+  padding: 2rem 0;
+}
+
 .img-fill {
   // display: flex;
   // justify-content: center;

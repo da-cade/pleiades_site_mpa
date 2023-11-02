@@ -3,7 +3,7 @@
     <div class="bg-white w-full text-black relative bannerWrapper">
       <img :src="service.image" class="img-col" alt="" />
       <div class="absolute inset-0 p-5 h-full w-full">
-        <h1 class="text-7xl modak">{{ service.name }}</h1>
+        <h1 class="text-9xl alata font-extrabold">{{ service.name }}</h1>
       </div>
     </div>
     <Vue3Marquee
@@ -29,7 +29,7 @@
         />
       </div>
     </div>
-    <StepsLayout />
+    <StepsLayout :steps="service.steps" />
   </div>
 </template>
 
@@ -68,7 +68,7 @@ export default {
 .bannerWrapper {
   display: flex;
   justify-content: center;
-  height: 70vh;
+  height: calc(80vh - 100px);
 }
 
 // .pageWrapper:nth-last-child(1) {

@@ -1,6 +1,6 @@
 <template>
   <div
-    class="detailsCard"
+    class="detailsCard coverBg"
     :style="`background-image: url(${step.image}); background-position: ${step.imagePosition}`"
     :aria-label="step.imageAlt"
   >
@@ -33,10 +33,13 @@ export default {
 
 
 <style lang="scss" scoped>
-.detailsCard {
+.coverBg {
   background: white;
-  margin: auto 0;
   background-position: 50% 10%;
+}
+
+.detailsCard {
+  margin: auto 0;
   width: 100%;
   // max-height: 90vh;
   border-radius: 24px;

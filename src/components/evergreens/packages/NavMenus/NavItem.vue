@@ -26,7 +26,6 @@ export default {
               params: { instance: props.route.routeParams },
             }
           : { name: props.route.routeName };
-        console.log(destination, props.route.routeParams);
         return destination;
       }),
     };

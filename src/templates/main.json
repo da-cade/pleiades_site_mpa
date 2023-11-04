@@ -6,8 +6,9 @@
       "shortDescription": "",
       "longDescription": "",
       "bodyBlocks": [],
-      "coverImg": "",
-      "imgAlt": ""
+      "coverImg": "../src/assets/img/about-us-cover.avif",
+      "coverImgPosition": "%50 %50",
+      "imgAlt": "We're a bunch of nerds doing all that boring stuff with a smile"
     },
     {
       "name": "FAQ",
@@ -20,6 +21,10 @@
     }
   ],
   "services": [
+    {
+      "name": "Free Website Audit",
+      "shortDescription": "blblabalbal"
+    },
     {
       "name": "Website Design",
       "routeParams": "website-design",
@@ -396,76 +401,91 @@
     "values": []
   },
   "navigation": {
-    "header": {
-      "about": [
-        {
-          "displayName": "What's Our Deal?",
-          "routeName": "What's Our Deal?"
-        },
-        {
-          "displayName": "FAQ",
-          "routeName": "FAQ"
-        }
-      ],
-      "services": [
-        {
-          "displayName": "Website Design",
-          "routeName": "service",
-          "routeParams": "website-design"
-        },
-        {
-          "displayName": "SEO",
-          "routeName": "service",
-          "routeParams": "seo"
-        },
-        {
-          "displayName": "Google Ads",
-          "routeName": "service",
-          "routeParams": "google-ads-sem"
-        },
-        {
-          "displayName": "E-Commerce",
-          "routeName": "service",
-          "routeParams": "e-commerce"
-        },
-        {
-          "displayName": "Everything Else",
-          "routeName": "Everything Else"
-        }
-      ],
-      "blog": [],
-      "contact": []
-    },
+    "header": [
+      {
+        "routeName": "About",
+        "children": [
+          {
+            "displayName": "What's Our Deal?",
+            "routeName": "What's Our Deal?"
+          },
+          {
+            "displayName": "FAQ",
+            "routeName": "FAQ"
+          }
+        ]
+      },
+      {
+        "routeName": "Our Services",
+        "children": [
+          {
+            "routeName": "Free Website Audit",
+            "displayName": "Free Website Audit"
+          },
+          {
+            "displayName": "Website Design",
+            "routeName": "service",
+            "routeParams": "website-design"
+          },
+          {
+            "displayName": "SEO",
+            "routeName": "service",
+            "routeParams": "seo"
+          },
+          {
+            "displayName": "Google Ads",
+            "routeName": "service",
+            "routeParams": "google-ads-sem"
+          },
+          {
+            "displayName": "E-Commerce",
+            "routeName": "service",
+            "routeParams": "e-commerce"
+          },
+          {
+            "displayName": "Everything Else",
+            "routeName": "Everything Else"
+          }
+        ]
+      },
+      {
+        "routeName": "blog",
+        "children": []
+      },
+      {
+        "routeName": "contact",
+        "children": []
+      }
+    ],
     "footer": [
       {
         "displayName": "About",
-        "routeName": "",
-        "routePath": "about"
+        "routeName": "What's Our Deal?"
       },
       {
         "displayName": "FAQ",
-        "routeName": "",
-        "routePath": "about/frequently-asked-questions"
+        "routeName": "FAQ"
+      },
+      {
+        "displayName": "Free Website Audit",
+        "routeName": "Free Website Audit"
       },
       {
         "displayName": "Services",
-        "routeName": "",
-        "routePath": "services"
+        "routeName": "Our Services"
       },
       {
         "displayName": "Website Design",
-        "routeName": "",
-        "routePath": "services/website-design"
+        "routeName": "service",
+        "routeParams": "website-design"
       },
       {
         "displayName": "Blog",
-        "routeName": "",
-        "routePath": "blog"
+        "routeName": "Blog"
       },
       {
         "displayName": "Contact",
-        "routeName": "",
-        "routePath": "contact"
+        "routeName": "Contact"
       }
     ]
   }

@@ -27,7 +27,6 @@ export default {
   setup() {
     onMounted(() => {
       let nav = document.getElementById("nav");
-      console.log(nav);
       navTuck(nav);
     });
     return {};

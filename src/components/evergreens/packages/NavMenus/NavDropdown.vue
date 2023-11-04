@@ -42,7 +42,6 @@ export default {
   },
   setup(props) {
     const formattedName = computed(() => {
-      console.log(props);
       return props.baseRoute.charAt(0).toUpperCase() + props.baseRoute.slice(1);
     });
 

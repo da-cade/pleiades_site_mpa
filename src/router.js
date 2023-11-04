@@ -51,6 +51,11 @@ const routes = [
     children:
       [
         {
+          path: "/services/free-website-audit",
+          name: "Free Website Audit",
+          component: loadView('WebsiteAuditView')
+        },
+        {
           path: '/services/all',
           name: 'Our Services',
           component: loadLayout('ServicesList')
@@ -91,12 +96,12 @@ const routes = [
 
   {
     path: '/blog',
-    name: 'blog',
+    name: 'Blog',
     component: loadPage('StandardPage')
   },
   {
     path: '/contact',
-    name: 'contact',
+    name: 'Contact',
     component: loadPage('ContactPage'),
   },
 ]

@@ -22,8 +22,6 @@ export default {
   components: { NavDropdown },
   setup() {
     const navRoutes = computed(() => Object.keys(template.navigation.header));
-
-    console.log(navRoutes.value);
     const generatedGridCols = generateGridItems("columns", navRoutes.value);
 
     return {

@@ -31,11 +31,11 @@ export default {
   <RouterView />
   <!-- </main> -->
   <Fab @click="toggleOffCanvas" />
-  <!-- <OffCanvas>
+  <OffCanvas>
     <template #offcanvas-content-slot>
       <ContactForm class="bg-white p-4 rounded-3xl" />
     </template>
-  </OffCanvas> -->
+  </OffCanvas>
   <Footer />
 </template>
 

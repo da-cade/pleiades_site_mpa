@@ -1,16 +1,31 @@
 <template >
   <Transition name="nested">
     <div
-      v-if="offCanvasOpen"
+      v-show="offCanvasOpen"
       ref="dialog"
       class="offcanvasDialogue fixed overflow-hidden inset-0 z-50"
     >
-      <div class="offcanvasContent bg-blue-950 w-1/4 p-3">
+      <div class="offcanvasContent bg-white rounded-s-3xl w-1/4 p-3">
         <div class="dismissRow">
-          <XIcon class="h-5 w-5" @click="toggleOffCanvas" />
+          <XIcon class="h-5 w-5 text-black" @click="toggleOffCanvas" />
         </div>
         <div class="contentHeader">
-          <span class="text-3xl text-white alata">Start a Conversation</span>
+          <div
+            class="contact-info p-4 justify-center items-center flex flex-column w-full"
+          >
+            <div class="imgWrapper w-3/4">
+              <img
+                src="../../assets/img/Color logo with background - true square.png"
+                alt=""
+              />
+            </div>
+            <p>
+              <span class="">Email: </span>
+              info@pleiadesprojectworks.com
+            </p>
+            <p>Monday - Friday</p>
+            <p>9 - 5</p>
+          </div>
         </div>
         <div class="contentBody">
           <slot name="offcanvas-content-slot" />
@@ -34,10 +49,12 @@ export default {
     const dialog = ref();
     const offCanvasOpen = computed(() => Appstate.value.offCanvasOpen);
     watchEffect(() => {
-      if (dialog.value) {
+      if (Appstate.value.offCanvasOpen) {
         const body = document.querySelector("body");
+        const bgImage = document.querySelector(".bg-image");
         var scrollbarWidth = window.innerWidth - body.clientWidth + "px";
         body.style.overflowY = "hidden";
+        bgImage.style.width = `calc(100% - ${scrollbarWidth})`;
         body.style.paddingRight = scrollbarWidth;
         dialog.value.addEventListener("click", (e) => {
           if (e.target === e.currentTarget) {
@@ -45,9 +62,10 @@ export default {
           }
         });
       } else {
-        console.log("watchy");
         const body = document.querySelector("body");
+        const bgImage = document.querySelector(".bg-image");
         body.style.overflowY = "auto";
+        bgImage.style.width = `100%`;
         body.style.paddingRight = "0px";
       }
     });
@@ -111,8 +129,10 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100vh;
+  height: calc(100vh - 20px);
   position: absolute;
+  margin: 10px auto;
+  outline: solid 10px #ffb625da;
   top: 0;
   right: 0;
 }

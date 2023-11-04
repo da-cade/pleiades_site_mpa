@@ -2,7 +2,7 @@
   <div
     class="detailsCard"
     :style="`background-image: url(${step.image}); background-position: ${step.imagePosition}`"
-    :aria-label="imageAlt"
+    :aria-label="step.imageAlt"
   >
     <!-- <img class="img" :src="step.image" :alt="step.imageAlt" /> -->
     <div class="detailsTitle">

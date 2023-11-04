@@ -16,19 +16,19 @@
 <script>
 import NavDropdown from "./NavDropdown.vue";
 import { computed, onBeforeMount, ref } from "vue";
-import { generateGridItems } from "../../composables/generateGridItems.js";
-import * as template from "../../../templates/main.json";
+import { generateGridItems } from "../../../composables/generateGridItems.js";
+import * as template from "../../../../templates/main.json";
 export default {
   components: { NavDropdown },
   setup() {
-    const navRoutes = computed(() => Object.keys(template.pages));
+    const navRoutes = computed(() => Object.keys(template.navigation.header));
 
-    console.log();
+    console.log(navRoutes.value);
     const generatedGridCols = generateGridItems("columns", navRoutes.value);
 
     return {
       navRoutes,
-      navObject: computed(() => template.pages),
+      navObject: computed(() => template.navigation.header),
       generatedGridCols,
     };
   },

@@ -43,7 +43,11 @@
       }
     ],
    
-  },
+  
+  // {
+        //   "name": "E-Commerce",
+        //   "routeName": "e-commerce"
+        // },
   {
         "name": "Domains & Email",
         "routeName": "domains-email-hosting",

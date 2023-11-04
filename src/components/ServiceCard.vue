@@ -1,6 +1,6 @@
 <template>
   <router-link
-    :to="{ name: 'service', params: { instance: service.routeName } }"
+    :to="{ name: 'service', params: { instance: service.routeParams } }"
     class="cardBorder hover:shadow-lg hover:-translate-y-2 duration-300 ease-out"
   >
     <div

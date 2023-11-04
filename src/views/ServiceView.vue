@@ -1,6 +1,6 @@
 <template>
   <div class="pageWrapper relative grid">
-    <div class="bg-white w-full text-black relative bannerWrapper">
+    <div class="w-full text-black relative bannerWrapper">
       <img :src="service.image" class="img-col" alt="" />
       <div class="absolute inset-0 p-5 h-full w-full">
         <h1 class="text-9xl alata font-extrabold">{{ service.name }}</h1>
@@ -23,9 +23,9 @@
       <div class="rounded-3xl contentColumn p-5">
         <h2 class="text-5xl">What You Get</h2>
         <PunchOutCard
-          v-for="block in service.blocks"
-          :instance="block"
-          :key="block"
+          v-for="offer in service.offers"
+          :instance="offer"
+          :key="offer"
         />
       </div>
     </div>
@@ -47,8 +47,8 @@ export default {
     const route = useRoute();
 
     const service = computed(() => {
-      return template.pages.services.find(
-        (s) => s.routeName == route.params.instance
+      return template.services.find(
+        (s) => s.routeParams == route.params.instance
       );
     });
 
@@ -66,9 +66,13 @@ export default {
 
 <style lang="scss" scoped>
 .bannerWrapper {
+  background: #ffffffd9;
   display: flex;
   justify-content: center;
   height: calc(80vh - 100px);
+  img {
+    mix-blend-mode: multiply;
+  }
 }
 
 // .pageWrapper:nth-last-child(1) {

@@ -20,7 +20,7 @@
 import { computed } from "vue";
 import ServiceCard from "../components/ServiceCard.vue";
 import * as template from "../templates/main.json";
-const services = computed(() => template.pages.services.slice(0, 4));
+const services = computed(() => template.services.slice(0, 4));
 </script>
 
 <style lang="scss" scoped>

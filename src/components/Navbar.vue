@@ -19,7 +19,7 @@
 
 <script>
 import { onMounted, ref } from "vue";
-import NavMenu from "./evergreens/packages/NavMenu.vue";
+import NavMenu from "./evergreens/packages/NavMenus/NavMenu.vue";
 import { navTuck } from "./composables/navTuck.js";
 export default {
   components: { NavMenu },

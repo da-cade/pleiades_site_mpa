@@ -1,12 +1,5 @@
 <template>
   <div class="block mb-4">
-    <div
-      id="contact"
-      class="flex justify-center mb-4 text-6xl"
-      v-scrollanimation
-    >
-      <h2 class="text-white">contact us today</h2>
-    </div>
     <div class="justify-center items-center flex w-full" v-scrollanimation>
       <div class="grid md:grid-cols-2 w-full">
         <div

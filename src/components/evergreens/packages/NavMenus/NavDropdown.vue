@@ -1,6 +1,8 @@
 <template>
   <div class="dropDownContainer relative flex content-center justify-center">
-    <router-link class="group navParentLabel p-2" :to="computedDestination"
+    <router-link
+      class="group navParentLabel p-2"
+      :to="{ name: baseRoute.routeName }"
       >{{ formattedName }}
 
       <div
@@ -10,10 +12,8 @@
         <div class="routeContainer 3xl:mx-24 grid" :style="generatedGridRows">
           <NavItem
             v-for="route in subroutes"
-            :key="route.name + '-routekey'"
-            class=""
-            :routePath="`/${baseRoute}/${route.routeName}`"
-            :routeName="route.name"
+            :key="route.path + '-routekey'"
+            :route="route"
           />
         </div>
       </div>
@@ -24,7 +24,7 @@
 
 <script>
 import NavItem from "./NavItem.vue";
-import { generateGridItems } from "../../composables/generateGridItems.js";
+import { generateGridItems } from "../../../composables/generateGridItems.js";
 import { computed } from "vue";
 export default {
   components: {
@@ -41,8 +41,8 @@ export default {
     },
   },
   setup(props) {
-    console.log(props.baseRoute);
     const formattedName = computed(() => {
+      console.log(props);
       return props.baseRoute.charAt(0).toUpperCase() + props.baseRoute.slice(1);
     });
 

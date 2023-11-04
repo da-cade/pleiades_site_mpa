@@ -1,159 +1,317 @@
 {
-  "pages": {
-    "about": [
-      {
-        "name": "What's Our Deal?",
-        "routeName": "so-you-want-to-know-about-us-huh",
-        "shortDescription": "",
-        "longDescription": "",
-        "bodyBlocks": [],
-        "coverImg": "",
-        "imgAlt": ""
-      },
-      {
-        "name": "FAQ",
-        "routeName": "frequently-asked-questions",
-        "shortDescription": "",
-        "longDescription": "",
-        "bodyBlocks": [],
-        "coverImg": "",
-        "imgAlt": ""
-      }
-    ],
-    "services": [
-      {
-        "name": "Website Design",
-        "routeName": "website-design",
-        "shortDescription": "At Pleiades, we start with good design. Using industry best practices in UX and SEO, Pleiades Projectworks crafts websites that are both stylish and functional, which are formatted to organically rank high on searches and unobtrusively communicate your brand to your customers.",
-        "longDescription": "When you work with Lounge Lizard, you get a custom web design that captures visitors’ imagination by telling your brand’s story in a unique and effective way. From our first discussions to learn about you and your company through the final testing and launch, our design team creates company web designs that are fresh, original, and, most importantly, produce results.",
-        "blocks": [
-          {
-            "title": "Good Fundamentals",
-            "subtitle": "Industry Best Practices in UX/UI/SEO",
-            "body": "Our websites are built to work well for both robots and people, with events that make analytics easy and a User Experience that leads visitors where you want them to go."
-          },
-          {
-            "title": "Ongoing Upkeep",
-            "subtitle": "Maintaining Your Site For You",
-            "body": "For a low monthly fee, we make sure that your site is free from problems and constantly optimized. We make sure that visual or operational issues never remain more than 24 hours."
-          },
-          {
-            "title": "Regular Updates",
-            "subtitle": "Saving You a New Website Every 5 Years",
-            "body": "We can provide seasonal or promotional changes to your webpage to emphasize important periods for your business. And if you're already paying for upkeep, we'll make sure your site doesn't go out of style."
-          }
-        ],
-        "steps": [
-          {
-            "title": "Mission Briefing",
-            "body": "We start with what makes your brand who you are — what challenges you've faced, your strong points, your not so strong, and most importantly, your goals. We talk to you about what you want your business and brand to evoke in your visitors, and who you want to be. From there, we craft a design that articulates that in color, shape, and graphic. If you need a logo, we take care of that too.",
-            "image": "../src/assets/img/mission-control.avif",
-            "imageAlt": "Mission Control For Your New Website",
-            "imagePosition": "20% 80%"
-          },
-          {
-            "title": "Prototyping",
-            "body": "We create some models of how we think your website could look, and draft copy that will help structure the page. We rely on input from you about what sounds and looks right — this part usually requires a lot of \"no's.\" Once we think we have something good, we'll make a high fidelity version so you can give the OK.",
-            "image": "../src/assets/img/prototyping.avif",
-            "imageAlt": "Playing Around With A Smaller Rocket",
-            "imagePosition": "20% 30%"
-          },
-          {
-            "title": "Content Cultivation",
-            "body": "Every good website has high-quality images and sometimes custom graphics. If you have them, we filter though and find what works, and if you don't, we get them made. Then we optimize and compress everything for SEO and page speed.",
-            "image": "../src/assets/img/content-cultivation.avif",
-            "imageAlt": "Photographers Creating Custom Content Just For You",
-            "imagePosition": "50% 10%"
-          },
-          {
-            "title": "Web Development",
-            "body": "Now we're ready to get started. We take our prototypes and make them a reality, using industry best practices in UX and SEO. We make sure everything is optimized for both mobile and desktop use.",
-            "image": "../src/assets/img/web-development.avif",
-            "imageAlt": "The Magic Begins and Your Website Takes Shape",
-            "imagePosition": "50% 50%"
-          },
-          {
-            "title": "Testing & Analytics",
-            "body": "Extensive testing takes places to ensure that the site functions free from errors or unexpected quirks. Also, if you opt-in, we set up conversion and usage analytics events for integration with Google Analytics and ads.",
-            "image": "../src/assets/img/testing-analytics-2.avif",
-            "imageAlt": "We Take Our Testing Very Seriously",
-            "imagePosition": "40% 50%"
-          },
-          {
-            "title": "Lift-Off",
-            "body": "The wait is over and your webpage is ready to launch! You set the time, and then we push the big, red button.",
-            "image": "../src/assets/img/rocket-launch.avif",
-            "imageAlt": ""
-          }
-        ],
-        "image": "../src/assets/img/custom.png",
-        "imageAlt": "Launching your new site like a rocket"
-      },
-      {
-        "name": "SEO",
-        "routeName": "seo",
-        "shortDescription": "Running a business online can be complicated, and it works at its best when operating under one, cohesive plan. At Pleiades, we can handle anything from SEO to SEM, adwords, strategy, and brand-planning.",
-        "longDescription": "Running a business online can be complicated, and it works at its best when operating under one, cohesive plan. At Pleiades, we can handle anything from SEO to SEM, adwords, strategy, and brand-planning. We also specialize in Google Ads, and can create campaigns at nearly any budget. We work at your level, making sure you stay competitive in your areas of operation while also discovering new avenuesiption that your competitors don't utilize.",
-        "image": "../src/assets/img/seo.png",
-        "imageAlt": ""
-      },
-      {
-        "name": "Google Ads",
-        "routeName": "google-ads-sem",
-        "shortDescription": "Pleiades Projectworks specializes in Google Ads for small businesses. We work with you to create a strategy that fits your advertising budget and your goals for growth, and can show you meaningful results with analytics.",
-        "longDescription": "",
-        "image": "../src/assets/img/coding.png",
-        "imageAlt": ""
-      },
-      {
-        "name": "E-Commerce",
-        "routeName": "e-commerce",
-        "shortDescription": "Taking your business into e-commerce comes with a hosts of challenges, and we've dont them all before. We can help train you and your staff to sell online, while helping you make the right decisions about what you'll need to start.",
-        "longDescription": "",
-        "image": "../src/assets/img/coding.png",
-        "imageAlt": ""
-      },
-      {
-        "name": "Everything Else",
-        "routeName": "everything-else",
-        "shortDescription": "Pleiades does odd-jobs: its how we make friends. If you have a problem, talk to us and we'll tackle it.",
-        "longDescription": "",
-        "image": "../src/assets/img/coding.png",
-        "imageAlt": ""
-      }
-    ],
-    "blog": [],
-    "contact": []
-  },
-  "layout": [
+  "about": [
     {
-      "servicePage": {
-        "name": "Website Design",
-        "routeName": "website-design",
-        "shortDescription": "At Pleiades, we start with good design. Using industry best practices in UX and SEO, Pleiades Projectworks crafts websites that are both stylish and functional, which are formatted to organically rank high on searches and unobtrusively communicate your brand to your customers.",
-        "longDescription": "When you work with Lounge Lizard, you get a custom web design that captures visitors’ imagination by telling your brand’s story in a unique and effective way. From our first discussions to learn about you and your company through the final testing and launch, our design team creates company web designs that are fresh, original, and, most importantly, produce results.",
-        "blocks": [
-          {
-            "title": "Good Fundamentals",
-            "subtitle": "Industry Best Practices in UX/UI/SEO",
-            "body": "Our websites are built to work well for both robots and people, with events that make analytics easy and a User Experience that leads visitors where you want them to go."
-          },
-          {
-            "title": "Ongoing Upkeep",
-            "subtitle": "Maintaining Your Site For You",
-            "body": "For a low monthly fee, we make sure that your site is free from problems and constantly optimized. We make sure that visual or operational issues never remain more than 24 hours."
-          },
-          {
-            "title": "Regular Updates",
-            "subtitle": "Saving You a New Website Every 5 Years",
-            "body": "We can provide seasonal or promotional changes to your webpage to emphasize important periods for your business. And if you're already paying for upkeep, we'll make sure your site doesn't go out of style."
-          }
-        ],
-        "image": "../src/assets/img/custom.png",
-        "imageAlt": ""
-      }
+      "name": "What's Our Deal?",
+      "routeName": "so-you-want-to-know-about-us-huh",
+      "shortDescription": "",
+      "longDescription": "",
+      "bodyBlocks": [],
+      "coverImg": "",
+      "imgAlt": ""
+    },
+    {
+      "name": "FAQ",
+      "routeName": "frequently-asked-questions",
+      "shortDescription": "",
+      "longDescription": "",
+      "bodyBlocks": [],
+      "coverImg": "",
+      "imgAlt": ""
     }
   ],
+  "services": [
+    {
+      "name": "Website Design",
+      "routeParams": "website-design",
+      "shortDescription": "At Pleiades, we start with good design. Using industry best practices in UX and SEO, Pleiades Projectworks crafts websites that are both stylish and functional, which are formatted to organically rank high on searches and unobtrusively communicate your brand to your customers.",
+      "longDescription": "When you work with Lounge Lizard, you get a custom web design that captures visitors’ imagination by telling your brand’s story in a unique and effective way. From our first discussions to learn about you and your company through the final testing and launch, our design team creates company web designs that are fresh, original, and, most importantly, produce results.",
+      "offers": [
+        {
+          "title": "Good Fundamentals",
+          "subtitle": "Industry Best Practices in UX/UI/SEO",
+          "body": "Our websites are built to work well for both robots and people, with events that make analytics easy and a User Experience that leads visitors where you want them to go."
+        },
+        {
+          "title": "Ongoing Upkeep",
+          "subtitle": "Maintaining Your Site For You",
+          "body": "For a low monthly fee, we make sure that your site is free from problems and constantly optimized. We make sure that visual or operational issues never remain more than 24 hours."
+        },
+        {
+          "title": "Regular Updates",
+          "subtitle": "Saving You a New Website Every 5 Years",
+          "body": "We can provide seasonal or promotional changes to your webpage to emphasize important periods for your business. And if you're already paying for upkeep, we'll make sure your site doesn't go out of style."
+        }
+      ],
+      "steps": [
+        {
+          "title": "Mission Briefing",
+          "body": "We start with what makes your business unique — what challenges you've faced, your strong points, your not so strong, and most importantly, your goals. We talk to you about what you want your business and brand to evoke in your visitors, and who you want to be. From there, we craft a design that articulates that in color, shape, and graphic. If you need a logo, we take care of that too.",
+          "image": "../src/assets/img/mission-control.avif",
+          "imageAlt": "Mission Control For Your New Website",
+          "imagePosition": "20% 80%"
+        },
+        {
+          "title": "Prototyping",
+          "body": "We create some models of how we think your website could look, and draft copy that will help structure the page. We rely on input from you about what sounds and looks right — this part usually requires a lot of \"no's.\" Once we think we have something good, we'll make a high fidelity version so you can give the OK.",
+          "image": "../src/assets/img/prototyping.avif",
+          "imageAlt": "Playing Around With A Smaller Rocket",
+          "imagePosition": "20% 30%"
+        },
+        {
+          "title": "Content Cultivation",
+          "body": "Every good website has high-quality images and sometimes custom graphics. If you have them, we filter though and find what works, and if you don't, we get them made. Then we optimize and compress everything for SEO and page speed.",
+          "image": "../src/assets/img/content-cultivation.avif",
+          "imageAlt": "Photographers Creating Custom Content Just For You",
+          "imagePosition": "50% 10%"
+        },
+        {
+          "title": "Web Development",
+          "body": "Now we're ready to get started. We take our prototypes and make them a reality, using industry best practices in UX and SEO. We make sure everything is optimized for both mobile and desktop use.",
+          "image": "../src/assets/img/web-development.avif",
+          "imageAlt": "The Magic Begins and Your Website Takes Shape",
+          "imagePosition": "50% 50%"
+        },
+        {
+          "title": "Testing & Analytics",
+          "body": "Extensive testing takes places to ensure that the site functions free from errors or unexpected quirks. Also, if you opt-in, we set up conversion and usage analytics events for integration with Google Analytics and ads.",
+          "image": "../src/assets/img/testing-analytics-2.avif",
+          "imageAlt": "We Take Our Testing Very Seriously",
+          "imagePosition": "40% 50%"
+        },
+        {
+          "title": "Lift-Off",
+          "body": "The wait is over and your webpage is ready to launch! You set the time, and then we push the big, red button.",
+          "image": "../src/assets/img/rocket-launch.avif",
+          "imageAlt": ""
+        }
+      ],
+      "image": "../src/assets/img/custom.png",
+      "imageAlt": "Launching your new site like a rocket"
+    },
+    {
+      "name": "SEO",
+      "routeParams": "seo",
+      "shortDescription": "Running a business online can be complicated, and it works at its best when operating under one, cohesive plan. At Pleiades, we can handle anything from SEO to SEM, adwords, strategy, and brand-planning.",
+      "longDescription": "Running a business online can be complicated, and it works at its best when operating under one, cohesive plan. At Pleiades, we can handle anything from SEO to SEM, adwords, strategy, and brand-planning. We also specialize in Google Ads, and can create campaigns at nearly any budget. We work at your level, making sure you stay competitive in your areas of operation while also discovering new avenuesiption that your competitors don't utilize.",
+      "offers": [
+        {
+          "title": "Brand Strategy",
+          "subtitle": "A Cohesive Plan For Your Business",
+          "body": "SEO is about executing a detailed plan over a long period. We target keywords that you can compete for at your level, and as your domain goes stronger, we go after harder keywords. We work with you to make sure these appear in lots of places inside and outside your business."
+        },
+        {
+          "title": "Tracking Trends",
+          "subtitle": "Helping You Stay Ahead of the Competition",
+          "body": "Using our advanced keyword research techniques, we help isolate high-volume and low-competition keywords, so you can find new opportunities for your business. We help you satisfy hot search trends by pivoting quickly between offerings."
+        },
+        {
+          "title": "Blog Content",
+          "subtitle": "Building Your Reputation as an Authoritative Name",
+          "body": "Based on your monthly plan, we write between 1 and 8 articles a month, all loaded with high-intent keywords and angled to capture the viewer's attention. These articles form the foundation of a great portfolio of backlinks from other sites."
+        }
+      ],
+      "steps": [
+        {
+          "title": "Brandstorming",
+          "body": "We start with where you're at and where you want to go. Who do you want to attract, how big do you want to get, and how fast? These decisions form the basis of a long-term strategy that we begin immediately. We come up with creative solutions for content that you approve of, and outline the most important things to highlight about your business.",
+          "image": "../src/assets/img/seo-brandstorming.avif",
+          "imageAlt": "Mission Control For Your New Website",
+          "imagePosition": "59% 47%"
+        },
+        {
+          "title": "Site Audit",
+          "body": "Site optimizaiton has an enormous effect on your ability to rank on Google, as its algorithm penalizes slow pages and rewards good practices in naming and accessibility. We go through your website and public profiles like Google with a fine-toothed comb, making sure they operate free of errors and at maximum speed.",
+          "image": "../src/assets/img/seo-audit.avif",
+          "imageAlt": "Playing Around With A Smaller Rocket",
+          "imagePosition": "60% 17%"
+        },
+        {
+          "title": "Competitive Analysis",
+          "body": "Every brand, no matter how successful, has competitors that are doing things better than they are. Pleiades researches your competitors at every level and determines their strengths and weaknesses, translating them into tweaks and opportunities for you.",
+          "image": "../src/assets/img/seo-competitive-analysis.avif",
+          "imageAlt": "Photographers Creating Custom Content Just For You",
+          "imagePosition": "50% 40%"
+        },
+        {
+          "title": "Keyword Planning",
+          "body": "At this stage, you're ready to begin your SEO journey. We craft keyword plans that we share with you, showing how each stage tackles your competitors at that level. We continually evaluate this plan, accounting for trends and seasonal opportunities that could boost your exposure.",
+          "image": "../src/assets/img/seo-keyword-planning.avif",
+          "imageAlt": "The Magic Begins and Your Website Takes Shape",
+          "imagePosition": "44% 2%"
+        },
+        {
+          "title": "Content Creation",
+          "body": "Our keyword plans inform the changes we make to your website, your online business profiles, and any articles we write for you. Each content addition is made at a specific time with an exact target for brand development. When we deploy these changes, we like to coordinate them with other pieces of your advertising or merchandising plans.",
+          "image": "../src/assets/img/seo-content-creation.avif",
+          "imageAlt": "We Take Our Testing Very Seriously",
+          "imagePosition": "50% 67%"
+        },
+        {
+          "title": "Amplification",
+          "body": "Unlike other SEO agencies, who take your money to backlink your site on thousands of anonymous websites hosted in Nepal, we cultivate real relationships with bloggers, influencers, and news outlets online. We encourage these bloggers to write articles linking to your site, increasing your domain rating and your organic ranking on Google while also advertising your business.",
+          "image": "../src/assets/img/seo-backlinking.avif",
+          "imageAlt": "",
+          "imagePosition": "1% 14%"
+        }
+      ],
+      "image": "../src/assets/img/seo.png",
+      "imageAlt": ""
+    },
+    {
+      "name": "Google Ads",
+      "routeParams": "google-ads-sem",
+      "shortDescription": "Pleiades Projectworks specializes in Google Ads for small businesses. We work with you to create a strategy that fits your advertising budget and your goals for growth, and can show you meaningful results with analytics.",
+      "longDescription": "",
+      "offers": [
+        {
+          "title": "Full Feature Ads",
+          "subtitle": "Making Your Content as Thorough as Possible",
+          "body": "Google Ads ranks your material based on how thorough your ads are and on how relevant they are to the searchers interest. We make sure your ads have photos, logos, important keywords, and everything else they need to capture it. We also ensure they're hooked up to calls on forms on your site."
+        },
+        {
+          "title": "Custom Analytics",
+          "subtitle": "Hand-tooled Scripts for Tracking Engagement",
+          "body": "Pleiades is comprised of web-developers, which means we are literate in complex web tools used to write our own tags and scripts for measuring how visitors interact with your ads and website. For even out most basic level of advertising we make sure that these are optizimed to provide accurate and useful information."
+        },
+        {
+          "title": "Targeting & Remarketing",
+          "subtitle": "Precision Focus on Your Most Relevant Demographics",
+          "body": "When we design your ads, we research who is searching for subjects like yours, and who isn't, but should be. If you want us to, we can split some of your ad dollars into focused remarketing campaigns that remind past customers of your brand."
+        }
+      ],
+      "steps": [
+        {
+          "title": "Brandstorming",
+          "body": "We start with where you're at and where you want to go. Who do you want to attract, how big do you want to get, and how fast? These decisions form the basis of a long-term strategy that we begin immediately. We come up with creative solutions for content that you approve of, and outline the most important things to highlight about your business.",
+          "image": "../src/assets/img/seo-brandstorming.avif",
+          "imageAlt": "Mission Control For Your New Website",
+          "imagePosition": "59% 47%"
+        },
+        {
+          "title": "Site Audit",
+          "body": "Site optimizaiton has an enormous effect on the efficiency of your ads, as Google's ad algorithm penalizes slow pages and rewards authoritative results. We go through your website and public profiles with a fine-toothed comb, making sure they operate free of errors and at maximum speed, while also giving searchers what they're looking for.",
+          "image": "../src/assets/img/seo-audit.avif",
+          "imageAlt": "Playing Around With A Smaller Rocket",
+          "imagePosition": "60% 17%"
+        },
+        {
+          "title": "Competitive Analysis",
+          "body": "Every brand, no matter how successful, has competitors that are doing things better than they are. Pleiades researches your competitors at every level and determines their strengths and weaknesses, translating them into tweaks and opportunities for you.",
+          "image": "../src/assets/img/seo-competitive-analysis.avif",
+          "imageAlt": "Photographers Creating Custom Content Just For You",
+          "imagePosition": "50% 40%"
+        },
+        {
+          "title": "Keyword Planning",
+          "body": "At this stage, you're ready to begin your Google Ads journey. We craft keyword plans that we share with you, showing how each stage tackles your competitors at that level. If you already have a plan for SEO, we incorporate it into our ads strategy, since your Google Ads rank higher if you also organically bid for keywords.",
+          "image": "../src/assets/img/seo-keyword-planning.avif",
+          "imageAlt": "The Magic Begins and Your Website Takes Shape",
+          "imagePosition": "44% 2%"
+        },
+        {
+          "title": "Ad Creation",
+          "body": "Once we have our keywords planned out, we develop full-service ads filled with sitelinks, calls-to-action, and photos. If you're running a shopping campaign, we sync your products with your website or e-commerce provider, getting you listed on Google Shopping. When we deploy these changes, we like to coordinate them with other pieces of your advertising or merchandising plans.",
+          "image": "../src/assets/img/ads-ad-creation-3.avif",
+          "imageAlt": "We Take Our Testing Very Seriously",
+          "imagePosition": "70% 15%"
+        },
+        {
+          "title": "Monitor Growth",
+          "body": "Many ad agencies have a 'set it and forget it' approach to their ads. Not us. We monitor their performance and make sure they continue performing, while incorporating changes to your business and merchandising. Then you see the results!",
+          "image": "../src/assets/img/ads-monitor-growth.avif",
+          "imageAlt": "",
+          "imagePosition": "50% 80%"
+        }
+      ],
+      "image": "../src/assets/img/coding.png",
+      "imageAlt": ""
+    },
+    {
+      "name": "E-Commerce",
+      "routeParams": "e-commerce",
+      "shortDescription": "Taking your business into e-commerce comes with a hosts of challenges, and we've dont them all before. We can help train you and your staff to sell online, while helping you make the right decisions about what you'll need to start.",
+      "longDescription": "",
+      "offers": [
+        {
+          "title": "E-Commerce Strategy",
+          "subtitle": "Knowledge From the Experts About Selling Online",
+          "body": "It isn't always easy knowing where to turn to get started with selling online. We know the ins and outs of online merchant accounts, Google Shopping, Amazon affiliate marketing, and even product trends. We'll work with you to develop a plan for the short and long term."
+        },
+        {
+          "title": "Platform Integration",
+          "subtitle": "Integrating Your Current Business Solutions",
+          "body": "Your business probably has tried and true way of operating, and those shouldn't all change just because you're selling online. We do our best to integrate with your current inventory, delivery, and client-communication systems so that you can keep doing business your way."
+        },
+        {
+          "title": "Theme Development",
+          "subtitle": "Creating From a Theme So You Can Hold the Reigns",
+          "body": "Many e-commerce sites offer the choice of custom code or theme-builders for your website. We're proud to say we can tackle both and mix them together, so you can have a theme-driven website that is easy to change while still standing out from the crowd."
+        }
+      ],
+      "steps": [
+        {
+          "title": "Getting Acquainted",
+          "body": "Embarking into e-commerce is something of a journey, so we like to get to know your business thoroughly before we begin. We want to know about your current challenges and what's worked for you in the past, as well as more technical stuff like your payment processors.",
+          "image": "../src/assets/img/ecommerce-getting-acquainted.avif",
+          "imageAlt": "Mission Control For Your New Website",
+          "imagePosition": "60% 63%"
+        },
+        {
+          "title": "Strategy",
+          "body": "You probably have a solid handle on what works for your brick-and-mortar store. We take your successful strategies and meld them with ours, pointing out opportunities we've found in our research. We prep your socials for launch, and if you have competitors, we delve into what they're doing well and do it better.",
+          "image": "../src/assets/img/ecommerce-strategy.avif",
+          "imageAlt": "Playing Around With A Smaller Rocket",
+          "imagePosition": "50% 55%"
+        },
+        {
+          "title": "Operation Optimization",
+          "body": "As we begin to prepare for live e-commerce, we take a moment to train and optimize your workflow. Your employees (or you) will need to use your time efficiently once demand arrives, so we make sure everything is consistent, efficient, and secure.",
+          "image": "../src/assets/img/ecommerce-strategy-2.avif",
+          "imageAlt": "Photographers Creating Custom Content Just For You",
+          "imagePosition": "50% 30%"
+        },
+        {
+          "title": "Content Creation",
+          "body": "If you don't have a website or content for it, we take the time to develop both the material you need and the process to produce more. Either way, we optimize and compress everything for SEO and page speed. If you've signed up for it, we develop your seasonal or promotional content as well.",
+          "image": "../src/assets/img/ecommerce-content-creation.avif",
+          "imageAlt": "The Magic Begins and Your Website Takes Shape",
+          "imagePosition": "50% 50%"
+        },
+        {
+          "title": "Development",
+          "body": "At Pleiades, we ensure that you're a part of the development process. If you're developing a website, we go over our protoypes with you, and if its e-commerce management, we triple-check all our app and service integrations.",
+          "image": "../src/assets/img/ecommerce-development.avif",
+          "imageAlt": "We Take Our Testing Very Seriously",
+          "imagePosition": "60% 40%"
+        },
+        {
+          "title": "Testing & Analytics",
+          "body": "Extensive testing takes places to ensure that everything functions free from errors or unexpected quirks, and that customer orders are processed properly. Also, if you opt-in, we set up conversion and usage analytics events for integration with Google Analytics and ads.",
+          "image": "../src/assets/img/testing-analytics-2.avif",
+          "imageAlt": "",
+          "imagePosition": "54% 56%"
+        },
+        {
+          "title": "Lift-Off",
+          "body": "Your business is ready to sell online! You set the time, and then we push the big, red button.",
+          "image": "../src/assets/img/rocket-launch.avif",
+          "imageAlt": ""
+        }
+      ],
+      "image": "../src/assets/img/coding.png",
+      "imageAlt": ""
+    },
+    {
+      "name": "Everything Else",
+      "routeParams": "everything-else",
+      "shortDescription": "Pleiades does odd-jobs: its how we make friends. If you have a problem, talk to us and we'll tackle it.",
+      "longDescription": "",
+      "image": "../src/assets/img/coding.png",
+      "imageAlt": ""
+    }
+  ],
+  "blog": [],
+  "contact": [],
   "details": {
     "technologies": [
       {
@@ -238,31 +396,76 @@
     "values": []
   },
   "navigation": {
-    "header": [],
+    "header": {
+      "about": [
+        {
+          "displayName": "What's Our Deal?",
+          "routeName": "What's Our Deal?"
+        },
+        {
+          "displayName": "FAQ",
+          "routeName": "FAQ"
+        }
+      ],
+      "services": [
+        {
+          "displayName": "Website Design",
+          "routeName": "service",
+          "routeParams": "website-design"
+        },
+        {
+          "displayName": "SEO",
+          "routeName": "service",
+          "routeParams": "seo"
+        },
+        {
+          "displayName": "Google Ads",
+          "routeName": "service",
+          "routeParams": "google-ads-sem"
+        },
+        {
+          "displayName": "E-Commerce",
+          "routeName": "service",
+          "routeParams": "e-commerce"
+        },
+        {
+          "displayName": "Everything Else",
+          "routeName": "Everything Else"
+        }
+      ],
+      "blog": [],
+      "contact": []
+    },
     "footer": [
       {
-        "name": "About",
-        "routeName": "about"
+        "displayName": "About",
+        "routeName": "",
+        "routePath": "about"
       },
       {
-        "name": "FAQ",
-        "routeName": "/about/frequently-asked-questions"
+        "displayName": "FAQ",
+        "routeName": "",
+        "routePath": "about/frequently-asked-questions"
       },
       {
-        "name": "Services",
-        "routeName": "services"
+        "displayName": "Services",
+        "routeName": "",
+        "routePath": "services"
       },
       {
-        "name": "Website Design",
-        "routeName": "/services/website-design"
+        "displayName": "Website Design",
+        "routeName": "",
+        "routePath": "services/website-design"
       },
       {
-        "name": "Blog",
-        "routeName": "blog"
+        "displayName": "Blog",
+        "routeName": "",
+        "routePath": "blog"
       },
       {
-        "name": "Contact",
-        "routeName": "contact"
+        "displayName": "Contact",
+        "routeName": "",
+        "routePath": "contact"
       }
     ]
   }

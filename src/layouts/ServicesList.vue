@@ -38,7 +38,7 @@ export default {
   },
   setup() {
     return {
-      services: computed(() => template.pages.services),
+      services: computed(() => template.services),
     };
   },
 };

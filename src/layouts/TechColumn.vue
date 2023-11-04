@@ -24,7 +24,9 @@
       </Vue3Marquee>
     </div>
     <div class="profiles">
-      <div class="check-us-out w-100 bg-white text-dark p-5 right-side">
+      <div
+        class="check-us-out w-100 bg-white text-dark p-5 right-side rounded-b-3xl"
+      >
         <h2>Check out our profiles on:</h2>
         <div class="flex">
           <Profile

@@ -15,10 +15,8 @@ export default {
     AppCard,
   },
   setup() {
-    console.log(template.pages.apps);
     const apps = computed(() => {
-      console.log(template.pages.apps);
-      return template.pages.apps;
+      return template.apps;
     });
     return { apps };
   },

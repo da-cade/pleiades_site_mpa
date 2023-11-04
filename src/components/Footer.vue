@@ -5,7 +5,7 @@
         class="text-white"
         v-for="route in routes"
         :key="route"
-        :to="route.routeName"
+        :to="`/${route.routeName}`"
         >{{ route.name }}</router-link
       >
     </div>

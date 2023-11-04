@@ -29,7 +29,7 @@ const routes = [
     children: [
       {
         path: '/about/so-you-want-to-know-about-us-huh',
-        name: "What's Our Deal",
+        name: "What's Our Deal?",
         component: loadView('AboutUsView')
       },
       {
@@ -60,6 +60,11 @@ const routes = [
           name: 'service',
           props: true,
           component: loadView('ServiceView')
+        },
+        {
+          path: '/services/everything-else',
+          name: 'Everything Else',
+          component: loadView('EverythingElseView')
         },
 
       ]

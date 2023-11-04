@@ -1,6 +1,6 @@
 <template>
   <router-link
-    :to="{ name: 'app', params: { instance: app.routeName } }"
+    :to="{ name: 'app', params: { instance: app.routeParams } }"
     class="appCard rounded-3xl"
   >
     <div

@@ -22,10 +22,6 @@
   ],
   "services": [
     {
-      "name": "Free Website Audit",
-      "shortDescription": "blblabalbal"
-    },
-    {
       "name": "Website Design",
       "routeParams": "website-design",
       "shortDescription": "At Pleiades, we start with good design. Using industry best practices in UX and SEO, Pleiades Projectworks crafts websites that are both stylish and functional, which are formatted to organically rank high on searches and unobtrusively communicate your brand to your customers.",
@@ -313,6 +309,13 @@
       "longDescription": "",
       "image": "../src/assets/img/coding.png",
       "imageAlt": ""
+    },
+    {
+      "name": "Free Website Audit",
+      "shortDescription": "Sometimes you just want to know where you're at.",
+      "offers": [],
+      "image": "../src/assets/img/custom.png",
+      "imageAlt": "Launching your new site like a rocket"
     }
   ],
   "blog": [],
@@ -396,9 +399,30 @@
           "Future Updates Coming Soon"
         ],
         "callToAction": "Discover Affordable Apps"
+      },
+      {
+        "name": "Want To Show Up Here?",
+        "routeName": "Contact",
+        "source": "https://pleiadesprojectworks.com/contact",
+        "image": "",
+        "logo": "",
+        "imageAlt": "This could be you",
+        "talkingPoints": [
+          "Competitive App Development Rates",
+          "Flexible Hosting and Stack Solutions",
+          "Tech-Support and Dev-Ops Available"
+        ],
+        "callToAction": "Get Started Today"
       }
     ],
-    "values": []
+    "values": [],
+    "socials": [
+      {
+        "name": "LinkedIn",
+        "url": "https://www.linkedin.com/company/pleiades-projectworks/",
+        "icon": "LinkedInIcon.vue"
+      }
+    ]
   },
   "navigation": {
     "header": [
@@ -418,10 +442,6 @@
       {
         "routeName": "Our Services",
         "children": [
-          {
-            "routeName": "Free Website Audit",
-            "displayName": "Free Website Audit"
-          },
           {
             "displayName": "Website Design",
             "routeName": "service",
@@ -445,48 +465,54 @@
           {
             "displayName": "Everything Else",
             "routeName": "Everything Else"
+          },
+          {
+            "routeName": "Free Website Audit",
+            "displayName": "Free Website Audit"
           }
         ]
       },
       {
-        "routeName": "blog",
+        "routeName": "Blog",
         "children": []
       },
       {
-        "routeName": "contact",
+        "routeName": "Contact",
         "children": []
       }
     ],
-    "footer": [
-      {
-        "displayName": "About",
-        "routeName": "What's Our Deal?"
-      },
-      {
-        "displayName": "FAQ",
-        "routeName": "FAQ"
-      },
-      {
-        "displayName": "Free Website Audit",
-        "routeName": "Free Website Audit"
-      },
-      {
-        "displayName": "Services",
-        "routeName": "Our Services"
-      },
-      {
-        "displayName": "Website Design",
-        "routeName": "service",
-        "routeParams": "website-design"
-      },
-      {
-        "displayName": "Blog",
-        "routeName": "Blog"
-      },
-      {
-        "displayName": "Contact",
-        "routeName": "Contact"
-      }
-    ]
+    "footer": {
+      "routes": [
+        {
+          "displayName": "About",
+          "routeName": "What's Our Deal?"
+        },
+        {
+          "displayName": "FAQ",
+          "routeName": "FAQ"
+        },
+        {
+          "displayName": "Free Website Audit",
+          "routeName": "Free Website Audit"
+        },
+        {
+          "displayName": "Services",
+          "routeName": "Our Services"
+        },
+        {
+          "displayName": "Website Design",
+          "routeName": "service",
+          "routeParams": "website-design"
+        },
+        {
+          "displayName": "Blog",
+          "routeName": "Blog"
+        },
+        {
+          "displayName": "Contact",
+          "routeName": "Contact"
+        }
+      ]
+    }
   }
 }

@@ -1,23 +1,18 @@
 <template>
-  <div class="block mb-4">
-    <div class="justify-center items-center flex w-full" v-scrollanimation>
-      <div class="grid md:grid-cols-2 w-full">
-        <div
-          class="contact-info p-4 justify-center items-center flex flex-column w-full"
-        >
-          <h5>Pleiades Projectworks</h5>
-          <p>
-            <span class="text-white">Email: </span>
-            info@pleiadesprojectworks.com
-          </p>
-          <p>Monday - Friday</p>
-          <p>9 - 5</p>
-        </div>
-        <div
-          class="contact-form flex justify-center items-center flex-column p-5 w-full"
-        >
-          <ContactForm />
-        </div>
+  <div class="justify-center items-center flex w-full" v-scrollanimation>
+    <div class="grid md:grid-cols-2 w-full">
+      <div
+        class="contact-info text-white p-4 justify-center items-center flex flex-column w-full"
+      >
+        <h5 class="text-white text-4">Pleiades Projectworks</h5>
+        <p class="text-1">Email: info@pleiadesprojectworks.com</p>
+        <p>Monday - Friday</p>
+        <p>9 - 5</p>
+      </div>
+      <div
+        class="contact-form flex justify-center items-center flex-column p-5 w-full"
+      >
+        <ContactForm />
       </div>
     </div>
   </div>
@@ -58,32 +53,18 @@ export default {
 }
 
 h1 {
-  color: white;
   text-align: center;
 
   @media (max-width: 480px) {
-    font-size: 5em;
     margin-bottom: 15vh;
   }
 
   /* Media Query for Tablets Ipads portrait mode */
 }
 
-h5 {
-  color: white;
-  font-size: 2em;
-}
-
-p {
-  color: white;
-  font-size: 1em;
-}
-
 .contact-form {
   background-color: white;
   padding: 2em;
-  // width: 50%;
-  height: 70vh;
   border-radius: 0px 25px 25px 0px;
   @media (max-width: 500px) {
     height: 100%;
@@ -99,7 +80,7 @@ p {
 
 .contact-info {
   background-color: black;
-  height: 70vh;
+  // height: 70vh;
   border-radius: 25px 0px 0px 25px;
   @media (max-width: 480px) {
     height: 100%;

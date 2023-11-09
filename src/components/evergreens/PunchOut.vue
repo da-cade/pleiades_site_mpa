@@ -1,6 +1,6 @@
 <template>
   <div class="punchOut">
-    <h2 class="title" :style="titleStyle">{{ title }}</h2>
+    <h3 class="title text-3" :class="titleClass">{{ title }}</h3>
     <div class="clouds"></div>
     <div class="ring"></div>
     <div class="up"></div>
@@ -12,7 +12,7 @@
 export default {
   props: {
     title: { type: [String, Number], required: true },
-    titleStyle: { type: String },
+    titleClass: { type: String },
   },
   setup() {
     return {};
@@ -38,7 +38,6 @@ export default {
   .title {
     padding: 2rem;
     position: absolute;
-    font-size: 2.5rem;
   }
 }
 </style>

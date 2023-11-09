@@ -3,29 +3,14 @@
     <div
       v-show="offCanvasOpen"
       ref="dialog"
-      class="offcanvasDialogue fixed overflow-hidden inset-0 z-50"
+      class="offcanvasDialogue h-screen w-screen fixed overflow-hidden inset-0"
     >
-      <div class="offcanvasContent bg-white rounded-s-3xl w-1/4 p-3">
+      <div class="offcanvasContent" :class="contentClasses">
         <div class="dismissRow">
           <XIcon class="h-5 w-5 text-black" @click="toggleOffCanvas" />
         </div>
         <div class="contentHeader">
-          <div
-            class="contact-info p-4 justify-center items-center flex flex-column w-full"
-          >
-            <div class="imgWrapper w-3/4">
-              <img
-                src="../../assets/img/Color logo with background - true square.png"
-                alt=""
-              />
-            </div>
-            <p>
-              <span class="">Email: </span>
-              info@pleiadesprojectworks.com
-            </p>
-            <p>Monday - Friday</p>
-            <p>9 - 5</p>
-          </div>
+          <slot name="offcanvas-header-slot" />
         </div>
         <div class="contentBody">
           <slot name="offcanvas-content-slot" />
@@ -42,6 +27,12 @@ import { computed, ref, watchEffect } from "vue";
 import { Appstate } from "../../AppState.js";
 import XIcon from "./icons/XIcon.vue";
 export default {
+  props: {
+    contentClasses: {
+      type: String,
+      required: false,
+    },
+  },
   components: {
     XIcon,
   },
@@ -52,15 +43,17 @@ export default {
       if (Appstate.value.offCanvasOpen) {
         const body = document.querySelector("body");
         const bgImage = document.querySelector(".bg-image");
-        var scrollbarWidth = window.innerWidth - body.clientWidth + "px";
+        if (!Appstate.value.mobile) {
+          var scrollbarWidth = window.innerWidth - body.clientWidth + "px";
+          bgImage.style.width = `calc(100% - ${scrollbarWidth})`;
+          body.style.paddingRight = scrollbarWidth;
+          dialog.value.addEventListener("click", (e) => {
+            if (e.target === e.currentTarget) {
+              Appstate.value.offCanvasOpen = false;
+            }
+          });
+        }
         body.style.overflowY = "hidden";
-        bgImage.style.width = `calc(100% - ${scrollbarWidth})`;
-        body.style.paddingRight = scrollbarWidth;
-        dialog.value.addEventListener("click", (e) => {
-          if (e.target === e.currentTarget) {
-            Appstate.value.offCanvasOpen = false;
-          }
-        });
       } else {
         const body = document.querySelector("body");
         const bgImage = document.querySelector(".bg-image");
@@ -75,7 +68,10 @@ export default {
       offCanvasOpen,
       toggleOffCanvas() {
         Appstate.value.offCanvasOpen = !Appstate.value.offCanvasOpen;
+        Appstate.value.contactOffcanvas = false;
+        Appstate.value.mobileOffcanvas = false;
       },
+      mobile: computed(() => Appstate.value.mobile),
     };
   },
 };
@@ -113,11 +109,12 @@ export default {
 
 .offcanvasDialogue {
   background-color: rgba(0, 0, 0, 0.167);
+  z-index: 51;
 }
 
 .dismissRow {
   display: flex;
-  color: white;
+  color: black;
   width: 100%;
   justify-content: flex-end;
   .icon:hover {
@@ -129,10 +126,10 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: calc(100vh - 20px);
+  // height: calc(100vh - 20px);
   position: absolute;
-  margin: 10px auto;
-  outline: solid 10px #ffb625da;
+  // margin: 10px auto;
+  // outline: solid 10px #ffb625da;
   top: 0;
   right: 0;
 }

@@ -7,8 +7,8 @@
     target="_blank"
   >
     <div class="form-elems gap-4" v-if="!submitted">
-      <div class="flex justify-content-between">
-        <div class="flex flex-column w-48">
+      <div class="md:flex justify-content-between">
+        <div class="flex flex-column md:w-48 mb-4 md:mb-0">
           <label for="contact-name" class="invisible">Name input</label>
           <input
             v-model.lazy="form.name"
@@ -19,7 +19,7 @@
             required
           />
         </div>
-        <div class="flex flex-column w-48">
+        <div class="flex flex-column md:w-48">
           <label for="contact-email" class="invisible">Email Input</label>
           <input
             v-model.lazy="form.email"
@@ -67,7 +67,7 @@
     />
     <div v-if="submitted">
       <div class="thanksWrapper">
-        <span class="font-bold text-3xl">Thank you!</span>
+        <span class="font-bold text-2">Thank you!</span>
         <div>We'll be in touch soon.</div>
       </div>
     </div>

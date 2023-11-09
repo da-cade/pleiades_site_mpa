@@ -1,15 +1,14 @@
 <template>
   <div id="works" class="" v-scrollanimation>
     <div class="py-12 bg-white rounded-3xl">
-      <div
-        class="col-12 justify-center items-center flex flex-column left-side"
-      >
-        <h1 class="text-center">Our Work</h1>
-        <p class="text-center">Check out our past work.</p>
+      <div class="justify-center items-center flex flex-column left-side gap-4">
+        <h1 class="text-center text-6">
+          <b>Our </b>
+          <b class="dark-side">Work</b>
+        </h1>
+        <h2 class="text-center text-2">Check out our portfolio</h2>
       </div>
-      <div
-        class="col-12 justify-center bg-black items-center flex w-md-100 g-0"
-      >
+      <div class="justify-center bg-black items-center flex w-md-100 g-0">
         <swiper
           :spaceBetween="30"
           :pagination="{
@@ -24,13 +23,6 @@
             class="h-64"
           >
             <PortfolioPiece :portfolioPiece="portfolioPiece" />
-          </swiper-slide>
-          <swiper-slide>
-            <div class="flex flex-col justify-center items-center h-64">
-              <b>Want to show up here? </b
-              ><a class="contact-link" href="#contact"> Contact Us</a>
-              <b>to get started!</b>
-            </div>
           </swiper-slide>
         </swiper>
       </div>
@@ -49,12 +41,14 @@ import { Pagination } from "swiper/modules";
 import * as template from "../templates/main.json";
 import PortfolioPiece from "./PortfolioPiece.vue";
 import { computed } from "vue";
+import RainbowButton from "./evergreens/RainbowButton.vue";
 
 export default {
   components: {
     Swiper,
     SwiperSlide,
     PortfolioPiece,
+    RainbowButton,
   },
   setup() {
     return {
@@ -73,20 +67,6 @@ a {
   font-weight: 500;
 }
 
-h1 {
-  font-size: 5em;
-  font-weight: 900;
-}
-
-h2 {
-  font-size: 3em;
-  font-weight: 900;
-}
-
-p {
-  font-size: 1.2em;
-}
-
 .contact-link {
   color: white;
 
@@ -100,6 +80,14 @@ p {
   opacity: 0;
   transform: translateY(30%);
   transition: all 0.5s ease;
+}
+.portfolioStripe {
+  height: 30vh;
+  background: rgba(0, 0, 0, 0.73);
+  backdrop-filter: blur(4px);
+  @media (max-width: 1020px) {
+    height: auto;
+  }
 }
 
 .enter {
@@ -133,7 +121,6 @@ p {
 ul {
   padding-top: 1em;
   color: white;
-
   font-size: 0.8em;
 }
 
@@ -167,21 +154,6 @@ ul {
   span {
     color: black;
   }
-}
-
-.link-tag {
-  background: rgba(255, 255, 255, 0.23);
-  transition: all 0.5s;
-  border-radius: 25px;
-}
-
-.link-tag:hover {
-  background: white;
-  color: white;
-}
-
-.link-tag:hover a {
-  color: black;
 }
 
 .img-brand {

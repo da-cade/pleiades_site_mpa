@@ -1,6 +1,6 @@
 <template>
   <router-link
-    :to="{ name: 'service', params: { instance: service.routeParams } }"
+    :to="computedDestination"
     class="cardBorder hover:shadow-lg hover:-translate-y-2 duration-300 ease-out"
   >
     <div
@@ -8,10 +8,10 @@
       :class="[direction == 'left' ? 'desktop-row' : 'desktop-row-reverse']"
     >
       <div class="text-wrapper">
-        <h2 class="text-black text-4xl mb-3">
+        <h2 class="text-black text-4 mb-3">
           {{ service.name }}
         </h2>
-        <p class="text-black">
+        <p class="text-black text-1">
           {{ service.shortDescription }}
         </p>
       </div>
@@ -31,6 +31,7 @@
 
 
 <script>
+import { computed } from "vue";
 export default {
   props: {
     service: {
@@ -42,8 +43,21 @@ export default {
       required: false,
     },
   },
-  setup() {
-    return {};
+  setup(props) {
+    console.log(props.service);
+    const computedDestination = computed(() => {
+      const destination = props.service.routeParams
+        ? {
+            name: "service",
+            params: { instance: props.service.routeParams },
+          }
+        : { name: props.service.name };
+      return destination;
+    });
+
+    return {
+      computedDestination,
+    };
   },
 };
 </script>

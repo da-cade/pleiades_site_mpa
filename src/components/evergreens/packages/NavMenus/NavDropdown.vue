@@ -2,18 +2,19 @@
   <div class="dropDownContainer relative flex content-center justify-center">
     <router-link
       class="group navParentLabel p-2"
-      :to="{ name: baseRoute.routeName }"
-      >{{ formattedName }}
+      :to="{ name: route.routeName }"
+      >{{ route.routeName }}
 
       <div
-        v-if="subroutes.length"
+        v-if="route.children.length"
         class="routeWrapper pt-4 group-hover:block left-0 right-0 absolute h-fit hidden"
       >
         <div class="routeContainer 3xl:mx-24 grid" :style="generatedGridRows">
           <NavItem
-            v-for="route in subroutes"
-            :key="route.path + '-routekey'"
-            :route="route"
+            v-for="routeChild in route.children"
+            :key="routeChild.routeName + '-routekey'"
+            :route="routeChild"
+            class="content-center w-full justify-center"
           />
         </div>
       </div>
@@ -31,34 +32,14 @@ export default {
     NavItem,
   },
   props: {
-    subroutes: {
-      type: Array,
-      required: true,
-    },
-    baseRoute: {
-      type: String,
+    route: {
+      type: Object,
       required: true,
     },
   },
   setup(props) {
-    const formattedName = computed(() => {
-      return props.baseRoute.charAt(0).toUpperCase() + props.baseRoute.slice(1);
-    });
-
-    const computedDestination = computed(() => {
-      const path = `/${props.baseRoute}/`;
-      if (props.subroutes.length) {
-        if (props.baseRoute == "about") {
-          return path + props.subroutes[0].routeName;
-        } else {
-          return path + "all";
-        }
-      } else {
-        return path;
-      }
-    });
-    const generatedGridRows = generateGridItems("rows", props.subroutes);
-    return { generatedGridRows, computedDestination, formattedName };
+    const generatedGridRows = generateGridItems("rows", props.route.children);
+    return { generatedGridRows };
   },
 };
 </script>
@@ -67,8 +48,10 @@ export default {
 <style lang="scss" scoped>
 .navParentLabel {
   border-radius: 12px;
+  // color: white;
   &:hover {
-    background: rgb(227, 227, 227);
+    color: black;
+    background: white;
   }
 }
 
@@ -78,6 +61,13 @@ export default {
   border-radius: 24px;
 
   .navItem {
+    color: white;
+    background: rgb(34, 34, 34);
+    opacity: 0.95;
+    &:hover {
+      background: white;
+      color: black;
+    }
     &:nth-child(1) {
       border-top-left-radius: 24px;
       border-top-right-radius: 24px;

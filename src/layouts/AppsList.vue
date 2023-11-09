@@ -1,5 +1,5 @@
 <template>
-  <h1 class="text-6xl mb-4 text-white">{{ $route.name }}</h1>
+  <h1 class="text-5 mb-4 text-white">{{ $route.name }}</h1>
   <div class="appsMenu grid grid-cols-2 gap-4">
     <AppCard class="" v-for="app in apps" :key="app.name" :app="app" />
   </div>

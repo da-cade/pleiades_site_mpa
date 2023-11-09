@@ -4,7 +4,7 @@
       id="progressBar"
       class="headerContainer sticky rounded-e-3xl z-10 bg-white"
     >
-      <h2 class="text-5xl text-black me-3">How It Works</h2>
+      <h2 class="text-5 text-black me-3">How It Works</h2>
     </div>
     <!-- <StepsWrapper /> -->
     <div class="contentColumn">
@@ -22,7 +22,7 @@
           v-for="(step, i) in steps"
           :key="step + '-detail'"
           :title="i + 1"
-          :titleStyle="'font-family: raleway; font-weight: 900; font-size: 6rem; line-height: 1;'"
+          :titleClass="'font-black raleway text-10'"
           class="stepAttrs stepTitle"
         />
       </div>
@@ -50,7 +50,7 @@ export default {
       const winScroll = rect.top;
       var height = rect.top - rect.bottom;
       var scrolled = (winScroll / height) * 100;
-      console.log(scrolled > 85);
+
       if (scrolled > 85) {
         document.getElementById("progressBar").style.width = "0%";
       } else {
@@ -71,7 +71,7 @@ export default {
   display: flex;
 }
 
-$height: 50vh;
+$height: 60vh;
 $topStart: 100px;
 $titleHeight: 60px;
 

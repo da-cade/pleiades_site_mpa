@@ -1,9 +1,10 @@
 <template>
   <div class="flex h-full flex-col rounded-3xl bg-white">
-    <div class="text-dark flex justify-center my-4">
+    <h1 class="mb-4 text-5 mt-10 text-center">
       <b class="text-dark">We</b>
       <b class="dark-side">Use</b>
-    </div>
+    </h1>
+
     <div class="tech-column flex h-full flex-col justify-between content-start">
       <Vue3Marquee
         id="service-marquee"
@@ -27,7 +28,7 @@
       <div
         class="check-us-out w-100 bg-white text-dark p-5 right-side rounded-b-3xl"
       >
-        <h2>Check out our profiles on:</h2>
+        <h2 class="text-1">Check out our profiles on:</h2>
         <div class="flex">
           <Profile
             v-for="(profile, i) in profiles"

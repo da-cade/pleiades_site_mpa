@@ -24,7 +24,7 @@ const routes = [
   },
   {
     path: '/about',
-    name: 'about',
+    name: 'About',
     component: loadPage('StandardPage'),
     children: [
       {
@@ -46,15 +46,11 @@ const routes = [
   },
   {
     path: '/services',
-    name: 'services',
+    name: 'Services',
     component: loadPage('StandardPage'),
     children:
       [
-        {
-          path: "/services/free-website-audit",
-          name: "Free Website Audit",
-          component: loadView('WebsiteAuditView')
-        },
+
         {
           path: '/services/all',
           name: 'Our Services',
@@ -71,12 +67,16 @@ const routes = [
           name: 'Everything Else',
           component: loadView('EverythingElseView')
         },
-
+        {
+          path: "/services/free-website-audit",
+          name: "Free Website Audit",
+          component: loadView('WebsiteAuditView')
+        }
       ]
   },
   {
     path: '/apps',
-    name: 'apps',
+    name: 'Apps',
     component: loadPage('StandardPage'),
     children:
       [
@@ -108,7 +108,11 @@ const routes = [
 
 
 export const router = createRouter({
-  // 4. Provide the history implementation to use. We are using the hash history for simplicity here.
+  // Provide the history implementation to use. We are using the hash history for simplicity here.
   history: createWebHistory(),
+  scrollBehavior(to, from, savedPosition) {
+    // always scroll to top
+    return { top: 0 }
+  },
   routes, // short for `routes: routes`
 })

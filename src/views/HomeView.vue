@@ -5,7 +5,10 @@
     <ServicesColumn />
     <TechValuesCard />
     <Portfolio />
-    <ContactLayout />
+    <div class="contactWrapper mb-12 flex flex-col items-center h-full">
+      <h1 class="text-white text-6 mb-6">Contact Us</h1>
+      <ContactLayout />
+    </div>
   </div>
 </template>
 

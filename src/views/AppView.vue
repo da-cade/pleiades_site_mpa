@@ -1,6 +1,6 @@
 <template>
   <div class="bg-white h-fit w-full text-black p-5 rounded-3xl">
-    <h1 class="text-6xl mb-4">{{ app.name }}</h1>
+    <h1 class="text-5 mb-4">{{ app.name }}</h1>
     <p>{{ app.longDescription }}</p>
   </div>
 </template>

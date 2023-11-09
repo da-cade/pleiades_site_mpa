@@ -11,17 +11,17 @@
           :alt="portfolioPiece.imageAlt"
         />
       </div>
-      <div class="flex justify-center items-center flex-column">
-        <ul class="text-white list-disc p-2">
+      <div class="flex justify-center items-start flex-column">
+        <ul class="text-white text-1 list-disc p-2">
           <li v-for="(point, i) in portfolioPiece.talkingPoints" :key="i">
             {{ point }}
           </li>
         </ul>
-        <div class="link-tag">
-          <a target="blank" :href="portfolioPiece.source">{{
-            portfolioPiece.callToAction
-          }}</a>
-        </div>
+        <RainbowButton
+          :displayMessage="portfolioPiece.callToAction"
+          target="blank"
+          :href="portfolioPiece.source"
+        />
       </div>
     </div>
   </div>
@@ -29,7 +29,9 @@
 
 
 <script>
+import RainbowButton from "./evergreens/RainbowButton.vue";
 export default {
+  components: { RainbowButton },
   props: {
     portfolioPiece: {
       type: Object,
@@ -56,5 +58,21 @@ export default {
   @media (max-width: 1020px) {
     height: auto;
   }
+}
+
+.link-tag {
+  background: rgba(255, 255, 255, 0.53);
+  transition: all 0.2s;
+  border-radius: 25px;
+  padding: 0.5em;
+  color: #0e70bc;
+}
+
+.link-tag:hover {
+  background: white;
+}
+
+.link-tag:hover a {
+  color: black;
 }
 </style>

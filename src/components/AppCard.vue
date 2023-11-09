@@ -6,7 +6,7 @@
     <div
       class="text-wrapper bg-black p-3 flex justify-center w-full rounded-t-3xl"
     >
-      <h2 class="text-white text-4xl">
+      <h2 class="text-white text-3">
         {{ app.name }}
       </h2>
     </div>

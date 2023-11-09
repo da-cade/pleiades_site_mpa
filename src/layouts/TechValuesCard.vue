@@ -25,14 +25,6 @@ import ValuesColumn from "./ValuesColumn.vue";
   transform: translatex(0);
 }
 
-p {
-  font-size: 1.2em;
-
-  @media (max-width: 280px) {
-    font-size: 1em;
-  }
-}
-
 .wrapper {
   padding: 3em;
   border-radius: 25px;
@@ -46,14 +38,6 @@ p {
     // height: 100%;
     // width: 100%;
     // border-radius: 25px;
-  }
-}
-
-.wrapper-2 h2 {
-  font-size: 3em;
-
-  @media (max-width: 280px) {
-    font-size: 1em;
   }
 }
 

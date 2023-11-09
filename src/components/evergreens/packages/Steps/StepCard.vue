@@ -6,10 +6,10 @@
   >
     <!-- <img class="img" :src="step.image" :alt="step.imageAlt" /> -->
     <div class="detailsTitle">
-      <h1 class="text-9xl raleway font-extrabold">{{ step.title }}</h1>
+      <h1 class="text-9 raleway font-extrabold">{{ step.title }}</h1>
     </div>
     <div class="detailsInfo bg-white p-4 rounded-3xl">
-      <p>
+      <p class="text-1">
         {{ step.body }}
       </p>
     </div>
@@ -41,16 +41,12 @@ export default {
 .detailsCard {
   margin: auto 0;
   width: 100%;
-  // max-height: 90vh;
   border-radius: 24px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  // justify-content: space-between;
   top: 5vh;
-  height: 50vh;
   padding: 2rem;
-  // gap: 2rem;
 
   img {
     flex-shrink: 1;

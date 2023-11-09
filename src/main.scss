@@ -1,38 +1,66 @@
-body {
-  @media (max-width: 1999px){
-    font-size: calc(0.45em + 1vmin);
+
+$base-font: .6em;
+
+@media (max-width: 1999px){
+  @for $i from 1 through 12 {
+    .text-#{$i}{
+      font-size: calc($base-font + #{$i}vmin)
+    }
   }
-  @media (max-width: 1536px){
-    font-size: calc(0.55em + 1vmin);
+}
+@media (max-width: 1536px){
+  @for $i from 1 through 12 {
+    .text-#{$i}{
+      font-size: calc($base-font + #{$i}vmin)
+    }
   }
-  @media (max-width: 1280px){
-    font-size: calc(0.6em + 1vmin);
+}
+@media (max-width: 1280px){
+  @for $i from 1 through 12 {
+    .text-#{$i}{
+      font-size: calc($base-font + #{$i}vmin)
+    }
   }
-  @media (max-width: 1024px){
-    font-size: calc(0.6em + 1vmin);
+}
+@media (max-width: 1024px){
+  @for $i from 1 through 12 {
+    .text-#{$i}{
+      font-size: calc($base-font + #{$i}vmin)
+    }
   }
-  @media (max-width: 768px){
-    font-size: calc(0.8em + 1vmin);
+}
+@media (max-width: 768px){
+  @for $i from 1 through 12 {
+    .text-#{$i}{
+      font-size: calc($base-font + #{$i}vmin)
+    }
   }
-  @media (max-width: 640px){
-    font-size: calc(0.7em + 1vmin);
+}
+@media (max-width: 640px){
+  @for $i from 1 through 12 {
+    .text-#{$i}{
+      font-size: calc($base-font + #{$i}vmin)
+    }
   }
-  @media (min-width: 2000px) {
-    font-size: calc(0.4em + 1vmin);
+}
+@media (min-width: 2000px) {
+  @for $i from 1 through 12 {
+    .text-#{$i}{
+      font-size: calc($base-font + #{$i}vmin)
+    }
   }
 }
 
-b {
-  font-size: 3em;
+
+.dark-side {
   position: relative;
-  color: black;
+  background-color: black;
+  color: white;
   z-index: 2;
   padding: 0.2em;
+  // margin: 0 .2em;
   text-align: center;
-
-  @media (max-width: 280px) {
-    font-size: 2em;
-  }
+  border-radius: 24px;
 }
 
 .body-text {
@@ -49,37 +77,44 @@ b {
 
 .content-width {
   @media (max-width: 1999px){
-     padding: 0 12rem;
+    padding: 0 12rem;
   }
   @media (max-width: 1536px){
-     padding: 0 8rem;
+    padding: 0 8rem;
   }
   @media (max-width: 1280px){
-     padding: 0 6rem;
+    padding: 0 6rem;
   }
   @media (max-width: 1024px){
-     padding: 0 4rem;
+    padding: 0 4rem;
   }
   @media (max-width: 768px){
-     padding: 0 2rem;
+    padding: 0 2rem;
   }
   @media (max-width: 640px){
-     padding: 0 1rem;
+    padding: 0 1rem;
   }
   @media (min-width: 2000px) {
-     padding: 0 16rem;
+    padding: 0 16rem;
   }
 
   padding: 0 6rem;
 }
 
-.dark-side {
-  background-color: black;
-  color: white;
-  border-radius: 25px;
-  max-width: 100%;
-}
-
 .standard-shadow {
   box-shadow: 6px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.mobileOffcanvas {
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+}
+
+.contactOffcanvas {
+  border-radius: 24px;
+  overflow-y: auto;
+  width: 25%;
+  padding: 1rem;
+  background-color: white;
 }

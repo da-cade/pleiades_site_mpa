@@ -1,11 +1,11 @@
 <template>
   <div class="content-width">
-    <h1 class="text-7xl raleway font-extrabold my-12 text-white">
+    <h1 class="text-6 raleway font-extrabold my-12 text-white">
       {{ $route.name }}
     </h1>
     <div class="servicesMenu flex flex-col gap-4 bg-off-white p-4 rounded-3xl">
       <div class="rounded-3xl p-24 flex w-full bg-white bubble-edge">
-        <p class="text-lg alata">
+        <p class="text-2 alata">
           We offer a lot of services at Pleiades, because there's a lot that
           people need. We go above and beyond in everything that we do; that
           means meaningful results for you in anything that can be measured.

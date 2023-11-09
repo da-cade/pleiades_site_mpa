@@ -1,7 +1,7 @@
 <template>
   <div class="about-wrapper bg-off-white rounded-3xl p-8">
-    <div id="services" class="text-6xl sm:mb-4 xl:mb-8" v-scrollanimation>
-      <span class="text-black alata">We Can Do That</span>
+    <div id="services" class="text-6 sm:mb-4 xl:mb-8" v-scrollanimation>
+      <h1 class="text-black alata">We Can Do That</h1>
     </div>
     <div class="about-section">
       <div class="grid grid-cols-1 xl:grid-cols-2 gap-4">

@@ -4,8 +4,8 @@
       <PunchOut :title="instance.title" />
       <div class="bodyWrapper flex flex-col justify-center mb-4 p-2">
         <div class="bodyContent rounded-3xl bg-gray-300 p-4">
-          <h3 class="text-2xl mb-3">{{ instance.subtitle }}</h3>
-          <p class="">{{ instance.body }}</p>
+          <h4 class="text-2 mb-3">{{ instance.subtitle }}</h4>
+          <p class="text-1">{{ instance.body }}</p>
         </div>
       </div>
     </div>

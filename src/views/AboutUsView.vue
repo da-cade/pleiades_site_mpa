@@ -16,7 +16,7 @@
     <!-- </div> -->
   </div>
   <div class="content-width mt-8">
-    <h1 class="text-6xl text-white mb-4">What We're About</h1>
+    <h1 class="text-5 text-white mb-4">What We're About</h1>
     <ValuesColumn />
   </div>
 

@@ -3,7 +3,7 @@
     <div class="w-full text-black relative bannerWrapper">
       <img :src="service.image" class="img-col" alt="" />
       <div class="absolute inset-0 p-5 h-full w-full">
-        <h1 class="text-9xl alata font-extrabold">{{ service.name }}</h1>
+        <h1 class="text-9 alata font-extrabold">{{ service.name }}</h1>
       </div>
     </div>
     <Vue3Marquee
@@ -13,15 +13,18 @@
       :duration="7"
     >
       <div class="marqueeSlogan gap-4 font-black">
-        <span class="marqueeText raleway" v-for="i in textArray" :key="i">{{
-          i
-        }}</span>
+        <span
+          class="marqueeText raleway text-4"
+          v-for="i in textArray"
+          :key="i"
+          >{{ i }}</span
+        >
         <img class="h-12 w-12" src="../assets/img/single-star.png" alt="" />
       </div>
     </Vue3Marquee>
     <div class="content-width my-64">
       <div class="rounded-3xl contentColumn p-5">
-        <h2 class="text-5xl">What You Get</h2>
+        <h2 class="text-5">What You Get</h2>
         <PunchOutCard
           v-for="offer in service.offers"
           :instance="offer"
@@ -30,6 +33,7 @@
       </div>
     </div>
     <StepsLayout :steps="service.steps" />
+    <div class="getStartedBanner w-full h-screen bg-gray-600"></div>
   </div>
 </template>
 
@@ -88,7 +92,6 @@ export default {
   display: flex;
   align-items: center;
   padding: 2rem 1rem;
-  font-size: 2.5rem;
   color: black;
 }
 

@@ -9,7 +9,10 @@
         v-if="route.children.length"
         class="routeWrapper pt-4 group-hover:block left-0 right-0 absolute h-fit hidden"
       >
-        <div class="routeContainer 3xl:mx-24 grid" :style="generatedGridRows">
+        <div
+          class="routeContainer mx-3 md:mx-8 3xl:mx-24 grid"
+          :style="generatedGridRows"
+        >
           <NavItem
             v-for="routeChild in route.children"
             :key="routeChild.routeName + '-routekey'"
@@ -64,6 +67,7 @@ export default {
     color: white;
     background: rgb(34, 34, 34);
     opacity: 0.95;
+    padding: 0.5rem;
     &:hover {
       background: white;
       color: black;

@@ -1,18 +1,33 @@
 <template>
-  <a class="rainbow rainbow-5">{{ displayMessage }}</a>
+  <a
+    @click="router.push({ name: to, params: params })"
+    class="rainbow rainbow-5"
+    >{{ displayMessage }}</a
+  >
 </template>
 
 
 <script>
+import { useRouter } from "vue-router";
 export default {
   props: {
     displayMessage: {
       type: String,
       required: true,
     },
+    to: {
+      type: String,
+      required: false,
+    },
+    params: {
+      type: Object,
+      required: false,
+    },
   },
   setup() {
-    return {};
+    return {
+      router: useRouter(),
+    };
   },
 };
 </script>

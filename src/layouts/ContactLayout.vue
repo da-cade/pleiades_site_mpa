@@ -1,8 +1,8 @@
 <template>
-  <div class="justify-center items-center flex w-full" v-scrollanimation>
+  <div class="justify-center items-center flex w-full">
     <div class="grid md:grid-cols-2 w-full">
       <div
-        class="contact-info text-white p-4 justify-center items-center flex flex-column w-full"
+        class="contact-info text-white p-4 justify-center items-center flex flex-col w-full"
       >
         <h5 class="text-white text-4">Pleiades Projectworks</h5>
         <p class="text-1">Email: info@pleiadesprojectworks.com</p>
@@ -10,7 +10,7 @@
         <p>9 - 5</p>
       </div>
       <div
-        class="contact-form flex justify-center items-center flex-column p-5 w-full"
+        class="contact-form flex justify-center items-center flex-col p-5 w-full"
       >
         <ContactForm />
       </div>

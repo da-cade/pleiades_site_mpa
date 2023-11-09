@@ -1,6 +1,6 @@
 <template>
   <div id="whyus" class="block xl:flex justify-center">
-    <div class="wrapper bg-off-white flex gap-4">
+    <div class="wrapper p-3 md:p-8 bg-off-white flex gap-4">
       <TechColumn />
       <ValuesColumn />
     </div>
@@ -26,7 +26,6 @@ import ValuesColumn from "./ValuesColumn.vue";
 }
 
 .wrapper {
-  padding: 3em;
   border-radius: 25px;
   height: 100%;
   display: flex;

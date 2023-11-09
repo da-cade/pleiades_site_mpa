@@ -1,19 +1,21 @@
 <template>
   <div class="flex h-full flex-col rounded-3xl bg-white">
-    <h1 class="mb-4 text-5 mt-10 text-center">
-      <b class="text-dark">We</b>
+    <h1 class="mb-4 text-6 mt-10 text-center">
+      <b class="text-dark">We </b>
       <b class="dark-side">Use</b>
     </h1>
 
-    <div class="tech-column flex h-full flex-col justify-between content-start">
+    <div
+      class="tech-column md:max-h-screen flex flex-col justify-between content-start"
+    >
       <Vue3Marquee
         id="service-marquee"
         class="border-b-4"
         :clone="true"
         :duration="7"
-        :vertical="true"
+        :vertical="!mobile"
       >
-        <div class="marqueeSlogan gap-8 font-black">
+        <div class="marqueeSlogan flex md:grid gap-8 font-black">
           <Technology
             v-for="t in technologies"
             :key="t.name"
@@ -48,25 +50,20 @@ import Profile from "../components/evergreens/Profile.vue";
 import { computed } from "vue";
 import Technology from "../components/Technology.vue";
 import { Vue3Marquee } from "vue3-marquee";
+import { Appstate } from "../AppState";
 const technologies = computed(() => template.details.technologies);
 const profiles = computed(() => template.details.profiles);
+const mobile = computed(() => Appstate.value.mobile);
 </script>
 
 
 <style lang="scss" scoped>
 .tech-column {
   display: flex;
-  max-height: 100vh;
+  // max-height: 100vh;
   padding: 2rem;
-  @media (max-width: 768px) {
-    max-height: 200vh;
-  }
-  @media (max-width: 1020px) {
-    order: 2;
-  }
 }
 
 .marqueeSlogan {
-  display: grid;
 }
 </style>

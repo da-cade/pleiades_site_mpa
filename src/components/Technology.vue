@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-center items-center imgWrapper" v-scrollanimation>
+  <div class="flex justify-center items-center imgWrapper">
     <img loading="lazy" class="img-fill" :src="pathToImage" :alt="imageAlt" />
   </div>
 </template>

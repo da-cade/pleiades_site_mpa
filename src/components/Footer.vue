@@ -1,16 +1,20 @@
 <template>
-  <footer class="flex align-center bg-black p-12 w-full">
+  <footer
+    class="flex flex-col md:flex-row align-center bg-black p-3 md:p-12 w-full"
+  >
     <div class="footer-section gap-4 grid">
-      <div class="logoWrapper">
-        <img src="../assets/img/white-logo-no-background.png" alt="" />
-      </div>
-      <div class="navGroup flex flex-wrap justify-between">
+      <div
+        class="navGroup md:order-2 flex flex-col md:flex-row flex-wrap justify-between"
+      >
         <NavItem
           class="w-fit navColor content-center bg-black hover:text-blue-800 justify-left"
           v-for="route in routes"
           :key="route.routeName"
           :route="route"
         />
+      </div>
+      <div class="logoWrapper md:order-1">
+        <img src="../assets/img/white-logo-no-background.png" alt="" />
       </div>
 
       <small class="legaleeze text-white flex flex-col">
@@ -19,10 +23,10 @@
         <span>Pleiades Projectworks is a Web Design Company since 2022 </span>
       </small>
     </div>
-    <div class="footer-section">
+    <div class="footer-section p-3 md:px-16">
       <div class="contact-info text-white text-1">
         <h1 class="text-3">Do an animation here</h1>
-        <p class="">Email: info@pleiadesprojectworks.com</p>
+        <p class="">info@pleiadesprojectworks.com</p>
         <p>Monday - Friday</p>
         <p>9 - 5</p>
       </div>
@@ -66,17 +70,27 @@ footer {
 
 .footer-section {
   width: 50%;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    order: 2;
+  }
   &:nth-last-child(1) {
-    padding: 0 4rem;
     gap: 1rem;
     display: flex;
     align-items: flex-end;
     justify-content: center;
     flex-direction: column;
+    @media screen and (max-width: 768px) {
+      order: 1;
+    }
     * {
       text-align: right;
     }
   }
+}
+
+.legaleeze {
+  order: 4;
 }
 
 .brand-box {

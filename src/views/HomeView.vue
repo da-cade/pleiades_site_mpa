@@ -1,12 +1,12 @@
 <template>
-  <div class="content-width flex flex-col mt-8 gap-32">
+  <div class="content-width flex flex-col mt-8 gap-16 md:gap-32">
     <Banner />
     <!-- <Eclipse /> -->
     <ServicesColumn />
     <TechValuesCard />
     <Portfolio />
     <div class="contactWrapper mb-12 flex flex-col items-center h-full">
-      <h1 class="text-white text-6 mb-6">Contact Us</h1>
+      <h1 class="text-white text-8 mb-6">Contact Us</h1>
       <ContactLayout />
     </div>
   </div>

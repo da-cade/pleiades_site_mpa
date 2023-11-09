@@ -1,6 +1,6 @@
 <template>
-  <div class="about-wrapper bg-off-white rounded-3xl p-8">
-    <div id="services" class="text-6 sm:mb-4 xl:mb-8" v-scrollanimation>
+  <div class="about-wrapper bg-off-white rounded-3xl p-3 md:p-8">
+    <div id="services" class="text-6 mb-2 md:mb-4 xl:mb-8">
       <h1 class="text-black alata">We Can Do That</h1>
     </div>
     <div class="about-section">

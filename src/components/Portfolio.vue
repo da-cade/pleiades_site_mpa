@@ -1,7 +1,9 @@
 <template>
-  <div id="works" class="" v-scrollanimation>
+  <div id="works" class="">
     <div class="py-12 bg-white rounded-3xl">
-      <div class="justify-center items-center flex flex-column left-side gap-4">
+      <div
+        class="justify-center items-center flex flex-col left-side p-3 md:p-8 gap-4"
+      >
         <h1 class="text-center text-6">
           <b>Our </b>
           <b class="dark-side">Work</b>
@@ -81,14 +83,6 @@ a {
   transform: translateY(30%);
   transition: all 0.5s ease;
 }
-.portfolioStripe {
-  height: 30vh;
-  background: rgba(0, 0, 0, 0.73);
-  backdrop-filter: blur(4px);
-  @media (max-width: 1020px) {
-    height: auto;
-  }
-}
 
 .enter {
   opacity: 1;
@@ -114,6 +108,9 @@ a {
 }
 
 .swiper-slide {
+  @media screen and (max-width: 768px) {
+    height: 70vh;
+  }
   height: 50vh;
   justify-content: center;
 }
@@ -129,7 +126,6 @@ ul {
   border-radius: 25px 25px 0px 0px;
   color: black;
   width: 100%;
-  padding: 5em;
 
   @media (max-width: 900px) {
     height: 100%;

@@ -1,5 +1,5 @@
 <template>
-  <div class="banner-headline-wrapper py-16 justify-center items-start">
+  <div class="banner-headline-wrapper py-8 md:py-16 justify-center items-start">
     <span class="modak text-12 whitespace-nowrap">Big Solutions</span>
     <span class="alata text-8">For Small Business</span>
     <div class="banner-text">
@@ -13,19 +13,30 @@
       </p>
     </div>
     <div class="buttonRow flex gap-4">
-      <RainbowButton class="mt-3" :displayMessage="'Find out more!'" />
-      <RainbowButton class="mt-3" :displayMessage="'Send a Message'" />
+      <RainbowButton
+        @click="router.push({ name: 'Our Services' })"
+        class="mt-3"
+        :displayMessage="'Find out more'"
+      />
+      <RainbowButton
+        @click="router.push({ name: 'Contact' })"
+        class="mt-3"
+        :displayMessage="'Get Started'"
+      />
     </div>
   </div>
 </template>
 
 
 <script>
+import { useRouter } from "vue-router";
 import RainbowButton from "./evergreens/RainbowButton.vue";
 export default {
   components: { RainbowButton },
   setup() {
-    return {};
+    return {
+      router: useRouter(),
+    };
   },
 };
 </script>
@@ -35,11 +46,14 @@ export default {
 .banner-headline-wrapper {
   position: relative;
   z-index: 10;
-  height: 80vh;
   color: white;
   display: flex;
-  width: min-content;
   flex-direction: column;
+  max-height: 80vh;
+  @media screen and (min-width: 768px) {
+    max-height: 90vh;
+    width: min-content;
+  }
 }
 
 .banner-text {

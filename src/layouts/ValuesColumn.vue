@@ -1,12 +1,9 @@
 <template>
   <div
-    class="pitch-column rounded-3xl bg-white flex flex-col content-between items-center p-10 gap-4"
+    class="pitch-column rounded-3xl bg-white flex flex-col content-between items-center p-3 md:p-8 gap-4"
   >
-    <div
-      class="valueItem gap-4 justify-center items-center gap-4"
-      v-scrollanimation
-    >
-      <h2 class="valueTitle text-5">
+    <div class="valueItem justify-center items-center gap-4">
+      <h2 class="valueTitle text-6">
         <b class="text-dark">The Right </b>
         <b class="dark-side">Prices</b>
       </h2>
@@ -26,8 +23,8 @@
         <a href="/services/all">Find out more.</a>
       </p>
     </div>
-    <div class="valueItem gap-4 justify-center items-center" v-scrollanimation>
-      <h2 class="valueTitle text-5">
+    <div class="valueItem gap-4 justify-center items-center">
+      <h2 class="valueTitle text-6">
         <b class="text-dark">A </b>
         <b class="dark-side">Tailored</b>
         <b class="text-dark"> Experience</b>
@@ -48,8 +45,8 @@
         platform, we have the skills and expertise to bring your vision to life.
       </p>
     </div>
-    <div class="valueItem gap-4 justify-center items-center" v-scrollanimation>
-      <h2 class="valueTitle text-5">
+    <div class="valueItem gap-4 justify-center items-center">
+      <h2 class="valueTitle text-6">
         <b class="text-dark">The </b>
         <b class="dark-side">Customer</b>
         <b> First</b>

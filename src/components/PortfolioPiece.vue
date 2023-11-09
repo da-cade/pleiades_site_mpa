@@ -3,15 +3,19 @@
     class="portfolioWrapper flex m-auto h-full rounded-3xl w-4/5 items-center justify-center"
     :style="`background-image: url(${portfolioPiece.image});`"
   >
-    <div class="portfolioStripe w-full flex justify-around">
-      <div class="h-full w-1/2">
+    <div
+      class="portfolioStripe w-full flex items-center justify-around flex-col md:flex-row"
+    >
+      <div class="h-full w-3/4 md:w-1/2">
         <img
           class="img-standard"
           :src="portfolioPiece.logo"
           :alt="portfolioPiece.imageAlt"
         />
       </div>
-      <div class="flex justify-center items-start flex-column">
+      <div
+        class="flex justify-center py-3 md:py-8 items-center md:items-start flex-col"
+      >
         <ul class="text-white text-1 list-disc p-2">
           <li v-for="(point, i) in portfolioPiece.talkingPoints" :key="i">
             {{ point }}
@@ -52,7 +56,7 @@ export default {
 }
 
 .portfolioStripe {
-  height: 30vh;
+  min-height: 30vh;
   background: rgba(0, 0, 0, 0.73);
   backdrop-filter: blur(4px);
   @media (max-width: 1020px) {

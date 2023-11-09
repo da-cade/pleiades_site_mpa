@@ -19,12 +19,18 @@
       <div class="img-wrapper">
         <img
           loading="lazy"
-          class="image-icon d-none d-lg-flex"
+          class="image-icon d-lg-flex"
           :id="service.image.split('/').pop()"
           :src="service.image"
           :alt="service.imageAlt"
         />
       </div>
+    </div>
+    <div
+      class="goTo flex items-center gap-2 md:hidden w-full p-4 underline underline-offset-4"
+    >
+      <LeftHandArrowIcon class="h-8 w-8" />
+      <span class="text-2 text-black">Find Out More</span>
     </div>
   </router-link>
 </template>
@@ -32,7 +38,9 @@
 
 <script>
 import { computed } from "vue";
+import LeftHandArrowIcon from "./evergreens/icons/LeftHandArrowIcon.vue";
 export default {
+  components: { LeftHandArrowIcon },
   props: {
     service: {
       type: Object,
@@ -71,11 +79,15 @@ export default {
 //   100% {
 //     background-position: -150% 0;
 //   }
+
 // }
+
+.goTo {
+  color: #ffb725;
+}
 
 .cardBorder {
   display: block;
-
   background: white;
   position: relative;
   border-radius: 25px;
@@ -101,9 +113,9 @@ export default {
 }
 
 .text-wrapper {
-  padding: 1em;
+  padding: 2rem;
   @media (max-width: 480px) {
-    padding: 0;
+    padding: 1rem;
   }
   @media (min-width: 1280px) {
     order: 2;

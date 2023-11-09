@@ -7,10 +7,11 @@
     target="_blank"
   >
     <div class="form-elems gap-4" v-if="!submitted">
-      <div class="md:flex justify-content-between">
-        <div class="flex flex-column md:w-48 mb-4 md:mb-0">
+      <div class="grid grid-cols-2 gap-4">
+        <div class="">
           <label for="contact-name" class="invisible">Name input</label>
           <input
+            class="w-full"
             v-model.lazy="form.name"
             autocomplete="name"
             type="text"
@@ -19,9 +20,10 @@
             required
           />
         </div>
-        <div class="flex flex-column md:w-48">
+        <div class="">
           <label for="contact-email" class="invisible">Email Input</label>
           <input
+            class="w-full"
             v-model.lazy="form.email"
             autocomplete="email"
             type="email"
@@ -31,7 +33,7 @@
           />
         </div>
       </div>
-      <div class="flex flex-column w-full">
+      <div class="flex flex-col w-full">
         <label for="query-dropdown" class="invisible">Select an Inquiry</label>
         <select
           v-model.lazy="form.query"
@@ -171,13 +173,11 @@ textarea {
   box-shadow: 0px 0px 0px 4px rgb(198, 198, 198);
   border: none;
   height: 40vh;
-  min-height: calc(50px);
   max-height: 50vh;
-
   margin-bottom: 1em;
 
   @media (max-width: 480px) {
-    width: 100%;
+    // width: 100%;
   }
 }
 </style>

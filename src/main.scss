@@ -30,6 +30,7 @@ $base-font: .6em;
   }
 }
 @media (max-width: 768px){
+  $base-font: .6em;
   @for $i from 1 through 12 {
     .text-#{$i}{
       font-size: calc($base-font + #{$i}vmin)
@@ -37,6 +38,7 @@ $base-font: .6em;
   }
 }
 @media (max-width: 640px){
+  $base-font: .75em;
   @for $i from 1 through 12 {
     .text-#{$i}{
       font-size: calc($base-font + #{$i}vmin)
@@ -57,7 +59,7 @@ $base-font: .6em;
   background-color: black;
   color: white;
   z-index: 2;
-  padding: 0.2em;
+  padding: 0.5rem;
   // margin: 0 .2em;
   text-align: center;
   border-radius: 24px;
@@ -108,13 +110,29 @@ $base-font: .6em;
 .mobileOffcanvas {
   width: 100%;
   height: 100vh;
-  background-color: white;
+  background-color: #091624;
+    overflow-y: auto;
+  .dismissRow {
+    color: white;
+  }
 }
 
 .contactOffcanvas {
-  border-radius: 24px;
-  overflow-y: auto;
+  border-top-right-radius: 24px;
+  border-bottom-right-radius: 24px;
+  // overflow-y: auto;
   width: 25%;
-  padding: 1rem;
+  height: calc(100vh - 20px);
+  margin: 10px auto;
+  outline: solid 10px #ffb625da;
+  // padding: 1rem;
   background-color: white;
+  .dismissRow {
+    color: black;
+  }
+  .contentWrapper {
+    padding: 1rem;
+   
+    overflow-y: auto;
+  }
 }

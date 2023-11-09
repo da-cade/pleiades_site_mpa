@@ -1,6 +1,6 @@
 <template>
   <router-link
-    class="navItem ease-in duration-100 flex p-1 h-fit max-w-full"
+    class="navItem ease-in duration-100 flex h-fit max-w-full"
     :to="computedDestination"
   >
     <span class="">{{ route.displayName }}</span>

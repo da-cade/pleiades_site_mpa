@@ -1,9 +1,9 @@
 <template>
-  <div id="contact" class="flex justify-center mb-4 text-5" v-scrollanimation>
-    <h2 class="text-white">contact us today</h2>
+  <div id="contact" class="flex justify-center mb-4 text-5">
+    <h2 class="text-white text-6">Contact Us Today</h2>
   </div>
   <div class="contactWrapper bg-white h-fit w-full text-black p-5 rounded-3xl">
-    <p class="text-2">
+    <p class="text-1">
       We'd love to hear from you, so give us a shout! We'll get back to you
       A.S.A.P.
     </p>
@@ -21,7 +21,4 @@ export default {
 
 
 <style lang="scss" scoped>
-.contactWrapper {
-  box-shadow: 0px 0px 0px 4px rgb(234, 235, 255);
-}
 </style>

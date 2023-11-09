@@ -43,7 +43,7 @@ export default {
     },
   },
   components: { PunchOut, StepCard },
-  setup(props) {
+  setup() {
     function progressBar() {
       const container = document.querySelector(".detailsCol");
       const rect = container.getBoundingClientRect();
@@ -71,7 +71,7 @@ export default {
   display: flex;
 }
 
-$height: 60vh;
+$height: 50vh;
 $topStart: 100px;
 $titleHeight: 60px;
 
@@ -95,7 +95,7 @@ $titleHeight: 60px;
   position: relative;
   align-items: center;
   background: #d3dae2;
-  padding: $height/10;
+  padding: calc($height/10);
   width: 70%;
   gap: $height;
 }
@@ -105,7 +105,7 @@ $titleHeight: 60px;
   flex-direction: column;
   position: relative;
   align-items: center;
-  padding-top: $height/10;
+  padding-top: calc($height/10);
   padding-bottom: calc($height/10 + $height/2 - 10rem);
   width: 30%;
   gap: $height;

@@ -13,8 +13,9 @@ export default {
   },
   setup() {
     return {
-      toggleOffCanvas() {
+      toggleContactCanvas() {
         Appstate.value.offCanvasOpen = !Appstate.value.offCanvasOpen;
+        Appstate.value.contactOffcanvas = !Appstate.value.contactOffcanvas;
       },
       mobile: computed(() => Appstate.value.mobile),
     };
@@ -27,7 +28,7 @@ export default {
   <!-- <main> -->
   <RouterView />
   <!-- </main> -->
-  <Fab v-if="!mobile" @click="toggleOffCanvas" />
+  <Fab v-if="!mobile" @click="toggleContactCanvas" />
 
   <Footer />
 </template>

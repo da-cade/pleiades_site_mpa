@@ -1,24 +1,25 @@
 <template >
-  <Transition name="nested">
-    <div
-      v-show="offCanvasOpen"
-      ref="dialog"
-      class="offcanvasDialogue h-screen w-screen fixed overflow-hidden inset-0"
-    >
-      <div class="offcanvasContent" :class="contentClasses">
-        <div class="dismissRow">
-          <XIcon class="h-5 w-5 text-black" @click="toggleOffCanvas" />
+  <Teleport to="body">
+    <Transition name="nested">
+      <div
+        v-show="offCanvasOpen"
+        ref="dialog"
+        class="offcanvasDialogue h-screen w-screen fixed overflow-hidden inset-0"
+      >
+        <div class="offcanvasContent" :class="contentClasses">
+          <div class="dismissRow pe-4 pt-4">
+            <XIcon class="h-5 w-5" @click="closeOffcanvas" />
+          </div>
+          <div class="contentHeader">
+            <slot name="offcanvas-header-slot" />
+          </div>
+          <div class="contentWrapper py-2">
+            <slot name="offcanvas-content-slot" />
+          </div>
         </div>
-        <div class="contentHeader">
-          <slot name="offcanvas-header-slot" />
-        </div>
-        <div class="contentBody">
-          <slot name="offcanvas-content-slot" />
-        </div>
-        <div class="contentEnd"></div>
       </div>
-    </div>
-  </Transition>
+    </Transition>
+  </Teleport>
 </template>
 
 
@@ -43,34 +44,39 @@ export default {
       if (Appstate.value.offCanvasOpen) {
         const body = document.querySelector("body");
         const bgImage = document.querySelector(".bg-image");
+        const app = document.getElementById("app");
         if (!Appstate.value.mobile) {
           var scrollbarWidth = window.innerWidth - body.clientWidth + "px";
           bgImage.style.width = `calc(100% - ${scrollbarWidth})`;
           body.style.paddingRight = scrollbarWidth;
           dialog.value.addEventListener("click", (e) => {
             if (e.target === e.currentTarget) {
-              Appstate.value.offCanvasOpen = false;
+              closeOffcanvas();
             }
           });
+        } else {
         }
-        body.style.overflowY = "hidden";
+        app.style.overflowY = "hidden";
+        body.style.overflow = "hidden";
       } else {
         const body = document.querySelector("body");
         const bgImage = document.querySelector(".bg-image");
         body.style.overflowY = "auto";
         bgImage.style.width = `100%`;
+        app.style.overflowY = "auto";
         body.style.paddingRight = "0px";
       }
     });
+    function closeOffcanvas() {
+      Appstate.value.offCanvasOpen = false;
+      Appstate.value.contactOffcanvas = false;
+      Appstate.value.mobileOffcanvas = false;
+    }
 
     return {
       dialog,
       offCanvasOpen,
-      toggleOffCanvas() {
-        Appstate.value.offCanvasOpen = !Appstate.value.offCanvasOpen;
-        Appstate.value.contactOffcanvas = false;
-        Appstate.value.mobileOffcanvas = false;
-      },
+      closeOffcanvas,
       mobile: computed(() => Appstate.value.mobile),
     };
   },
@@ -104,7 +110,7 @@ export default {
 
 .nested-enter-from .offcanvasContent,
 .nested-leave-to .offcanvasContent {
-  transform: translateX(100%);
+  transform: translateX(-100%);
 }
 
 .offcanvasDialogue {
@@ -114,7 +120,6 @@ export default {
 
 .dismissRow {
   display: flex;
-  color: black;
   width: 100%;
   justify-content: flex-end;
   .icon:hover {
@@ -125,12 +130,40 @@ export default {
 .offcanvasContent {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  // height: calc(100vh - 20px);
+
   position: absolute;
-  // margin: 10px auto;
-  // outline: solid 10px #ffb625da;
   top: 0;
-  right: 0;
+  left: 0;
 }
+
+.contentWrapper {
+  margin: 14px 0;
+}
+
+.contentWrapper::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #f5f5f5;
+}
+
+.contentWrapper::-webkit-scrollbar {
+  width: 6px;
+  background-color: #f5f5f5;
+}
+
+.contentWrapper::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #d62929;
+}
+
+// .contentWrapper::-webkit-scrollbar-track-piece:end {
+//   background: transparent;
+//   margin-bottom: 10px;
+// }
+
+// .contentWrapper::-webkit-scrollbar-track-piece:start {
+//   background: transparent;
+//   margin-top: 10px;
+// }
 </style>

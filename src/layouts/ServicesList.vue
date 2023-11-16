@@ -1,6 +1,6 @@
 <template>
-  <div class="content-width md:my-12 xl:my-24">
-    <h1 class="text-5 raleway mb-4 font-extrabold text-white">
+  <div class="content-width my-8 md:my-16 xl:my-24">
+    <h1 class="text-8 raleway mb-4 font-extrabold text-white">
       {{ $route.name }}
     </h1>
     <div class="servicesMenu flex flex-col gap-4 bg-off-white p-4 rounded-3xl">

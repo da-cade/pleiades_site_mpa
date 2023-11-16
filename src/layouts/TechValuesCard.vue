@@ -1,15 +1,36 @@
 <template>
   <div id="whyus" class="block xl:flex justify-center">
-    <div class="wrapper p-3 md:p-8 bg-off-white flex gap-4">
-      <TechColumn />
-      <ValuesColumn />
+    <div class="wrapper p-4 md:p-8 bg-off-white flex gap-4">
+      <TechColumn :maxHeight="maxHeight" />
+      <ValuesColumn ref="valuesColumn" />
     </div>
   </div>
 </template>
 
-<script setup>
+<script>
+import { onMounted, ref } from "vue";
 import TechColumn from "./TechColumn.vue";
 import ValuesColumn from "./ValuesColumn.vue";
+export default {
+  components: {
+    TechColumn,
+    ValuesColumn,
+  },
+  setup() {
+    const valuesColumn = ref();
+    const maxHeight = ref();
+    onMounted(() => {
+      const el = valuesColumn.value.$el;
+      const rect = el.getBoundingClientRect();
+      maxHeight.value = rect.bottom - rect.top - 16;
+      console.log(maxHeight.value);
+    });
+    return {
+      valuesColumn,
+      maxHeight,
+    };
+  },
+};
 </script>
 
 <style lang="scss" scoped>
@@ -27,10 +48,9 @@ import ValuesColumn from "./ValuesColumn.vue";
 
 .wrapper {
   border-radius: 25px;
-  height: 100%;
+  max-height: clamp(100%, 150vh, 200vh);
   display: flex;
   justify-content: center;
-  // align-items: center;
   align-self: center;
   @media (max-width: 1020px) {
     flex-direction: column;

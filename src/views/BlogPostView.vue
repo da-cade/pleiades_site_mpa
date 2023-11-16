@@ -13,7 +13,7 @@
     </div>
     <!-- </div> -->
 
-    <div class="bodyContent grid 2xl:gap-36 content-width bg-white">
+    <div class="bodyContent grid 2xl:gap-46 content-width bg-white">
       <div
         v-for="b in post.blocks"
         :key="b.subtitle"

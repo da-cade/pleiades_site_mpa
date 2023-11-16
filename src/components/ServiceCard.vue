@@ -7,15 +7,6 @@
       class="card-holder bg-white"
       :class="[direction == 'left' ? 'desktop-row' : 'desktop-row-reverse']"
     >
-      <div class="text-wrapper">
-        <h2 class="text-black text-4 mb-3">
-          {{ service.name }}
-        </h2>
-        <p class="text-black text-1">
-          {{ service.shortDescription }}
-        </p>
-      </div>
-
       <div class="img-wrapper">
         <img
           loading="lazy"
@@ -25,9 +16,17 @@
           :alt="service.imageAlt"
         />
       </div>
+      <div class="text-wrapper">
+        <h2 class="text-black text-4 mb-3">
+          {{ service.name }}
+        </h2>
+        <p class="text-black text-1">
+          {{ service.shortDescription }}
+        </p>
+      </div>
     </div>
     <div
-      class="goTo flex items-center gap-2 md:hidden w-full p-4 underline underline-offset-4"
+      class="goTo flex items-center gap-2 md:hidden w-full p-8 pt-0 underline underline-offset-4"
     >
       <LeftHandArrowIcon class="h-8 w-8" />
       <span class="text-2 text-black">Find Out More</span>
@@ -114,8 +113,8 @@ export default {
 
 .text-wrapper {
   padding: 2rem;
-  @media (max-width: 480px) {
-    padding: 1rem;
+  @media (min-width: 1024px) {
+    padding: 4rem;
   }
   @media (min-width: 1280px) {
     order: 2;
@@ -124,6 +123,10 @@ export default {
 
 .img-wrapper {
   display: flex;
+  img {
+    border-top-right-radius: 24px;
+    border-top-left-radius: 24px;
+  }
   flex-grow: 1;
   // max-width: 60%;
   align-items: center;
@@ -142,7 +145,7 @@ export default {
   }
   @media (max-width: 1020px) {
     flex-direction: column;
-    margin-bottom: 50px;
+    // margin-bottom: 50px;
   }
   width: 100%;
 }

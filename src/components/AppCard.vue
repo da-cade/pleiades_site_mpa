@@ -4,7 +4,7 @@
     class="appCard rounded-3xl"
   >
     <div
-      class="text-wrapper bg-black p-3 flex justify-center w-full rounded-t-3xl"
+      class="text-wrapper bg-black p-4 flex justify-center w-full rounded-t-3xl"
     >
       <h2 class="text-white text-3">
         {{ app.name }}
@@ -19,7 +19,7 @@
         :src="app.coverImg"
         :alt="app.coverImgAlt"
       />
-      <div class="img-overlay p-3 text-white">
+      <div class="img-overlay p-4 text-white">
         <p class="">
           {{ app.shortDescription }}
         </p>

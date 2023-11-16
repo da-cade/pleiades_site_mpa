@@ -1,8 +1,8 @@
 <template>
   <div class="dropDownContainer relative md:content-center md:justify-center">
-    <div class="dropDownWrapper md:text-1 text-4 flex">
+    <div class="dropDownWrapper text-7 flex">
       <router-link
-        class="group navParentLabel w-full md:w-fit p-3 pb-1"
+        class="group navParentLabel w-full md:w-fit px-4"
         :to="{ name: route.routeName }"
         >{{ route.routeName }}
 
@@ -18,18 +18,18 @@
               v-for="routeChild in route.children"
               :key="routeChild.routeName + '-routekey'"
               :route="routeChild"
-              class="content-center w-full justify-center"
+              class="navItem content-center py-4 w-full justify-center"
             />
           </div>
         </div>
       </router-link>
       <div
-        class="dropDown text-white w-2/5 flex justify-end pe-3 items-center"
+        class="dropDown text-white flex justify-end pe-3 items-center"
         @click="showDropdown = !showDropdown"
         v-if="route.children.length && mobile"
       >
         <DownChevronIcon
-          class="h-10 w-10 chevronIcon"
+          class="h-12 w-12 chevronIcon"
           :class="showDropdown ? 'rotated' : ''"
         />
       </div>
@@ -46,7 +46,7 @@
             v-for="routeChild in route.children"
             :key="routeChild.routeName + '-routekey'"
             :route="routeChild"
-            class="content-center text-3 w-full justify-center"
+            class="navItem content-center p-2 px-8 text-4 w-full justify-center"
           />
         </div>
       </Transition>
@@ -130,34 +130,18 @@ export default {
 
 .mobileRouteContainer {
   transition: all ease-in-out 0.25s;
-  .navItem {
-    color: white;
-    justify-content: start;
-    padding: 0 2rem;
-    // background: rgb(198, 195, 195);
-  }
 }
 
-.routeContainer {
-  border-radius: 24px;
-
-  .navItem {
-    color: white;
-    background: rgb(34, 34, 34);
-    opacity: 0.95;
-    padding: 0.5rem;
-    &:hover {
-      background: white;
-      color: black;
-    }
-    &:nth-child(1) {
-      border-top-left-radius: 24px;
-      border-top-right-radius: 24px;
-    }
-    &:nth-last-child(1) {
-      border-bottom-left-radius: 24px;
-      border-bottom-right-radius: 24px;
-    }
+.navItem {
+  color: white;
+  justify-content: start;
+  // background: rgb(198, 195, 195);
+  &:nth-child(1) {
+    padding-top: 1rem;
+  }
+  &:nth-last-child(1) {
+    // padding-top: 0.5rem;
+    padding-bottom: 0;
   }
 }
 </style>

@@ -1,5 +1,7 @@
 <template>
-  <div class="navItemsContainer w-full justify-start content-start alata">
+  <div
+    class="navItemsContainer w-full gap-8 flex flex-col justify-start content-start alata"
+  >
     <MobileNavDropdown
       class="w-full justify-start text-5"
       v-for="route in routes"

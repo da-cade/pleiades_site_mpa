@@ -22,6 +22,13 @@
   ],
   "services": [
     {
+      "name": "Free Website Audit",
+      "shortDescription": "Sometimes you just want to know where you're at.",
+      "offers": [],
+      "image": "../src/assets/img/custom.png",
+      "imageAlt": "Launching your new site like a rocket"
+    },
+    {
       "name": "Website Design",
       "routeParams": "website-design",
       "shortDescription": "At Pleiades, we start with good design. Using industry best practices in UX and SEO, Pleiades Projectworks crafts websites that are both stylish and functional, which are formatted to organically rank high on searches and unobtrusively communicate your brand to your customers.",
@@ -309,13 +316,6 @@
       "longDescription": "",
       "image": "../src/assets/img/coding.png",
       "imageAlt": ""
-    },
-    {
-      "name": "Free Website Audit",
-      "shortDescription": "Sometimes you just want to know where you're at.",
-      "offers": [],
-      "image": "../src/assets/img/custom.png",
-      "imageAlt": "Launching your new site like a rocket"
     }
   ],
   "blog": [
@@ -496,6 +496,10 @@
         "routeName": "Our Services",
         "children": [
           {
+            "routeName": "Free Website Audit",
+            "displayName": "Free Website Audit"
+          },
+          {
             "displayName": "Website Design",
             "routeName": "service",
             "routeParams": "website-design"
@@ -518,10 +522,6 @@
           {
             "displayName": "Everything Else",
             "routeName": "Everything Else"
-          },
-          {
-            "routeName": "Free Website Audit",
-            "displayName": "Free Website Audit"
           }
         ]
       },

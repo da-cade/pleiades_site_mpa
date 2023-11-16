@@ -1,11 +1,14 @@
 <template>
-  <div class="flex h-full flex-col rounded-3xl bg-white">
-    <h1 class="mb-4 text-5 mt-10 text-center">
+  <div class="columnWrapper flex flex-col p-8 rounded-3xl bg-white">
+    <h1 class="mb-4 text-5 mt-2 text-center">
       <b class="text-dark">We </b>
       <b class="dark-side">Use</b>
     </h1>
 
-    <div class="tech-column flex flex-col justify-between content-start">
+    <div
+      :style="`max-height: ${maxHeight - rectHeight}px`"
+      class="tech-column flex flex-col md:p-8 justify-between content-start"
+    >
       <Vue3Marquee
         id="service-marquee"
         class="border-b-4"
@@ -13,7 +16,7 @@
         :duration="7"
         :vertical="!mobile"
       >
-        <div class="marqueeSlogan flex md:grid gap-8 font-black">
+        <div class="marqueeSlogan max-w-lg flex lg:grid gap-8 font-black">
           <Technology
             v-for="t in technologies"
             :key="t.name"
@@ -24,9 +27,9 @@
         </div>
       </Vue3Marquee>
     </div>
-    <div class="profiles">
+    <div ref="profileContainer" class="profiles">
       <div
-        class="check-us-out w-100 bg-white text-dark p-5 right-side rounded-b-3xl"
+        class="check-us-out w-100 bg-white text-dark p-8 right-side rounded-b-3xl"
       >
         <h2 class="text-1">Check out our profiles on:</h2>
         <div class="flex">
@@ -42,32 +45,53 @@
 </template>
 
 
-<script setup>
+<script>
 import * as template from "../templates/main.json";
 import Profile from "../components/evergreens/Profile.vue";
-import { computed } from "vue";
+import { computed, onMounted, ref } from "vue";
 import Technology from "../components/Technology.vue";
 import { Vue3Marquee } from "vue3-marquee";
 import { Appstate } from "../AppState";
-const technologies = computed(() => template.details.technologies);
-const profiles = computed(() => template.details.profiles);
-const mobile = computed(() => Appstate.value.mobile);
+export default {
+  components: {
+    Technology,
+    Profile,
+    Vue3Marquee,
+  },
+  props: {
+    maxHeight: {
+      type: Number,
+      required: false,
+    },
+  },
+  setup(props) {
+    const profileContainer = ref();
+    const rectHeight = ref();
+    onMounted(() => {
+      const el = profileContainer.value;
+      const rect = el.getBoundingClientRect();
+      rectHeight.value = rect.bottom - rect.top;
+    });
+    return {
+      profileContainer,
+      rectHeight,
+      technologies: computed(() => template.details.technologies),
+      profiles: computed(() => template.details.profiles),
+      mobile: computed(() => Appstate.value.mobile),
+    };
+  },
+};
 </script>
 
 
 <style lang="scss" scoped>
-.tech-column {
-  display: flex;
-  // max-height: 100vh;
-  padding: 2rem;
-  @media (min-width: 1536px) {
-    max-height: 80vh;
-  }
-  @media (max-width: 1024px) {
-    max-height: 90vh;
-  }
+.columnWrapper {
+  flex-shrink: 1;
+  max-height: 70%;
+  // height: 50%;
 }
 
-.marqueeSlogan {
+.tech-column {
+  display: flex;
 }
 </style>

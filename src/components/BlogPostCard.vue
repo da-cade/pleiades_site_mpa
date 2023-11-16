@@ -101,8 +101,8 @@ export default {
 
 .text-wrapper {
   padding: 2rem;
-  @media (max-width: 480px) {
-    padding: 1rem;
+  @media (max-width: 1024px) {
+    padding: 4rem;
   }
   @media (min-width: 1280px) {
     order: 2;

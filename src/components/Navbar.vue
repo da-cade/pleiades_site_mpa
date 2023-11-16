@@ -1,5 +1,5 @@
 <template>
-  <nav id="nav" class="responsive-navbar">
+  <nav id="nav" class="responsive-navbar px-8 lg:px-0">
     <div class="image-container">
       <router-link id="navlogo" class="flex" :to="{ name: 'home' }">
         <img
@@ -44,7 +44,7 @@
 import { computed, onMounted, ref, watch } from "vue";
 import NavMenu from "./evergreens/packages/NavMenus/NavMenu.vue";
 import MobileNavMenu from "./evergreens/packages/NavMenus/MobileNavMenu.vue";
-import { navTuck } from "./composables/navTuck.js";
+// import { navTuck } from "./composables/navTuck.js";
 import OffCanvas from "./evergreens/OffCanvas.vue";
 import ContactForm from "./ContactForm.vue";
 import { Appstate } from "../AppState";
@@ -96,22 +96,18 @@ export default {
 }
 
 .image-container {
+  @media (min-width: 1025px) {
+    max-width: 30%;
+  }
   @media (max-width: 1024px) {
     max-width: 40%;
   }
   @media (max-width: 640px) {
     max-width: 80%;
   }
-
-  @media (min-width: 1280px) {
-    max-width: 20%;
-  }
 }
 
 @media (max-width: 768px) {
-  .responsive-navbar {
-    justify-content: space-around;
-  }
 }
 @media (max-width: 640px) {
 }

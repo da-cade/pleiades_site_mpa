@@ -2,7 +2,7 @@
   <div id="works" class="">
     <div class="py-12 bg-white rounded-3xl">
       <div
-        class="justify-center items-center flex flex-col left-side p-3 md:p-8 gap-4"
+        class="justify-center items-center flex flex-col left-side p-4 md:p-8 gap-4"
       >
         <h1 class="text-center text-6">
           <b>Our </b>

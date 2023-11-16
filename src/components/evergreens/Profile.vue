@@ -1,6 +1,6 @@
 <template>
   <a
-    class="flex items-center p-3"
+    class="flex items-center p-4"
     target="blank"
     rel="nofollow"
     :href="profile.source"

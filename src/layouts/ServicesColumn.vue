@@ -1,6 +1,9 @@
 <template>
-  <div class="about-wrapper bg-off-white rounded-3xl p-3 md:p-8">
-    <div id="services" class="text-5 mb-4 md:mb-8 xl:mb-16">
+  <div class="about-wrapper bg-off-white rounded-3xl p-4 md:p-8">
+    <div
+      id="services"
+      class="text-6 mb-4 flex justify-center md:justify-start md:mb-8 xl:mb-16"
+    >
       <h1 class="text-black alata">We Can Do That</h1>
     </div>
     <div class="about-section">
@@ -20,7 +23,7 @@
 import { computed } from "vue";
 import ServiceCard from "../components/ServiceCard.vue";
 import * as template from "../templates/main.json";
-const services = computed(() => template.services.slice(0, 4));
+const services = computed(() => template.services.slice(1, 5));
 </script>
 
 <style lang="scss" scoped>

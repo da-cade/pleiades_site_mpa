@@ -1,6 +1,6 @@
 <template>
   <footer
-    class="flex flex-col md:flex-row align-center bg-black p-3 md:p-12 w-full"
+    class="flex flex-col md:flex-row align-center bg-black p-4 md:p-12 w-full"
   >
     <div class="footer-section gap-4 grid">
       <div
@@ -23,7 +23,7 @@
         <span>Pleiades Projectworks is a Web Design Company since 2022 </span>
       </small>
     </div>
-    <div class="footer-section p-3 md:px-16">
+    <div class="footer-section p-4 md:px-16">
       <div class="contact-info text-white text-1">
         <h1 class="text-3">Do an animation here</h1>
         <p class="">info@pleiadesprojectworks.com</p>

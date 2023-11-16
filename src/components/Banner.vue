@@ -1,10 +1,12 @@
 <template>
-  <div class="banner-headline-wrapper py-8 md:py-16 justify-center items-start">
+  <div
+    class="banner-headline-wrapper gap-2 md:gap-4 xl:gap-8 py-4 md:py-8 xl:py-16 justify-center items-start"
+  >
     <span class="modak text-12 whitespace-nowrap">Big Solutions</span>
     <span class="alata text-8">For Small Business</span>
     <div class="banner-text">
       <p
-        class="text-1 my-3 bg-opacity-40 bg-blue-950 p-3 rounded-3xl border-2 border-white"
+        class="text-1 my-3 bg-opacity-40 bg-blue-950 p-4 rounded-3xl border-2 border-white"
       >
         With our combination of know-how and next-level creativity, our expert
         team of designers and digi-gurus can guide you through the noise. We are
@@ -49,9 +51,9 @@ export default {
   color: white;
   display: flex;
   flex-direction: column;
-  max-height: 80vh;
+  // max-height: 80vh;
   @media screen and (min-width: 768px) {
-    max-height: 90vh;
+    // max-height: 90vh;
     width: min-content;
   }
 }

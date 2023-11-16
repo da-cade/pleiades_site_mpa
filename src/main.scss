@@ -10,7 +10,7 @@ $media_queries : (
     'desktop'   : "only screen and (min-width: ($size__site_content_width + 1))",
     'retina2'   : "only screen and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi)",
     'retina3'   : "only screen and (-webkit-min-device-pixel-ratio: 3) and (min-resolution: 288dpi)",
-    'landscape' : "screen and (orientation:landscape) ",    
+    'landscape' : "screen and (orientation:landscape)",
     'portrait'  : "screen and (orientation:portrait) "
 );
 
@@ -140,6 +140,31 @@ $range: 12;
   }
 }
 
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) and (orientation:landscape){
+  @for $i from 1 through $range {
+    $min: #{calc($i * .5) + 1}rem;
+    $base-ratio: #{calc(-1 + ($i * .5))}rem;
+    $view-ratio: #{calc($i * .5)}vw;
+    $max: #{calc($i * 1.8)}rem;
+    .text-#{$i}{
+      font-size: clamp($min, $base-ratio + $view-ratio, $max);
+      line-height: calc((($range/$i) * .1) + .7);
+    }
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 3) and (min-resolution: 288dpi) and (orientation:landscape){
+  @for $i from 1 through $range {
+    $min: #{calc($i * .25) + 1}rem;
+    $base-ratio: #{calc(-1 + ($i * .5))}rem;
+    $view-ratio: #{calc($i * .45)}vw;
+    $max: #{calc($i * .4)}rem;
+    .text-#{$i}{
+      font-size: clamp($min, $base-ratio + $view-ratio, $max);
+      line-height: calc((($range/$i) * .1) + .7);
+    }
+  }
+}
+
 // @media screen and (orientation:landscape){
 //   @for $i from 1 through $range {
 //     $min: #{calc($i * 1.125)};
@@ -246,7 +271,7 @@ $range: 12;
   border-top-right-radius: 24px;
   border-bottom-right-radius: 24px;
   // overflow-y: auto;
-  width: 25%;
+ 
   height: calc(100vh - 20px);
   margin: 10px auto;
   outline: solid 10px #ffb625da;
@@ -258,5 +283,15 @@ $range: 12;
   .contentWrapper {
     padding: 1rem;
     overflow-y: auto;
+  }
+  @media screen and (min-width: 1281px){
+    width: 30%;
+  }
+  @media screen and (min-width: 1025px) and (max-width: 1280px){
+    width: 25%;
+  }
+  @media screen and (max-width: 1024px){
+    width: 40%;
+    justify-content: space-around;
   }
 }

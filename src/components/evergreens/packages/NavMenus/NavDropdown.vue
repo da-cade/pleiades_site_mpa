@@ -1,5 +1,7 @@
 <template>
-  <div class="dropDownContainer relative flex content-center justify-center">
+  <div
+    class="dropDownContainer text-1 relative flex content-center justify-center"
+  >
     <router-link
       class="group navParentLabel p-2"
       :to="{ name: route.routeName }"

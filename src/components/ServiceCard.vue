@@ -113,11 +113,15 @@ export default {
 
 .text-wrapper {
   padding: 2rem;
-  @media (min-width: 1024px) {
-    padding: 4rem;
-  }
   @media (min-width: 1280px) {
     order: 2;
+    padding: 4rem;
+  }
+  @media (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+    padding: 2rem;
+  }
+  @media (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 3) and (min-resolution: 288dpi) and (orientation: landscape) {
+    padding: 2rem;
   }
 }
 

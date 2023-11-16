@@ -2,7 +2,7 @@
   <div
     class="banner-headline-wrapper gap-2 md:gap-4 xl:gap-8 py-4 md:py-8 xl:py-16 justify-center items-start"
   >
-    <span class="modak text-12 whitespace-nowrap">Big Solutions</span>
+    <span class="modak text-12 bigTitle">Big Solutions</span>
     <span class="alata text-8">For Small Business</span>
     <div class="banner-text">
       <p
@@ -58,7 +58,8 @@ export default {
   }
 }
 
-.banner-text {
-  // flex-basis: 70%;
+.bigTitle {
+  line-height: 1;
+  // white-space: nowrap;
 }
 </style>

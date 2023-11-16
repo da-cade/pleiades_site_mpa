@@ -6,7 +6,7 @@
   >
     <!-- <img class="img" :src="step.image" :alt="step.imageAlt" /> -->
     <div class="detailsTitle">
-      <h1 class="text-9 raleway font-extrabold">{{ step.title }}</h1>
+      <h1 class="text-8 raleway font-extrabold">{{ step.title }}</h1>
     </div>
     <div class="detailsInfo bg-white p-4 rounded-3xl">
       <p class="text-1">
@@ -45,7 +45,6 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  top: 5vh;
   padding: 2rem;
 
   img {

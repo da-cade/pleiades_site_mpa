@@ -1,7 +1,7 @@
 <template>
   <nav id="nav" class="responsive-navbar">
     <div class="image-container">
-      <router-link id="navlogo" class="d-mflex" :to="{ name: 'home' }">
+      <router-link id="navlogo" class="flex" :to="{ name: 'home' }">
         <img
           class="navbar-brand"
           src="../assets/img/white-logo-no-background.png"
@@ -86,6 +86,7 @@ export default {
 .responsive-navbar {
   background-color: black;
   display: flex;
+  justify-content: space-between;
   position: sticky;
   top: 0;
   right: 0;
@@ -95,16 +96,18 @@ export default {
 }
 
 .image-container {
-  max-width: 30%;
-}
-
-@media (max-width: 1024px) {
-  .image-container {
+  @media (max-width: 1024px) {
+    max-width: 40%;
+  }
+  @media (max-width: 640px) {
     max-width: 80%;
   }
-  #navMenu {
+
+  @media (min-width: 1280px) {
+    max-width: 20%;
   }
 }
+
 @media (max-width: 768px) {
   .responsive-navbar {
     justify-content: space-around;

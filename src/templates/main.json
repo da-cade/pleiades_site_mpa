@@ -63,7 +63,7 @@
           "body": "Every good website has high-quality images and sometimes custom graphics. If you have them, we filter though and find what works, and if you don't, we get them made. Then we optimize and compress everything for SEO and page speed.",
           "image": "../src/assets/img/content-cultivation.avif",
           "imageAlt": "Photographers Creating Custom Content Just For You",
-          "imagePosition": "50% 10%"
+          "imagePosition": "50% 0%"
         },
         {
           "title": "Web Development",
@@ -318,7 +318,60 @@
       "imageAlt": "Launching your new site like a rocket"
     }
   ],
-  "blog": [],
+  "blog": [
+    {
+      "title": "10 Things Every Business Owner Should Know About SEO",
+      "shortDescription": "",
+      "coverImg": "../src/assets/img/about-us-cover.avif",
+      "coverImgAlt": "Why SEO is so important - visualized",
+      "blocks": [
+        {
+          "subtitle": "1. The first and most important rule of SEO is to give your visitors what they want.",
+          "body": "This isn't what they think they want, or what you think they want, but what they're really, actually looking for. If search engines can't satisfy what we call \"searcher intent,\" people are going to dismiss them as irrelevant; therefore, they have a lot of incentive to make sure that people find what they're looking for, and their algorithms are going to punish search listings that mislead or miscommunicate their content to searchers. A lot of agencies and private individuals go through complicated, roundabout means to achieve better SEO scores, when really, they simply should provide good products, services, or information."
+        },
+        {
+          "subtitle": "2. Prove that you have what visitors want.",
+          "body": "But Pleedy, you say, isn't the only way to do that through visits and long-term website visits? Well, yes. In this industry, what we call a \"high bounce rate\" is usually a sign that you aren't giving searchers what they want, since it means they're only spending a very, very short time on your website before leaving. HOWEVER! You can do other things to prove your worth, the best being comments and reviews. Everyone knows the best way to find a mechanic or a lawyer is to know one that you trust, or find one through someone's recommendation. The internet works the same way. If you can show your trustworthiness and your ability to satisfy people's intent through good reviews, you can build your authoritativeness quickly."
+        },
+        {
+          "subtitle": "3. Be authoritative, and stick to what you know",
+          "body": "Authoritativeness is simply another way of saying, \"how qualified are you to state the information that brought someone to you?\" You wouldn't ask your plumber for advice about your sick cockatiel, Mercutio, but you might ask them what it means when you hear groaning coming from your walls at night. Search engines like Google rank answers from authoritative sources higher than if they're from generalists, so before you start writing articles about SEO for your axe-throwing business, you should write about which finger-foods are the least greasy."
+        },
+        {
+          "subtitle": "4. Analyze trends",
+          "body": "Many successful business owners will tell you that they don't pay attention to trends and that they've always done well regardless, or perhaps as a result. What they're not considering is that trends influence buying decisions every day, and that they simply may have been taking advantage of them without trying. If you find your online presence is a bit weak, go after some trends that change more frequently. These keywords often have lower competition and high search volume, so even though it can be more work to create content for them, you're much more likely to appear, maybe even on a national ranking."
+        },
+        {
+          "subtitle": "5. Check your competitors",
+          "body": "Every business has competitors — even that guy who invented the cheeseburger had to compete with the guy who invented the hamburger. If you're just starting out, there's a good chance your competitors have had a lot more time to establish an online presence than you, but this isn't always a bad thing. You can use tools from sites like ahrefs or Google Ads to see what keywords other websites are ranking for, and if your domain is strong enough, you can go after them too. If it isn't, it can be a great starting point to come up with some adjacent keywords that have a lot less competition. Use what your competitors do well, particularly in blogging or website content, and then do it better."
+        },
+        {
+          "subtitle": "6. Think outside the box",
+          "body": "When coming up with keyword strategies, it's easy to think of the simplest, most immediate concepts first. For example, if you're starting a new outdoor apparel brand, you might go for keywords like \"thermal clothing\", \"outdoorsy t-shirts\", or \"waterproof boots\". These keywords are going to be pretty competitive; you might find yourself up against huge brands that aren't even known for their outdoor apparel, like Nike or Shoes for Crews. Converse-ly (haha), keywords like \"the best wicking fabrics in 2023\" might get you a place at the table, since bigger brands focus more income on merchandising and less on fresh blog content."
+        },
+        {
+          "subtitle": "7. Use them keywords, and use 'em right",
+          "body": "You wouldn't think it, but once you've made your keyword plan, they're easy to forget about. You've planned for your first 6 months, and then your next year after that, and then for the next two years, when you expect to have grown enough to compete with some big dogs. \"Great!\" you say, \"I am a the architect of my reality.\" Perhaps. These plans only exist when you stick to them. When you write your website and articles, include these early keywords when you can, but as you rank for them, move them off your main pages. Make sure that you are competing for keywords that you can achievably rank for, starting small and only moving onto the next level after you rank consistently. Revisit your plans and account for trends, check what works and what didn't, and be ready to change your business strategies or keyword plans to match each other if they start to change."
+        },
+        {
+          "subtitle": "8. Associate With Good Websites",
+          "body": "This one is arguably the hardest, but perhaps most impactful thing that can be done in SEO strategy. Your ability to rank well in search engines is also defined by the number of \"backlinks\" you have AND THEIR QUALITY. This makes logical sense from an advertising standpoint, too. If you receive a link to your website from a New York Times article, imagine the publicity that would entail. Google feels the same. If the websites linking to your domain are extremely authoritative, or exceptionally well-established, you're going to get a boost. If they're not, you get a very tiny boost, or sometimes, a negative hit to your ranking. "
+        },
+        {
+          "subtitle": "9. Cultivate good relationships online",
+          "body": "We can't all count on a mainstream news story featuring our business, but there are many people who write content that to a certain extent is read more consistently than the news: bloggers and influencers. If you have a product, consider offering a free use of it in exchange for a post about how much they liked it, and if you have a service, sponsor a visit from them to experience it. Then you can both post about it — backlinks and publicity for you, publicity and a brand relationship for them. Now if you go this route, don't be a spammer. Nothing gets you blackballed like spamming bloggers and influencers; just imagine the negativity publicity you're setting yourself up for. Instead, choose your ambassadors carefully, and write some thoughtful messages to them that address your desire to collaborate without stating that you expect something for nothing."
+        },
+        {
+          "subtitle": "10. Stay away from schemes",
+          "body": "The world of online marketing, advertising, and SEO are *absolutely rife* with bad faith practices. Some of these are designed to fool Google, and some are designed to fool you. Be very cautious of agencies who demonstrate an enormous increase in backlinks or referencing domains, but are unwilling to show you who these domains are. This can often mean that most of your backlinks are in far-flung domains originating in Nepal or Timbuktu, on web-pages created just to hold thousands of backlinks. Not only do these strategies contribute little to your web presence, they can even hurt it."
+        },
+        {
+          "subtitle": "",
+          "body": "Once you have a great SEO strategy in place, with keyword goals for each quarter, you can branch out into other forms of marketing to support your strategy. Teaming up with influencers, for example, is an excellent way to gain exposure and backlinks at the same time. Conversely, putting your keyword strategy into Google ads can make your ads more efficient, because Google rewards pages that already satisfy searcher intent with a higher ad rank. Whatever strategy you choose, you'll want a lot of time to study ahead of time, or, a really superb and not-too-fancy agency to help you get there. Talk to us at Pleaides and get yourself "
+        }
+      ]
+    }
+  ],
   "contact": [],
   "details": {
     "technologies": [
@@ -474,6 +527,7 @@
       },
       {
         "routeName": "Blog",
+        "displayName": "The Pleiades Blog",
         "children": []
       },
       {

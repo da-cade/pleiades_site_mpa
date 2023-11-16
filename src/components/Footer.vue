@@ -65,7 +65,6 @@ export default {
 
 <style lang="scss" scoped>
 footer {
-  // height: 50vh;
 }
 
 .footer-section {

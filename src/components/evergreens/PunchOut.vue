@@ -1,9 +1,11 @@
 <template>
   <div class="punchOut">
-    <h3 class="title text-3" :class="titleClass">{{ title }}</h3>
-    <div class="clouds"></div>
+    <h3 class="title text-3 p-2 md:p-4 xl:p-8" :class="titleClass">
+      {{ title }}
+    </h3>
+    <!-- <div class="clouds"></div>
     <div class="ring"></div>
-    <div class="up"></div>
+    <div class="up"></div> -->
   </div>
 </template>
 
@@ -24,10 +26,6 @@ export default {
 <style lang="scss" scoped>
 .punchOut {
   color: white;
-  min-width: 20rem;
-  min-height: 20rem;
-  max-width: 20rem;
-  max-height: 20rem;
   border-radius: 100%;
   position: relative;
   background-color: black;
@@ -36,7 +34,6 @@ export default {
   align-items: center;
 
   .title {
-    padding: 2rem;
     position: absolute;
   }
 }

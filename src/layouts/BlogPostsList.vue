@@ -1,9 +1,9 @@
 <template>
   <div class="content-width md:my-12 xl:my-24">
-    <h1 class="text-5 raleway mb-4 font-extrabold text-white">
+    <h1 class="text-6 raleway mb-4 font-extrabold text-white">
       {{ $route.name }}
     </h1>
-    <div class="servicesMenu flex flex-col gap-4 bg-off-white p-4 rounded-3xl">
+    <div class="postsMenu flex flex-col gap-4 bg-off-white p-4 rounded-3xl">
       <div
         class="rounded-3xl p-4 pb-8 md:p-24 flex flex-col gap-4 w-full bg-white alata"
       >
@@ -21,11 +21,11 @@
         <RainbowButton :to="'Contact'" :displayMessage="'Talk to Us'" />
       </div>
       <div class="serviceCardWrapper grid xl:grid-cols-2 gap-4">
-        <ServiceCard
+        <BlogPostCard
           class=""
-          v-for="(service, i) in services"
-          :key="service.name"
-          :service="service"
+          v-for="(post, i) in posts"
+          :key="post.name"
+          :post="post"
           :direction="i % 2 == 0 ? 'left' : 'right'"
         />
       </div>
@@ -36,20 +36,20 @@
 
 <script>
 import { computed, onMounted } from "vue";
-import ServiceCard from "../components/ServiceCard.vue";
 import * as template from "../templates/main.json";
 import RainbowButton from "../components/evergreens/RainbowButton.vue";
+import BlogPostCard from "../components/BlogPostCard.vue";
 export default {
   components: {
-    ServiceCard,
     RainbowButton,
+    BlogPostCard,
   },
   setup() {
     onMounted(() => {
-      console.log("ServicesList");
+      console.log("PostsList");
     });
     return {
-      services: computed(() => template.services),
+      posts: computed(() => template.blog),
     };
   },
 };

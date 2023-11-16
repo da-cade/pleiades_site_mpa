@@ -96,8 +96,22 @@ const routes = [
 
   {
     path: '/blog',
-    name: 'Blog',
-    component: loadPage('StandardPage')
+    name: 'BlogHost',
+    component: loadPage('BlogPage'),
+    children: [
+      {
+        path: "/blog/all",
+        name: "Blog",
+        component: loadLayout('BlogPostsList')
+      },
+      {
+        path: "/blog/:instance",
+        name: "posts",
+        props: true,
+        component: loadView('BlogPostView')
+      }
+    ]
+
   },
   {
     path: '/contact',

@@ -1,5 +1,5 @@
 <template>
-  <div class="pageWrapper relative grid">
+  <div class="pageWrapper w-full relative grid">
     <div class="w-full text-black relative bannerWrapper">
       <img :src="service.image" class="img-col" alt="" />
       <div class="absolute inset-0 p-5 h-full w-full">
@@ -33,6 +33,7 @@
       </div>
     </div>
     <StepsLayout :steps="service.steps" />
+    <!-- <MobileStepsLayout v-else /> -->
     <div class="getStartedBanner w-full h-screen bg-gray-600"></div>
   </div>
 </template>
@@ -45,8 +46,10 @@ import * as template from "../templates/main.json";
 import PunchOutCard from "../components/PunchOutCard.vue";
 import { Vue3Marquee } from "vue3-marquee";
 import StepsLayout from "../layouts/StepsLayout.vue";
+import MobileStepsLayout from "../layouts/MobileStepsLayout.vue";
+import { Appstate } from "../AppState";
 export default {
-  components: { PunchOutCard, Vue3Marquee, StepsLayout },
+  components: { PunchOutCard, Vue3Marquee, StepsLayout, MobileStepsLayout },
   setup() {
     const route = useRoute();
 
@@ -62,7 +65,12 @@ export default {
 
     const textArray = computed(() => ["Level Up Your Brand"]);
 
-    return { service, bgImage, textArray };
+    return {
+      service,
+      bgImage,
+      textArray,
+      mobile: computed(() => Appstate.value.mobile),
+    };
   },
 };
 </script>

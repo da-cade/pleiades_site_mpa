@@ -24,7 +24,7 @@
 
 
 <script>
-import { computed, ref, watchEffect } from "vue";
+import { computed, ref, watch } from "vue";
 import { Appstate } from "../../AppState.js";
 import XIcon from "./icons/XIcon.vue";
 export default {
@@ -40,33 +40,40 @@ export default {
   setup() {
     const dialog = ref();
     const offCanvasOpen = computed(() => Appstate.value.offCanvasOpen);
-    watchEffect(() => {
-      if (Appstate.value.offCanvasOpen) {
-        const body = document.querySelector("body");
-        const bgImage = document.querySelector(".bg-image");
-        const app = document.getElementById("app");
-        if (!Appstate.value.mobile) {
-          var scrollbarWidth = window.innerWidth - body.clientWidth + "px";
-          bgImage.style.width = `calc(100% - ${scrollbarWidth})`;
-          body.style.paddingRight = scrollbarWidth;
-          dialog.value.addEventListener("click", (e) => {
-            if (e.target === e.currentTarget) {
-              closeOffcanvas();
+    watch(
+      () => Appstate.value.offCanvasOpen,
+      (value, oldValue) => {
+        if (oldValue !== value) {
+          if (value) {
+            const body = document.querySelector("body");
+            const bgImage = document.querySelector(".bg-image");
+            const app = document.getElementById("app");
+            if (!Appstate.value.mobile) {
+              var scrollbarWidth = window.innerWidth - body.clientWidth + "px";
+              bgImage.style.width = `calc(100% - ${scrollbarWidth})`;
+              body.style.paddingRight = scrollbarWidth;
+              dialog.value.addEventListener("click", (e) => {
+                if (e.target === e.currentTarget) {
+                  closeOffcanvas();
+                }
+              });
             }
-          });
-        } else {
+            // FIXME why was this here. Mobile
+            // app.style.overflowY = "hidden";
+            body.style.overflowY = "hidden";
+          } else {
+            const body = document.querySelector("body");
+
+            const bgImage = document.querySelector(".bg-image");
+            body.style.overflowY = "auto";
+            bgImage.style.width = `100%`;
+
+            body.style.paddingRight = "0px";
+          }
         }
-        app.style.overflowY = "hidden";
-        body.style.overflow = "hidden";
-      } else {
-        const body = document.querySelector("body");
-        const bgImage = document.querySelector(".bg-image");
-        body.style.overflowY = "auto";
-        bgImage.style.width = `100%`;
-        app.style.overflowY = "auto";
-        body.style.paddingRight = "0px";
       }
-    });
+    );
+
     function closeOffcanvas() {
       Appstate.value.offCanvasOpen = false;
       Appstate.value.contactOffcanvas = false;
@@ -156,14 +163,4 @@ export default {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   background-color: #d62929;
 }
-
-// .contentWrapper::-webkit-scrollbar-track-piece:end {
-//   background: transparent;
-//   margin-bottom: 10px;
-// }
-
-// .contentWrapper::-webkit-scrollbar-track-piece:start {
-//   background: transparent;
-//   margin-top: 10px;
-// }
 </style>

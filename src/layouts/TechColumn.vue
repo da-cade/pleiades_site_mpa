@@ -1,13 +1,11 @@
 <template>
   <div class="flex h-full flex-col rounded-3xl bg-white">
-    <h1 class="mb-4 text-6 mt-10 text-center">
+    <h1 class="mb-4 text-5 mt-10 text-center">
       <b class="text-dark">We </b>
       <b class="dark-side">Use</b>
     </h1>
 
-    <div
-      class="tech-column md:max-h-screen flex flex-col justify-between content-start"
-    >
+    <div class="tech-column flex flex-col justify-between content-start">
       <Vue3Marquee
         id="service-marquee"
         class="border-b-4"
@@ -62,6 +60,12 @@ const mobile = computed(() => Appstate.value.mobile);
   display: flex;
   // max-height: 100vh;
   padding: 2rem;
+  @media (min-width: 1536px) {
+    max-height: 80vh;
+  }
+  @media (max-width: 1024px) {
+    max-height: 90vh;
+  }
 }
 
 .marqueeSlogan {

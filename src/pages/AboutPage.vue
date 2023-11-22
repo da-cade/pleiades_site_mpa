@@ -1,10 +1,12 @@
 <template>
-  <div class="component"></div>
+  <AboutUsView />
 </template>
 
 
 <script>
+import AboutUsView from "../views/AboutUsView.vue";
 export default {
+  components: { AboutUsView },
   setup() {
     return {};
   },

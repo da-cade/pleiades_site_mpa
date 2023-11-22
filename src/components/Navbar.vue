@@ -44,7 +44,7 @@
 import { computed, onMounted, ref, watch } from "vue";
 import NavMenu from "./evergreens/packages/NavMenus/NavMenu.vue";
 import MobileNavMenu from "./evergreens/packages/NavMenus/MobileNavMenu.vue";
-// import { navTuck } from "./composables/navTuck.js";
+import { navTuck } from "./composables/navTuck.js";
 import OffCanvas from "./evergreens/OffCanvas.vue";
 import ContactForm from "./ContactForm.vue";
 import { Appstate } from "../AppState";
@@ -63,10 +63,15 @@ export default {
         }
       }
     );
+
     function toggleMobileMenu() {
       Appstate.value.mobileOffcanvas = !Appstate.value.mobileOffcanvas;
       Appstate.value.offCanvasOpen = !Appstate.value.offCanvasOpen;
     }
+
+    onMounted(() => {
+      // navTuck();
+    });
 
     return {
       mobile: computed(() => Appstate.value.mobile),
@@ -93,18 +98,6 @@ export default {
   left: 0;
   z-index: 50;
   width: 100%;
-}
-
-.image-container {
-  @media (min-width: 1025px) {
-    max-width: 30%;
-  }
-  @media (max-width: 1024px) {
-    max-width: 40%;
-  }
-  @media (max-width: 640px) {
-    max-width: 80%;
-  }
 }
 
 @media (max-width: 768px) {

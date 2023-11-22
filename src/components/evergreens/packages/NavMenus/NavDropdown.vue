@@ -12,7 +12,7 @@
         class="routeWrapper pt-4 group-hover:block left-0 right-0 absolute h-fit hidden"
       >
         <div
-          class="routeContainer mx-4 md:mx-8 xl:mx-16 grid"
+          class="routeContainer mx-4 md:mx-8 3xl:mx-16 grid"
           :style="generatedGridRows"
         >
           <NavItem

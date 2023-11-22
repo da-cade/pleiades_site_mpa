@@ -25,24 +25,7 @@ const routes = [
   {
     path: '/about',
     name: 'About',
-    component: loadPage('StandardPage'),
-    children: [
-      {
-        path: '/about/so-you-want-to-know-about-us-huh',
-        name: "What's Our Deal?",
-        component: loadView('AboutUsView')
-      },
-      {
-        path: '/about/frequently-asked-questions',
-        name: 'FAQ',
-        component: loadView('FAQView')
-      },
-      {
-        path: '/about/portfolio-and-more',
-        name: 'Porfolio',
-        component: loadView('FAQView')
-      },
-    ]
+    component: loadPage('AboutPage'),
   },
   {
     path: '/services',
@@ -125,8 +108,19 @@ export const router = createRouter({
   // Provide the history implementation to use. We are using the hash history for simplicity here.
   history: createWebHistory(),
   scrollBehavior(to, from, savedPosition) {
-    // always scroll to top
-    return { top: 0 }
+    if (to.hash) {
+      // This ensures that if hash is provided to router.push it works as expected.
+      //  & since we have used "behavior: 'smooth'" the browser will slowly come to this hash position.
+      return {
+        el: document.getElementById(to.hash),
+        behavior: 'smooth',
+      }
+    }
+    if (to.path !== from.path) {
+      // always scroll to top
+
+      return { top: 0 }
+    }
   },
   routes, // short for `routes: routes`
 })

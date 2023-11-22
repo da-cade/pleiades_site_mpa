@@ -1,5 +1,6 @@
 <template>
   <footer
+    id="footer"
     class="flex flex-col md:flex-row align-center bg-black p-4 md:p-12 w-full"
   >
     <div class="footer-section gap-4 grid">
@@ -13,7 +14,7 @@
           :route="route"
         />
       </div>
-      <div class="logoWrapper md:order-1">
+      <div class="max-w-xs md:max-w-md xl:max-w-md md:order-1">
         <img src="../assets/img/white-logo-no-background.png" alt="" />
       </div>
 

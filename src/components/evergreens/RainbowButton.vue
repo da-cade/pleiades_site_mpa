@@ -1,14 +1,13 @@
 <template>
-  <a
-    @click="router.push({ name: to, params: params })"
-    class="rainbow rainbow-5"
-    >{{ displayMessage }}</a
-  >
+  <a @click="router.push(computedDestination)" class="rainbow rainbow-5">{{
+    displayMessage
+  }}</a>
 </template>
 
 
 <script>
-import { useRouter } from "vue-router";
+import { computed } from "vue";
+import { useRoute, useRouter } from "vue-router";
 export default {
   props: {
     displayMessage: {
@@ -24,9 +23,18 @@ export default {
       required: false,
     },
   },
-  setup() {
+  setup(props) {
+    const route = useRoute();
     return {
       router: useRouter(),
+      computedDestination: computed(() => {
+        if (props.to.startsWith("#", 0)) {
+          console.log(props.to.startsWith("#", 0));
+          return { hash: props.to };
+        } else {
+          return { name: props.to, params: props.params };
+        }
+      }),
     };
   },
 };

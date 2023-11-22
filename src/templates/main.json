@@ -3,11 +3,23 @@
     {
       "name": "What's Our Deal?",
       "routeName": "so-you-want-to-know-about-us-huh",
-      "shortDescription": "",
-      "longDescription": "",
-      "bodyBlocks": [],
-      "coverImg": "../src/assets/img/about-us-cover.avif",
-      "coverImgPosition": "%50 %50",
+      "bodyBlocks": [
+        {
+          "style": ""
+        },
+        {
+          "history": ""
+        },
+        {
+          "values": ""
+        }
+      ],
+      "coverImg": "../src/assets/img/about-us-history_2.avif",
+      "imagePosition": "50% 33%",
+      "coverImg2": "../src/assets/img/about-us-cover.avif",
+      "imagePosition2": "60% 0",
+      "coverImg3": "../src/assets/img/about-us-faq-2.jpg",
+      "imagePosition3": "40% 0",
       "imgAlt": "We're a bunch of nerds doing all that boring stuff with a smile"
     },
     {
@@ -23,16 +35,22 @@
   "services": [
     {
       "name": "Free Website Audit",
+      "subtitleOne": "Get Meaningful Insights",
+      "subtitleTwo": "For Free",
       "shortDescription": "Sometimes you just want to know where you're at.",
-      "offers": [],
+      "pitch": "Ever wonder if the website you paid your neighbor's grandson $500 for was worth it? We can give you the lowdown on your website for just about any public metric you can think of, and we can tell you what your competitors are doing that you aren't. All for free.",
+      "callToAction": "Get Your Free Report",
       "image": "../src/assets/img/custom.png",
       "imageAlt": "Launching your new site like a rocket"
     },
     {
       "name": "Website Design",
       "routeParams": "website-design",
+      "subtitleOne": "Stand Out",
+      "subtitleTwo": "From the Crowd",
       "shortDescription": "At Pleiades, we start with good design. Using industry best practices in UX and SEO, Pleiades Projectworks crafts websites that are both stylish and functional, which are formatted to organically rank high on searches and unobtrusively communicate your brand to your customers.",
-      "longDescription": "When you work with Lounge Lizard, you get a custom web design that captures visitors’ imagination by telling your brand’s story in a unique and effective way. From our first discussions to learn about you and your company through the final testing and launch, our design team creates company web designs that are fresh, original, and, most importantly, produce results.",
+      "pitch": "When you choose Pleiades Projectworks, you get a custom website that grabs visitors' attention and expresses who you are. From the very first steps in our process, we are studying the best way to tell your brand story and communicate your values, all with practices and techniques that produce results.",
+      "callToAction": "Let's Get Started",
       "offers": [
         {
           "title": "Good Fundamentals",
@@ -100,7 +118,10 @@
       "name": "SEO",
       "routeParams": "seo",
       "shortDescription": "Running a business online can be complicated, and it works at its best when operating under one, cohesive plan. At Pleiades, we can handle anything from SEO to SEM, adwords, strategy, and brand-planning.",
-      "longDescription": "Running a business online can be complicated, and it works at its best when operating under one, cohesive plan. At Pleiades, we can handle anything from SEO to SEM, adwords, strategy, and brand-planning. We also specialize in Google Ads, and can create campaigns at nearly any budget. We work at your level, making sure you stay competitive in your areas of operation while also discovering new avenuesiption that your competitors don't utilize.",
+      "subtitleOne": "Develop Your Goals",
+      "subtitleTwo": "For the Future",
+      "callToAction": "Get Started",
+      "pitch": "To many of us, SEO is 'digital voodoo' — but it doesn't have to be. At Pleiades, we skip the snake oil and put fate in your hands by developing a comprehensive digital presence plan that works with where you are now, and where you want to go.",
       "offers": [
         {
           "title": "Brand Strategy",
@@ -169,7 +190,10 @@
       "name": "Google Ads",
       "routeParams": "google-ads-sem",
       "shortDescription": "Pleiades Projectworks specializes in Google Ads for small businesses. We work with you to create a strategy that fits your advertising budget and your goals for growth, and can show you meaningful results with analytics.",
-      "longDescription": "",
+      "subtitleOne": "Boost",
+      "subtitleTwo": "Your Brand Presence",
+      "callToAction": "Talk To Us",
+      "pitch": "Ever wondered if you could boost your business past the competition? When Pleiades manages your Google Ads, you pay a flat fee for scaling results and an agency that takes an active role. We'll work with you to develop ads that bring in the kind of business you need, and we can work with nearly any budget. And if you want to know how it works, we'll teach you.",
       "offers": [
         {
           "title": "Full Feature Ads",
@@ -238,7 +262,10 @@
       "name": "E-Commerce",
       "routeParams": "e-commerce",
       "shortDescription": "Taking your business into e-commerce comes with a hosts of challenges, and we've dont them all before. We can help train you and your staff to sell online, while helping you make the right decisions about what you'll need to start.",
-      "longDescription": "",
+      "subtitleOne": "Start Selling Online",
+      "subtitleTwo": "Today",
+      "callToAction": "Find Out More",
+      "pitch": "Selling online has never been easier, but that doesn't mean running an online business isn't challenging. Pleiades offers plans for e-commerce business consulting, websites for merchants ready to tackle the web, and solutions for integrating your current business strategies into the online marketplace.",
       "offers": [
         {
           "title": "E-Commerce Strategy",
@@ -311,9 +338,11 @@
     },
     {
       "name": "Everything Else",
-      "routeParams": "everything-else",
+      "callToAction": "Tell Us More",
+      "subtitleOne": "Get Back",
+      "subtitleTwo": "To the Important Work",
       "shortDescription": "Pleiades does odd-jobs: its how we make friends. If you have a problem, talk to us and we'll tackle it.",
-      "longDescription": "",
+      "pitch": "There's a million things to do on the web, and we're already up to our elbows in it. If there's an odd job that needs doing, but you want it done by a professional, we can help. Talk to us about integrating your inventory system online, setting up emails for your business, getting you a domain, website security, or some other tedious thing!",
       "image": "../src/assets/img/coding.png",
       "imageAlt": ""
     }
@@ -468,7 +497,104 @@
         "callToAction": "Get Started Today"
       }
     ],
-    "values": [],
+    "values": [
+      {
+        "title": "The Right Prices",
+        "boldWord": "Prices",
+        "body": "At Pleiades, we charge a fair price for our services. The complexity of online marketing is often intentionally exaggerated by agencies offering SEO and SEM services — we don't do that. Our monthly reports tell you everything that we're doing and how it works, so that you can be a part of the process. Not only that, our goal is to work with your budget and what you truly need, whether that's advertising nationally on Google or building a clean, fast website for your new business.",
+        "callToAction": "Get a Quote",
+        "ctaDestination": "Contact"
+      },
+      {
+        "title": "A Tailored Experience",
+        "boldWord": "Tailored",
+        "body": "We're here to bring the boutique design experience to small businesses. We know that when you've signed up to have something made for your business, you're risking not just your time and money but also your control over the way your business or brand is perceived. Our team of experienced designers and developers work closely with you to ensure that we not only provide a solution that works fits your needs, but one that works with your ideals and values.",
+        "callToAction": "Explore Our Services",
+        "ctaDestination": "Our Services"
+      },
+      {
+        "title": "The Customer First",
+        "boldWord": "Customer",
+        "body": "This means three things: the first is that we provide the service you want, even if its a website design framework we don't normally use, or a hosting solution we've never tried; the second is that when designing both websites and online strategies, we talk to you every step of the way to make sure its done right. If somehow you don't like what we've made for you, we'll fix it for free. And finally, it means we won't leave you out to dry once the check has cleared.",
+        "callToAction": "See the Portfolio",
+        "ctaDestination": "#works"
+      }
+    ],
+    "questions": [
+      {
+        "question": "Am I going to be able to make changes to my website after its made?",
+        "answer": "If you choose a platform that allows you to make changes or add new content easily, we can build a website there for you. It can be more involved to create custom components that you can edit later, so it can sometimes be more expensive.",
+        "link": {
+          "linkText": "",
+          "linkDestination": ""
+        }
+      },
+      {
+        "question": "How do I get a custom email address?",
+        "answer": "Custom email addresses are available through many platforms, but the tricky party is setting up your DNS records with your domain provider. It's something we do a lot here at Pleiades.",
+        "link": {
+          "linkText": "",
+          "linkDestination": ""
+        }
+      },
+      {
+        "question": "If I had to choose to pay for SEO or Google Ads, which should I pick?",
+        "answer": "As effective as Google Ads can be, it still relies on a good understanding of who you want to appeal to and how you want to be seen online, and this requires an SEO strategy. If you had to pick one, we would say SEO. And your Ads get better if your SEO is good, too!",
+        "link": {
+          "linkText": "",
+          "linkDestination": ""
+        }
+      },
+      {
+        "question": "Are there any examples of your past work?",
+        "answer": "Absolutely! Right now, we only have a couple examples, but with your help that could change.",
+        "link": {
+          "linkText": "See Our Work",
+          "linkDestination": "{name: home, hash: #portfolio}"
+        }
+      },
+      {
+        "question": "What does SEO mean?",
+        "answer": "SEO stands for Search Engine Optimization, and it covers a wide array of strategies used to make your website appear higher on Google Search when people search for terms related to your business.",
+        "link": {
+          "linkText": "",
+          "linkDestination": ""
+        }
+      },
+      {
+        "question": "How much do you charge for Google Ads services?",
+        "answer": "We charge $650 per month flat rate for Google Ads, which only changes once you spend more than $3,000 per month on your ads — by then, your ads require a lot of time and study.",
+        "link": {
+          "linkText": "",
+          "linkDestination": ""
+        }
+      },
+      {
+        "question": "Can you help me with ecommerce?",
+        "answer": "We can! Setting up e-commerce can be an involved process, like setting up merchant accounts, payment processing, and an online store. Fortunately, we can help you with all of these.",
+        "link": {
+          "linkText": "",
+          "linkDestination": "{name: home, hash: #portfolio}"
+        }
+      },
+      {
+        "question": "What if I want to fix my website rather than remake it?",
+        "answer": "We can definitely help fix your website, whether that means improving page-speed, fixing bugs, adding analytics integrations, or something else.",
+        "link": {
+          "linkText": "",
+          "linkDestination": "{name: home, hash: #portfolio}"
+        }
+      }
+    ],
+    "stories": [
+      {
+        "title": "How It Started",
+        "image": "../src/assets/img/rocket-launch.avif",
+        "body": "Like most good things, Pleiades happened by accident. In the middle of 2022, two bootcamp grads in Boise, Idaho graduated into the first hiring freeze the tech industry has seen in 15 years. Fortunately, the world didn't stop turning just because the big tech companies thought it might. We were asked to do one thing, then another, and then another, and it wasn't long before we realized that there's plenty of work to be had for people willing to say \"yes\" to whatever needs doing.",
+        "imageAlt": "",
+        "imagePosition": "50% 0%"
+      }
+    ],
     "socials": [
       {
         "name": "LinkedIn",
@@ -481,16 +607,7 @@
     "header": [
       {
         "routeName": "About",
-        "children": [
-          {
-            "displayName": "What's Our Deal?",
-            "routeName": "What's Our Deal?"
-          },
-          {
-            "displayName": "FAQ",
-            "routeName": "FAQ"
-          }
-        ]
+        "children": []
       },
       {
         "routeName": "Our Services",
@@ -539,11 +656,11 @@
       "routes": [
         {
           "displayName": "About",
-          "routeName": "What's Our Deal?"
+          "routeName": "About"
         },
         {
           "displayName": "FAQ",
-          "routeName": "FAQ"
+          "routeName": "About"
         },
         {
           "displayName": "Free Website Audit",

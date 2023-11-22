@@ -167,7 +167,6 @@ body {
   position: relative;
   min-height: 100vh;
   max-width: 100vw;
-  width: 100vw;
   color: var(--color-text);
   transition: color 0.5s, background-color 0.5s;
   line-height: 1.6;
@@ -230,4 +229,50 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+.swiper>.swiper-button-next,
+.swiper>.swiper-button-prev {
+  color: #ffbd34;
+
+}
+
+@media screen and (min-width: 768px) {
+
+  .stepSwiper>.swiper-button-next,
+  .stepSwiper>.swiper-button-prev {
+    left: 50% !important;
+    transform: rotate(90deg);
+    transform-origin: left center;
+  }
+
+
+  .mySwiper>.swiper-button-prev,
+  .mySwiper>.swiper-button-next {
+    left: 50% !important;
+    transform: rotate(90deg);
+    transform-origin: left center;
+  }
+
+  .stepSwiper>.swiper-button-prev {
+    top: var(--swiper-navigation-top-offset, 5%) !important;
+  }
+
+  .stepSwiper>.swiper-button-next {
+    top: var(--swiper-navigation-top-offset, 90%) !important;
+  }
+
+  .mySwiper>.swiper-button-prev {
+    top: var(--swiper-navigation-top-offset, 5%) !important;
+  }
+
+  .mySwiper>.swiper-button-next {
+    top: var(--swiper-navigation-top-offset, 90%) !important;
+  }
+
+  .mySwiper2>.swiper-button-prev,
+  .mySwiper2>.swiper-button-next {
+    top: var(--swiper-navigation-top-offset, 50%) !important;
+  }
+
 }

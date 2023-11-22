@@ -1,18 +1,17 @@
 <template>
   <div
-    class="detailsCard justify-start lg:justify-around coverBg"
-    :style="`background-image: url(${step.image}); background-position: ${step.imagePosition}`"
-    :aria-label="step.imageAlt"
+    class="detailsCard gap-4 justify-start lg:justify-around coverBg h-full"
+    :style="`background-image: url(${instance.image}); background-position: ${instance.imagePosition}`"
+    :aria-label="instance.imageAlt"
   >
-    <!-- <img class="img" :src="step.image" :alt="step.imageAlt" /> -->
     <div class="detailsTitle">
       <h1 class="text-8 bg-white p-2 lg:p-4 raleway font-extrabold">
-        {{ step.title }}
+        {{ instance.title }}
       </h1>
     </div>
     <div class="detailsInfo bg-white p-4 lg:p-8 rounded-3xl">
       <p class="text-1">
-        {{ step.body }}
+        {{ instance.body }}
       </p>
     </div>
   </div>
@@ -21,12 +20,7 @@
 
 <script>
 export default {
-  props: {
-    step: {
-      type: Object,
-      required: true,
-    },
-  },
+  props: { instance: { type: Object, required: true } },
   setup() {
     return {};
   },
@@ -43,7 +37,7 @@ export default {
 .detailsCard {
   margin: auto 0;
   width: 100%;
-  border-radius: 24px;
+  // border-radius: 24px;
   display: flex;
   flex-direction: column;
   // justify-content: space-around;
@@ -77,5 +71,6 @@ export default {
 
 .detailsInfo {
   box-shadow: 6px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  outline: solid 4px #343a40;
 }
 </style>

@@ -29,7 +29,7 @@
       class="goTo flex items-center gap-2 md:hidden w-full p-8 pt-0 underline underline-offset-4"
     >
       <LeftHandArrowIcon class="h-8 w-8" />
-      <span class="text-2 text-black">Find Out More</span>
+      <span class="text-2 text-black">{{ service.callToAction }}</span>
     </div>
   </router-link>
 </template>

@@ -1,6 +1,6 @@
 <template>
   <div class="punchOut">
-    <h3 class="title text-3 p-2 md:p-4 xl:p-8" :class="titleClass">
+    <h3 class="title text-3 text-center p-2 md:p-4 xl:p-8" :class="titleClass">
       {{ title }}
     </h3>
     <!-- <div class="clouds"></div>

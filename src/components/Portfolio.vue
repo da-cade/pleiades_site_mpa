@@ -1,5 +1,5 @@
 <template>
-  <div id="works" class="">
+  <div id="portfolio" class="">
     <div class="py-12 bg-white rounded-3xl">
       <div
         class="justify-center items-center flex flex-col left-side p-4 md:p-8 gap-4"

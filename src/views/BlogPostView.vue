@@ -13,7 +13,9 @@
     </div>
     <!-- </div> -->
 
-    <div class="bodyContent grid 2xl:gap-46 content-width bg-white">
+    <div
+      class="bodyContent grid gap-4 lg:gap-8 2xl:gap-16 content-width bg-white"
+    >
       <div
         v-for="b in post.blocks"
         :key="b.subtitle"
@@ -22,6 +24,11 @@
         <h2 class="text-4">{{ b.subtitle }}</h2>
         <p class="text-1">{{ b.body }}</p>
       </div>
+      <RainbowButton
+        class="text-3"
+        :to="'Contact'"
+        :displayMessage="`Let's Have a Chat 👋`"
+      />
     </div>
   </div>
 </template>
@@ -31,12 +38,14 @@
 import * as template from "../templates/main.json";
 import { computed } from "vue";
 import { useRoute } from "vue-router";
+import RainbowButton from "../components/evergreens/RainbowButton.vue";
 export default {
+  components: { RainbowButton },
   setup() {
     const route = useRoute();
 
     const post = computed(() => {
-      return template.blog.find((s) => s.title == route.params.instance);
+      return template.blog.posts.find((s) => s == route.params.instance);
     });
     return {
       post,

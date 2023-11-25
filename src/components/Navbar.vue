@@ -1,10 +1,10 @@
 <template>
   <nav id="nav" class="responsive-navbar px-8 lg:px-0">
     <div class="image-container">
-      <router-link id="navlogo" class="flex" :to="{ name: 'home' }">
+      <router-link id="home" class="flex" :to="{ name: 'home' }">
         <img
           class="navbar-brand"
-          src="../assets/img/white-logo-no-background.png"
+          src="https://imagedelivery.net/Id169OYcKaUZq2ukOAQIsw/0075590e-ae84-4dbc-03de-8bff5e113f00/public"
           alt=""
         />
       </router-link>
@@ -23,7 +23,7 @@
       >
         <div class="imgWrapper w-3/4">
           <img
-            src="../assets/img/Color logo with background - true square.png"
+            src="https://imagedelivery.net/Id169OYcKaUZq2ukOAQIsw/61295c0d-268b-4d2f-9584-ed7975818d00/public"
             alt=""
           />
         </div>

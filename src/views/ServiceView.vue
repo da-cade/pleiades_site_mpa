@@ -21,17 +21,14 @@
     </div>
     <StepsLayoutAlternate :steps="service.steps" />
 
-    <div
-      class="contactUs bg-gray-500 bgImage w-screen"
-      :style="`background-image: url(${service.image})`"
-    >
+    <div class="contactWrapper w-screen">
       <Vue3Marquee
         id="service-marquee"
         class="border-t-4 border-t-white bg-gray-800"
         :clone="true"
         :duration="7"
       >
-        <div class="marqueeSlogan gap-8 font-black">
+        <div class="marqueeSlogan gap-8 lg:gap-16 font-black">
           <span
             class="marqueeText raleway font-bold text-5"
             v-for="i in textArray"
@@ -40,21 +37,24 @@
           >
           <img
             class="h-12 w-12 invert"
-            src="../assets/img/single-star.png"
+            src="https://imagedelivery.net/Id169OYcKaUZq2ukOAQIsw/75cdb46b-3081-4e67-5278-b76b284cb400/large"
             alt=""
           />
         </div>
       </Vue3Marquee>
-      <div class="contactWrapper p-8 lg:p-16">
-        <h1 id="#contact" class="text-black lg:text-white text-center text-6">
+      <div class="titleWrapper p-8 lg:p-16 bg-white">
+        <h1 id="#contact" class="text-black text-center text-6">
           Give Us a Shout
         </h1>
       </div>
-      <ContactLayoutHero
-        class="contactLayout content-width my-16 md:my-32 3xl:my-64"
-      />
+      <div
+        class="contactUs bg-white bgImage w-screen"
+        :style="`background-image: url(${service.image})`"
+      >
+        <ContactLayoutHero class="contactLayout content-width" />
+      </div>
+      <!-- <MobileStepsLayout v-else /> -->
     </div>
-    <!-- <MobileStepsLayout v-else /> -->
   </div>
 </template>
 
@@ -119,7 +119,8 @@ export default {
 }
 
 .bgImage {
-  background-position: 20% 80%;
+  background-size: contain;
+  background-position: 50% 0%;
   @media screen and (max-width: 768px) {
     background-position: 25% 0;
   }
@@ -133,9 +134,12 @@ export default {
 .marqueeSlogan {
   display: flex;
   align-items: center;
-  padding: 4em 2rem;
   // color: #ffbd34;
   color: white;
+  padding: 2rem 1rem;
+  @media screen and (min-width: 1024px) {
+    padding: 4rem 2rem;
+  }
 }
 
 .contentColumn {

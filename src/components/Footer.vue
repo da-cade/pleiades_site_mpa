@@ -15,7 +15,10 @@
         />
       </div>
       <div class="max-w-xs md:max-w-md xl:max-w-md md:order-1">
-        <img src="../assets/img/white-logo-no-background.png" alt="" />
+        <img
+          src="https://imagedelivery.net/Id169OYcKaUZq2ukOAQIsw/0075590e-ae84-4dbc-03de-8bff5e113f00/public"
+          alt=""
+        />
       </div>
 
       <small class="legaleeze text-white flex flex-col">
@@ -97,7 +100,7 @@ footer {
   width: calc(50% - 3rem);
 }
 .knockoutBar {
-  background-image: url("../assets/img/star-bar.png");
+  // background-image: url("../assets/img/star-bar.png");
   width: 3rem;
   background-color: white;
 }

@@ -1,6 +1,6 @@
 <template>
   <router-link
-    :to="{ name: 'posts', params: { instance: post.title } }"
+    :to="{ name: 'posts', params: { instance: post } }"
     class="cardBorder hover:shadow-lg hover:-translate-y-2 duration-300 ease-out"
   >
     <div

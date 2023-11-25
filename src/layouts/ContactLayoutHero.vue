@@ -1,5 +1,5 @@
 <template>
-  <div class="justify-center items-center flex w-full">
+  <div class="content-padding justify-center items-center flex w-full">
     <div class="grid md:grid-cols-2 w-full">
       <div
         class="contact-info text-white p-4 justify-center items-center flex flex-col w-full"

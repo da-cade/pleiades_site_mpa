@@ -4,16 +4,18 @@
     :slidesPerView="1"
     :keyboard="{ enabled: true }"
     :modules="modules"
-    :mousewheel="{ sensitivity: 0.5, thresholdDelta: 14, forceToAxis: true }"
+    :mousewheel="{
+      sensitivity: 0.5,
+      thresholdDelta: 14,
+      forceToAxis: true,
+      releaseOnEdges: true,
+    }"
     navigation
     class="mySwiper"
     :class="toggleScrollable"
     ref="swiper"
   >
-    <swiper-slide
-      class="bgImage w-full h-full aboutSlide"
-      :style="`background-image: url(${about.coverImg}); background-position: ${about.imagePosition}`"
-    >
+    <swiper-slide class="w-full h-full aboutSlide">
       <Swiper
         class="mySwiper2 swiper-v"
         :direction="'horizontal'"
@@ -23,11 +25,12 @@
           forceToAxis: true,
         }"
         navigation
+        :keyboard="{ enabled: true }"
         :modules="modules"
       >
         <swiper-slide
-          class="w-full h-full aboutSlide"
-          :style="`background-image: url(${about.coverImg}); background-position: ${about.imagePosition}`"
+          class="w-full bgImage h-full aboutSlide"
+          :style="`background-image: url(${about.coverImg1}); background-position: ${about.imagePosition1}`"
         >
           <div class="aboutTitle">
             <h1 class="text-12 raleway font-extrabold">Some Stories</h1>
@@ -37,7 +40,8 @@
           class="flex items-start bg-white w-full h-full"
           v-for="story in stories"
           :key="story"
-          ><StoryItem class="" :instance="story" />
+        >
+          <StoryItem class="content-width" :instance="story" />
         </swiper-slide>
       </Swiper>
 
@@ -58,6 +62,7 @@
           forceToAxis: true,
         }"
         navigation
+        :keyboard="{ enabled: true }"
         :modules="modules"
       >
         <swiper-slide
@@ -68,11 +73,13 @@
             <h1 class="text-12 raleway font-extrabold">How We Do Things</h1>
           </div>
         </swiper-slide>
-        <swiper-slide
-          class="flex items-start bg-white w-full h-full"
-          v-for="value in values"
-          :key="value"
-          ><ValueCard class="mt-24" :instance="value" />
+        <swiper-slide class="h-full" v-for="value in values" :key="value">
+          <div class="flex items-center content-center h-full content-width">
+            <ValueCard
+              class="p-4 lg:p-16 bg-white rounded-3xl"
+              :instance="value"
+            />
+          </div>
         </swiper-slide>
       </Swiper>
     </swiper-slide>
@@ -88,6 +95,7 @@
           forceToAxis: true,
         }"
         navigation
+        :keyboard="{ enabled: true }"
         :modules="modules"
       >
         <swiper-slide
@@ -99,13 +107,15 @@
           </div>
         </swiper-slide>
         <swiper-slide
-          class="flex items-start bg-white lg:p-16 w-full h-full"
+          class="bigflex items-start w-full h-full"
           v-for="qset in faqs"
           :key="qset"
         >
-          <div class="faqPair mt-4">
-            <FaqItem class="" :instance="qset[0]" />
-            <FaqItem class="" :instance="qset[1]" />
+          <div class="flex items-center content-center h-full content-width">
+            <div class="faqPair bg-white p-4 lg:p-16 mt-4 rounded-3xl">
+              <FaqItem class="" :instance="qset[0]" />
+              <FaqItem class="" :instance="qset[1]" />
+            </div>
           </div>
           <!-- <FaqItem class="mt-24" :instance="qset" /> -->
         </swiper-slide>

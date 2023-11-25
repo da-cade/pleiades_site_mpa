@@ -37,26 +37,16 @@ export default {
 .detailsCard {
   margin: auto 0;
   width: 100%;
-  // border-radius: 24px;
   display: flex;
   flex-direction: column;
-  // justify-content: space-around;
-  padding: 2rem;
 
   img {
-    // flex-shrink: 1;
     border-top-right-radius: 24px;
     border-top-left-radius: 24px;
   }
 
-  // &:nth-last-child(1) {
-  //   z-index: 11;
-  // }
-
   .detailsTitle {
     width: fit-content;
-
-    // background: white;
     mix-blend-mode: screen;
     h1 {
       color: black;

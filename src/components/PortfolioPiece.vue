@@ -8,10 +8,12 @@
     >
       <div class="h-full w-3/4 md:w-1/2">
         <img
+          v-if="portfolioPiece.logo"
           class="img-standard"
           :src="portfolioPiece.logo"
           :alt="portfolioPiece.imageAlt"
         />
+        <h2 class="text-7 text-white" v-else>This Could Be You</h2>
       </div>
       <div
         class="flex justify-center py-3 md:py-8 items-center md:items-start flex-col"
@@ -23,8 +25,7 @@
         </ul>
         <RainbowButton
           :displayMessage="portfolioPiece.callToAction"
-          target="blank"
-          :href="portfolioPiece.source"
+          :to="portfolioPiece.destination"
         />
       </div>
     </div>

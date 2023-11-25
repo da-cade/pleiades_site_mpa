@@ -23,7 +23,6 @@ export default {
       const el = valuesColumn.value.$el;
       const rect = el.getBoundingClientRect();
       maxHeight.value = rect.bottom - rect.top - 16;
-      console.log(maxHeight.value);
     });
     return {
       valuesColumn,

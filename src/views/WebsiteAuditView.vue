@@ -6,14 +6,19 @@
     :description="service.pitch"
     :buttonMessage="service.callToAction"
   />
-  <div
-    class="contactUs bg-gray-500 bgImage"
-    :style="`background-image: url(${service.image})`"
-  >
-    <h1 id="#contact" class="text-black text-6 text-center p-8 3xl:p-16">
-      Schedule Your Free Audit Today
-    </h1>
-    <ContactLayoutHero class="contactLayout content-width h-screen" />
+  <div class="contactWrapper">
+    <div class="titleWrapper p-8 lg:p-16 bg-white">
+      <h1 id="#contact" class="text-black text-center text-6">
+        Schedule Your Free Audit Today
+      </h1>
+    </div>
+    <div
+      class="contactUs bg-white bgImage w-screen"
+      :style="`background-image: url(${service.image})`"
+    >
+      <ContactLayoutHero class="contactLayout content-width" />
+    </div>
+    <!-- <MobileStepsLayout v-else /> -->
   </div>
 </template>
 
@@ -40,7 +45,8 @@ export default {
 
 <style lang="scss" scoped>
 .bgImage {
-  background-position: 0% 0%;
+  background-position: 50% 0%;
+  background-size: contain;
   @media screen and (max-width: 768px) {
     background-position: 25% 0;
   }

@@ -16,12 +16,12 @@
     </div>
     <div class="buttonRow flex gap-4">
       <RainbowButton
-        @click="router.push({ name: 'Our Services' })"
+        :to="'Our Services'"
         class="mt-3 text-1"
-        :displayMessage="'Find out more'"
+        :displayMessage="'Find Out More'"
       />
       <RainbowButton
-        @click="router.push({ name: 'Contact' })"
+        :to="'Contact'"
         class="mt-3 text-1"
         :displayMessage="'Get Started'"
       />

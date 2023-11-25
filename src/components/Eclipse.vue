@@ -1,6 +1,10 @@
 <template>
   <div class="eclipse">
-    <img id="logo" src="../assets/img/white-logo-no-background.png" alt="" />
+    <img
+      id="logo"
+      src="https://imagedelivery.net/Id169OYcKaUZq2ukOAQIsw/0075590e-ae84-4dbc-03de-8bff5e113f00/public"
+      alt=""
+    />
     <!-- <div id="lightMoon" class="light-circle"></div> -->
     <div id="darkMoon" class="dark-circle"></div>
   </div>

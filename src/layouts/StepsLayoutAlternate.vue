@@ -12,7 +12,7 @@
       :key="step"
       class="flex flex-col lg:flex-row w-full h-screen"
     >
-      <div class="detailsCol">
+      <div class="detailsCol p-4 lg:p-8 2xl:p-16">
         <StepCard :step="step" class="cardAttrs" />
       </div>
       <div class="stepsCol">
@@ -136,7 +136,6 @@ $breakpoints: (
   align-items: center;
   width: 70%;
   height: 100%;
-  padding: 2rem 1rem;
   background: #ffffff;
   @media screen and (max-width: 768px) {
     padding: 1rem 1rem;
@@ -162,8 +161,9 @@ $breakpoints: (
   height: 70vh;
   width: 100%;
   outline: solid 10px black;
-  padding: calc(1rem - 1rem);
+  padding: 2rem;
   @media screen and (max-width: 768px) {
+    padding: 1rem;
     background-size: cover;
     height: calc(100vh - 90px);
     padding: 1rem;

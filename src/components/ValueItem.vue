@@ -1,7 +1,5 @@
 <template>
-  <div
-    class="instanceWrapper flex justify-center gap-4 lg:p-16 items-center flex-col"
-  >
+  <div class="instanceWrapper flex justify-center gap-4 items-center flex-col">
     <h2 class="instanceTitle text-5 gap-2">
       <b
         v-for="word in formattedTitle"
@@ -58,7 +56,7 @@ export default {
 .instanceItem {
   margin-bottom: 2rem;
   padding: 1rem;
-  outline: solid 4px #343a40;
+  // outline: solid 4px #343a40;
   border-radius: 24px;
   @media screen and (min-width: 768px) {
     padding: 2rem;

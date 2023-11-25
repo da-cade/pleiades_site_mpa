@@ -51,7 +51,6 @@ export default {
     },
   },
   setup(props) {
-    console.log(props.service);
     const computedDestination = computed(() => {
       const destination = props.service.routeParams
         ? {
@@ -127,7 +126,12 @@ export default {
 
 .img-wrapper {
   display: flex;
+  padding: 0.5rem;
   img {
+    min-height: 30vh;
+    @media screen and (min-width: 1024px) {
+      min-height: 40vh;
+    }
     border-top-right-radius: 24px;
     border-top-left-radius: 24px;
   }
@@ -153,48 +157,4 @@ export default {
   }
   width: 100%;
 }
-
-// .dark-side {
-//   background-color: black;
-//   color: white;
-//   font-size: 0.2em;
-//   padding: 0.2em;
-//   border-radius: 25px;
-// }
-
-// .cardBorder::after {
-//   content: "";
-//   position: absolute;
-
-//   border-radius: 25px;
-//   z-index: -1;
-//   background-size: 300% 300%;
-//   background-position: 0 0;
-//   background: none;
-// }
-
-// .cardBorder:hover::after {
-//   top: calc(-1 * var(--borderWidth));
-//   left: calc(-1 * var(--borderWidth));
-//   height: calc(100% + var(--borderWidth) * 2);
-//   width: calc(100% + var(--borderWidth) * 2);
-//   background: linear-gradient(
-//     90deg,
-//     #e7484f,
-//     #e7484f 16.65%,
-//     #f68b1d 16.65%,
-//     #f68b1d 33.3%,
-//     #fced00 33.3%,
-//     #fced00 49.95%,
-//     #009e4f 49.95%,
-//     #009e4f 66.6%,
-//     #00aac3 66.6%,
-//     #00aac3 83.25%,
-//     #732982 83.25%,
-//     #732982 100%,
-//     #e7484f 100%
-//   );
-//   // background-position: 0% 0%;
-//   animation: animatedgradient 5s linear 0s infinite;
-// }
 </style>

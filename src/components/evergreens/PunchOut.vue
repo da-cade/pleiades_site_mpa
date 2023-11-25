@@ -24,6 +24,8 @@ export default {
 
 
 <style lang="scss" scoped>
+@use "sass:list";
+
 .punchOut {
   color: white;
   border-radius: 100%;
@@ -35,6 +37,46 @@ export default {
 
   .title {
     position: absolute;
+  }
+}
+
+$breakpoints: (
+  "min-width: 2000px",
+  "max-width: 1999px",
+  "max-width: 1536px",
+  "max-width: 1280px",
+  "max-width: 1024px"
+);
+
+@each $b in $breakpoints {
+  $count: list.length($breakpoints);
+  @media (#{$b}) {
+    $i: index($breakpoints, $b);
+    $circleDi: #{25 - $i * 2.5}rem;
+
+    .punchOut {
+      max-width: $circleDi;
+      min-width: $circleDi;
+      min-height: $circleDi;
+      max-height: $circleDi;
+    }
+  }
+}
+
+@media screen and (max-width: "max-width: 768px") {
+  .punchOut {
+    max-width: 25rem;
+    min-width: 25rem;
+    min-height: 25rem;
+    max-height: 25rem;
+  }
+}
+@media screen and (max-width: "max-width: 640px") {
+  .punchOut {
+    max-width: 22rem;
+    min-width: 22rem;
+    min-height: 22rem;
+    max-height: 22rem;
   }
 }
 </style>

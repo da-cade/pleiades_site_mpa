@@ -1,7 +1,5 @@
 <template>
-  <a @click="router.push(computedDestination)" class="rainbow rainbow-5">{{
-    displayMessage
-  }}</a>
+  <a @click="handleClick" class="rainbow rainbow-5">{{ displayMessage }}</a>
 </template>
 
 
@@ -24,17 +22,19 @@ export default {
     },
   },
   setup(props) {
-    const route = useRoute();
+    const router = useRouter();
     return {
       router: useRouter(),
-      computedDestination: computed(() => {
+      handleClick() {
         if (props.to.startsWith("#", 0)) {
-          console.log(props.to.startsWith("#", 0));
-          return { hash: props.to };
+          router.push({ hash: props.to });
+        } else if (props.to.startsWith("http")) {
+          window.open(props.to, "_blank");
         } else {
-          return { name: props.to, params: props.params };
+          router.push({ name: props.to, params: props.params });
         }
-      }),
+      },
+      computedDestination: computed(() => {}),
     };
   },
 };

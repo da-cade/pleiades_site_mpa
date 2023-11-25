@@ -14,22 +14,15 @@
           "values": ""
         }
       ],
-      "coverImg": "../src/assets/img/about-us-history_2.avif",
-      "imagePosition": "50% 33%",
-      "coverImg2": "../src/assets/img/about-us-cover.avif",
+      "coverImg1": "https://imagedelivery.net/Id169OYcKaUZq2ukOAQIsw/9db92648-0f9e-410f-c59f-4279a4da1300/large",
+      "imgAlt1": "We like to think we're making history, but probably not",
+      "imagePosition1": "50% 33%",
+      "coverImg2": "https://imagedelivery.net/Id169OYcKaUZq2ukOAQIsw/7662d4e1-ee19-4324-f6e8-8fd8118a9000/large",
+      "imgAlt2": "We're a bunch of nerds doing all that boring stuff with a smile",
       "imagePosition2": "60% 0",
-      "coverImg3": "../src/assets/img/about-us-faq-2.jpg",
-      "imagePosition3": "40% 0",
-      "imgAlt": "We're a bunch of nerds doing all that boring stuff with a smile"
-    },
-    {
-      "name": "FAQ",
-      "routeName": "frequently-asked-questions",
-      "shortDescription": "",
-      "longDescription": "",
-      "bodyBlocks": [],
-      "coverImg": "",
-      "imgAlt": ""
+      "coverImg3": "https://imagedelivery.net/Id169OYcKaUZq2ukOAQIsw/0aa0d769-cd08-4ea9-2d26-fb1d0e2bcb00/large",
+      "imgAlt3": "The truth it out there",
+      "imagePosition3": "40% 0"
     }
   ],
   "services": [
@@ -40,8 +33,8 @@
       "shortDescription": "Sometimes you just want to know where you're at.",
       "pitch": "Ever wonder if the website you paid your neighbor's grandson $500 for was worth it? We can give you the lowdown on your website for just about any public metric you can think of, and we can tell you what your competitors are doing that you aren't. All for free.",
       "callToAction": "Get Your Free Report",
-      "image": "../src/assets/img/custom.png",
-      "imageAlt": "Launching your new site like a rocket"
+      "image": "https://imagedelivery.net/Id169OYcKaUZq2ukOAQIsw/6f61302c-ce3c-4317-69ad-d23c61a47100/large",
+      "imageAlt": "Auditing your website with next-level analytics"
     },
     {
       "name": "Website Design",
@@ -72,47 +65,47 @@
         {
           "title": "Mission Briefing",
           "body": "We start with what makes your business unique — what challenges you've faced, your strong points, your not so strong, and most importantly, your goals. We talk to you about what you want your business and brand to evoke in your visitors, and who you want to be. From there, we craft a design that articulates that in color, shape, and graphic. If you need a logo, we take care of that too.",
-          "image": "../src/assets/img/mission-control.avif",
-          "imageAlt": "Mission Control For Your New Website",
+          "image": "https://imagedelivery.net/Id169OYcKaUZq2ukOAQIsw/8156b8d3-953b-4b2f-ff78-cdf90f75b000/large",
+          "imageAlt": "Planning our mission for your business",
           "imagePosition": "20% 80%"
         },
         {
           "title": "Prototyping",
           "body": "We create some models of how we think your website could look, and draft copy that will help structure the page. We rely on input from you about what sounds and looks right — this part usually requires a lot of \"no's.\" Once we think we have something good, we'll make a high fidelity version so you can give the OK.",
-          "image": "../src/assets/img/prototyping.avif",
-          "imageAlt": "Playing Around With A Smaller Rocket",
+          "image": "https://imagedelivery.net/Id169OYcKaUZq2ukOAQIsw/5c092ec6-b735-45d6-8827-fe4292d9e300/large",
+          "imageAlt": "Making smaller versions so you can give the OK",
           "imagePosition": "20% 30%"
         },
         {
           "title": "Content Cultivation",
           "body": "Every good website has high-quality images and sometimes custom graphics. If you have them, we filter though and find what works, and if you don't, we get them made. Then we optimize and compress everything for SEO and page speed.",
-          "image": "../src/assets/img/content-cultivation.avif",
+          "image": "https://imagedelivery.net/Id169OYcKaUZq2ukOAQIsw/d0471ac7-78fe-451f-b31c-471545f99600/large",
           "imageAlt": "Photographers Creating Custom Content Just For You",
           "imagePosition": "50% 0%"
         },
         {
           "title": "Web Development",
           "body": "Now we're ready to get started. We take our prototypes and make them a reality, using industry best practices in UX and SEO. We make sure everything is optimized for both mobile and desktop use.",
-          "image": "../src/assets/img/web-development.avif",
+          "image": "https://imagedelivery.net/Id169OYcKaUZq2ukOAQIsw/bd7dddf0-8ed9-4c49-71b1-fd95ba274000/large",
           "imageAlt": "The Magic Begins and Your Website Takes Shape",
           "imagePosition": "50% 50%"
         },
         {
           "title": "Testing & Analytics",
           "body": "Extensive testing takes places to ensure that the site functions free from errors or unexpected quirks. Also, if you opt-in, we set up conversion and usage analytics events for integration with Google Analytics and ads.",
-          "image": "../src/assets/img/testing-analytics-2.avif",
-          "imageAlt": "We Take Our Testing Very Seriously",
+          "image": "https://imagedelivery.net/Id169OYcKaUZq2ukOAQIsw/94e834ba-d1ac-4d04-fc6d-ff35fc910e00/large",
+          "imageAlt": "Extensive testing makes sure your website works right the first time",
           "imagePosition": "40% 50%"
         },
         {
           "title": "Lift-Off",
           "body": "The wait is over and your webpage is ready to launch! You set the time, and then we push the big, red button.",
-          "image": "../src/assets/img/rocket-launch.avif",
-          "imageAlt": ""
+          "image": "https://imagedelivery.net/Id169OYcKaUZq2ukOAQIsw/6008b518-f362-4cb3-f21f-0dc6413c6200/large",
+          "imageAlt": "We pass your new website over to you, or manage your website for you"
         }
       ],
-      "image": "../src/assets/img/custom.png",
-      "imageAlt": "Launching your new site like a rocket"
+      "image": "https://imagedelivery.net/Id169OYcKaUZq2ukOAQIsw/8a143944-7880-4381-37f8-736f47a68200/large",
+      "imageAlt": "Custom design from Pleiades Projectworks"
     },
     {
       "name": "SEO",
@@ -143,48 +136,48 @@
         {
           "title": "Brandstorming",
           "body": "We start with where you're at and where you want to go. Who do you want to attract, how big do you want to get, and how fast? These decisions form the basis of a long-term strategy that we begin immediately. We come up with creative solutions for content that you approve of, and outline the most important things to highlight about your business.",
-          "image": "../src/assets/img/seo-brandstorming.avif",
-          "imageAlt": "Mission Control For Your New Website",
+          "image": "https://imagedelivery.net/Id169OYcKaUZq2ukOAQIsw/d5ee8b55-1a44-4e16-0247-410183256e00/large",
+          "imageAlt": "We find out what makes your business unique through a series of dialogues",
           "imagePosition": "59% 47%"
         },
         {
           "title": "Site Audit",
           "body": "Site optimizaiton has an enormous effect on your ability to rank on Google, as its algorithm penalizes slow pages and rewards good practices in naming and accessibility. We go through your website and public profiles like Google with a fine-toothed comb, making sure they operate free of errors and at maximum speed.",
-          "image": "../src/assets/img/seo-audit.avif",
-          "imageAlt": "Playing Around With A Smaller Rocket",
+          "image": "https://imagedelivery.net/Id169OYcKaUZq2ukOAQIsw/9a31cf93-bbdb-4e49-278b-114a3e9c1b00/large",
+          "imageAlt": "We use custom analytics and special tools to make sure your site is performing well",
           "imagePosition": "60% 17%"
         },
         {
           "title": "Competitive Analysis",
           "body": "Every brand, no matter how successful, has competitors that are doing things better than they are. Pleiades researches your competitors at every level and determines their strengths and weaknesses, translating them into tweaks and opportunities for you.",
-          "image": "../src/assets/img/seo-competitive-analysis.avif",
-          "imageAlt": "Photographers Creating Custom Content Just For You",
+          "image": "https://imagedelivery.net/Id169OYcKaUZq2ukOAQIsw/6b1cd1d1-0ced-489b-1c0f-27510864ba00/large",
+          "imageAlt": "Its time to find out what your competitors are doing, and plan how to do it better",
           "imagePosition": "50% 40%"
         },
         {
           "title": "Keyword Planning",
           "body": "At this stage, you're ready to begin your SEO journey. We craft keyword plans that we share with you, showing how each stage tackles your competitors at that level. We continually evaluate this plan, accounting for trends and seasonal opportunities that could boost your exposure.",
-          "image": "../src/assets/img/seo-keyword-planning.avif",
-          "imageAlt": "The Magic Begins and Your Website Takes Shape",
+          "image": "https://imagedelivery.net/Id169OYcKaUZq2ukOAQIsw/957e73e3-ba21-4168-1a83-a6e332a46b00/large",
+          "imageAlt": "We turn your business goals into actionable plans spread out to change as milestones are reached",
           "imagePosition": "44% 2%"
         },
         {
           "title": "Content Creation",
           "body": "Our keyword plans inform the changes we make to your website, your online business profiles, and any articles we write for you. Each content addition is made at a specific time with an exact target for brand development. When we deploy these changes, we like to coordinate them with other pieces of your advertising or merchandising plans.",
-          "image": "../src/assets/img/seo-content-creation.avif",
-          "imageAlt": "We Take Our Testing Very Seriously",
+          "image": "https://imagedelivery.net/Id169OYcKaUZq2ukOAQIsw/726b9f28-4443-4e6f-df79-249a5bcec200/large",
+          "imageAlt": "We create any necessary content needed for your website, and discuss possible product additions that could help with growth",
           "imagePosition": "50% 67%"
         },
         {
           "title": "Amplification",
           "body": "Unlike other SEO agencies, who take your money to backlink your site on thousands of anonymous websites hosted in Nepal, we cultivate real relationships with bloggers, influencers, and news outlets online. We encourage these bloggers to write articles linking to your site, increasing your domain rating and your organic ranking on Google while also advertising your business.",
-          "image": "../src/assets/img/seo-backlinking.avif",
-          "imageAlt": "",
+          "image": "https://imagedelivery.net/Id169OYcKaUZq2ukOAQIsw/50e94cf9-629f-4282-6d67-fe80f1ad6f00/large",
+          "imageAlt": "We use contacts, blog posts, and more to get the word out for your brand",
           "imagePosition": "1% 14%"
         }
       ],
-      "image": "../src/assets/img/seo.png",
-      "imageAlt": ""
+      "image": "https://imagedelivery.net/Id169OYcKaUZq2ukOAQIsw/55cf9a3e-9618-4e89-fd95-36eb58cdc300/large",
+      "imageAlt": "Meet your long term goals with great SEO"
     },
     {
       "name": "Google Ads",
@@ -215,48 +208,48 @@
         {
           "title": "Brandstorming",
           "body": "We start with where you're at and where you want to go. Who do you want to attract, how big do you want to get, and how fast? These decisions form the basis of a long-term strategy that we begin immediately. We come up with creative solutions for content that you approve of, and outline the most important things to highlight about your business.",
-          "image": "../src/assets/img/seo-brandstorming.avif",
-          "imageAlt": "Mission Control For Your New Website",
+          "image": "https://imagedelivery.net/Id169OYcKaUZq2ukOAQIsw/d5ee8b55-1a44-4e16-0247-410183256e00/large",
+          "imageAlt": "We help you articulate who you are and what you have to offer",
           "imagePosition": "59% 47%"
         },
         {
           "title": "Site Audit",
           "body": "Site optimizaiton has an enormous effect on the efficiency of your ads, as Google's ad algorithm penalizes slow pages and rewards authoritative results. We go through your website and public profiles with a fine-toothed comb, making sure they operate free of errors and at maximum speed, while also giving searchers what they're looking for.",
-          "image": "../src/assets/img/seo-audit.avif",
-          "imageAlt": "Playing Around With A Smaller Rocket",
+          "image": "https://imagedelivery.net/Id169OYcKaUZq2ukOAQIsw/9a31cf93-bbdb-4e49-278b-114a3e9c1b00/large",
+          "imageAlt": "We make sure everything is working the way its supposed to on your current site.",
           "imagePosition": "60% 17%"
         },
         {
           "title": "Competitive Analysis",
           "body": "Every brand, no matter how successful, has competitors that are doing things better than they are. Pleiades researches your competitors at every level and determines their strengths and weaknesses, translating them into tweaks and opportunities for you.",
-          "image": "../src/assets/img/seo-competitive-analysis.avif",
-          "imageAlt": "Photographers Creating Custom Content Just For You",
+          "image": "https://imagedelivery.net/Id169OYcKaUZq2ukOAQIsw/6b1cd1d1-0ced-489b-1c0f-27510864ba00/large",
+          "imageAlt": "We find out what your competitors are doing, and incorporate their strategies",
           "imagePosition": "50% 40%"
         },
         {
           "title": "Keyword Planning",
           "body": "At this stage, you're ready to begin your Google Ads journey. We craft keyword plans that we share with you, showing how each stage tackles your competitors at that level. If you already have a plan for SEO, we incorporate it into our ads strategy, since your Google Ads rank higher if you also organically bid for keywords.",
-          "image": "../src/assets/img/seo-keyword-planning.avif",
-          "imageAlt": "The Magic Begins and Your Website Takes Shape",
+          "image": "https://imagedelivery.net/Id169OYcKaUZq2ukOAQIsw/957e73e3-ba21-4168-1a83-a6e332a46b00/large",
+          "imageAlt": "Your ad goals are split into achievable steps with actionable strategies.",
           "imagePosition": "44% 2%"
         },
         {
           "title": "Ad Creation",
           "body": "Once we have our keywords planned out, we develop full-service ads filled with sitelinks, calls-to-action, and photos. If you're running a shopping campaign, we sync your products with your website or e-commerce provider, getting you listed on Google Shopping. When we deploy these changes, we like to coordinate them with other pieces of your advertising or merchandising plans.",
-          "image": "../src/assets/img/ads-ad-creation-3.avif",
-          "imageAlt": "We Take Our Testing Very Seriously",
+          "image": "https://imagedelivery.net/Id169OYcKaUZq2ukOAQIsw/0662c63b-c9e7-47b7-c544-2a8fec4e9d00/large",
+          "imageAlt": "We create your ads with all the assets they need",
           "imagePosition": "70% 15%"
         },
         {
           "title": "Monitor Growth",
           "body": "Many ad agencies have a 'set it and forget it' approach to their ads. Not us. We monitor their performance and make sure they continue performing, while incorporating changes to your business and merchandising. Then you see the results!",
-          "image": "../src/assets/img/ads-monitor-growth.avif",
-          "imageAlt": "",
+          "image": "https://imagedelivery.net/Id169OYcKaUZq2ukOAQIsw/7956fa00-56ba-460f-63c0-a40d32972900/large",
+          "imageAlt": "We make sure ads are performing, and continue to tweak them for the best possible return",
           "imagePosition": "50% 80%"
         }
       ],
-      "image": "../src/assets/img/coding.png",
-      "imageAlt": ""
+      "image": "https://imagedelivery.net/Id169OYcKaUZq2ukOAQIsw/119c4cdd-b8a6-477b-cf7b-06789da4fe00/large",
+      "imageAlt": "Boost your ROI with Google Ads"
     },
     {
       "name": "E-Commerce",
@@ -287,54 +280,54 @@
         {
           "title": "Getting Acquainted",
           "body": "Embarking into e-commerce is something of a journey, so we like to get to know your business thoroughly before we begin. We want to know about your current challenges and what's worked for you in the past, as well as more technical stuff like your payment processors.",
-          "image": "../src/assets/img/ecommerce-getting-acquainted.avif",
-          "imageAlt": "Mission Control For Your New Website",
+          "image": "https://imagedelivery.net/Id169OYcKaUZq2ukOAQIsw/42656893-2109-45cc-205d-bf0d0830a700/large",
+          "imageAlt": "Its essential that we get to know your business, and learn who you are and how you do things",
           "imagePosition": "60% 63%"
         },
         {
           "title": "Strategy",
           "body": "You probably have a solid handle on what works for your brick-and-mortar store. We take your successful strategies and meld them with ours, pointing out opportunities we've found in our research. We prep your socials for launch, and if you have competitors, we delve into what they're doing well and do it better.",
-          "image": "../src/assets/img/ecommerce-strategy.avif",
-          "imageAlt": "Playing Around With A Smaller Rocket",
+          "image": "https://imagedelivery.net/Id169OYcKaUZq2ukOAQIsw/aeb52f52-a3ce-4d62-b49b-c3f299fe3c00/large",
+          "imageAlt": "It takes a lot of small decisions to create an e-commerce strategy that's right for you",
           "imagePosition": "50% 55%"
         },
         {
           "title": "Operation Optimization",
           "body": "As we begin to prepare for live e-commerce, we take a moment to train and optimize your workflow. Your employees (or you) will need to use your time efficiently once demand arrives, so we make sure everything is consistent, efficient, and secure.",
-          "image": "../src/assets/img/ecommerce-strategy-2.avif",
-          "imageAlt": "Photographers Creating Custom Content Just For You",
+          "image": "https://imagedelivery.net/Id169OYcKaUZq2ukOAQIsw/5e40dc09-1270-4801-357c-7eaca27a8700/large",
+          "imageAlt": "Your brick-and-mortar store might need some new tools to work efficiently on the web",
           "imagePosition": "50% 30%"
         },
         {
           "title": "Content Creation",
           "body": "If you don't have a website or content for it, we take the time to develop both the material you need and the process to produce more. Either way, we optimize and compress everything for SEO and page speed. If you've signed up for it, we develop your seasonal or promotional content as well.",
-          "image": "../src/assets/img/ecommerce-content-creation.avif",
-          "imageAlt": "The Magic Begins and Your Website Takes Shape",
+          "image": "https://imagedelivery.net/Id169OYcKaUZq2ukOAQIsw/11c55958-48ed-4752-1f81-fe5da62bf900/large",
+          "imageAlt": "When launching sales on your website, you'll need great images and videos to back it up",
           "imagePosition": "50% 50%"
         },
         {
           "title": "Development",
           "body": "At Pleiades, we ensure that you're a part of the development process. If you're developing a website, we go over our protoypes with you, and if its e-commerce management, we triple-check all our app and service integrations.",
-          "image": "../src/assets/img/ecommerce-development.avif",
-          "imageAlt": "We Take Our Testing Very Seriously",
+          "image": "https://imagedelivery.net/Id169OYcKaUZq2ukOAQIsw/c7d1575b-5f6a-4013-57f8-9746ed611700/large",
+          "imageAlt": "The development of your e-commerce solution begins",
           "imagePosition": "60% 40%"
         },
         {
           "title": "Testing & Analytics",
           "body": "Extensive testing takes places to ensure that everything functions free from errors or unexpected quirks, and that customer orders are processed properly. Also, if you opt-in, we set up conversion and usage analytics events for integration with Google Analytics and ads.",
-          "image": "../src/assets/img/testing-analytics-2.avif",
-          "imageAlt": "",
+          "image": "https://imagedelivery.net/Id169OYcKaUZq2ukOAQIsw/94e834ba-d1ac-4d04-fc6d-ff35fc910e00/large",
+          "imageAlt": "We test to make sure your e-commerce solution is fast, safe, and reliable",
           "imagePosition": "54% 56%"
         },
         {
           "title": "Lift-Off",
           "body": "Your business is ready to sell online! You set the time, and then we push the big, red button.",
-          "image": "../src/assets/img/rocket-launch.avif",
-          "imageAlt": ""
+          "image": "https://imagedelivery.net/Id169OYcKaUZq2ukOAQIsw/6008b518-f362-4cb3-f21f-0dc6413c6200/large",
+          "imageAlt": "Yeehaw! You're ready to join the online marketplace!"
         }
       ],
-      "image": "../src/assets/img/coding.png",
-      "imageAlt": ""
+      "image": "https://imagedelivery.net/Id169OYcKaUZq2ukOAQIsw/adc8fb22-e06a-4f37-fde7-b5b43d918600/large",
+      "imageAlt": "Join the online marketplace with a custom e-commerce solution"
     },
     {
       "name": "Everything Else",
@@ -343,90 +336,94 @@
       "subtitleTwo": "To the Important Work",
       "shortDescription": "Pleiades does odd-jobs: its how we make friends. If you have a problem, talk to us and we'll tackle it.",
       "pitch": "There's a million things to do on the web, and we're already up to our elbows in it. If there's an odd job that needs doing, but you want it done by a professional, we can help. Talk to us about integrating your inventory system online, setting up emails for your business, getting you a domain, website security, or some other tedious thing!",
-      "image": "../src/assets/img/coding.png",
-      "imageAlt": ""
+      "image": "https://imagedelivery.net/Id169OYcKaUZq2ukOAQIsw/d2884c4d-b04a-41fb-a6a7-8ecbf86b2200/large",
+      "imageAlt": "Solve a variety of online problems with Pleiades Projectworks"
     }
   ],
-  "blog": [
-    {
-      "title": "10 Things Every Business Owner Should Know About SEO",
-      "shortDescription": "",
-      "coverImg": "../src/assets/img/about-us-cover.avif",
-      "coverImgAlt": "Why SEO is so important - visualized",
-      "blocks": [
-        {
-          "subtitle": "1. The first and most important rule of SEO is to give your visitors what they want.",
-          "body": "This isn't what they think they want, or what you think they want, but what they're really, actually looking for. If search engines can't satisfy what we call \"searcher intent,\" people are going to dismiss them as irrelevant; therefore, they have a lot of incentive to make sure that people find what they're looking for, and their algorithms are going to punish search listings that mislead or miscommunicate their content to searchers. A lot of agencies and private individuals go through complicated, roundabout means to achieve better SEO scores, when really, they simply should provide good products, services, or information."
-        },
-        {
-          "subtitle": "2. Prove that you have what visitors want.",
-          "body": "But Pleedy, you say, isn't the only way to do that through visits and long-term website visits? Well, yes. In this industry, what we call a \"high bounce rate\" is usually a sign that you aren't giving searchers what they want, since it means they're only spending a very, very short time on your website before leaving. HOWEVER! You can do other things to prove your worth, the best being comments and reviews. Everyone knows the best way to find a mechanic or a lawyer is to know one that you trust, or find one through someone's recommendation. The internet works the same way. If you can show your trustworthiness and your ability to satisfy people's intent through good reviews, you can build your authoritativeness quickly."
-        },
-        {
-          "subtitle": "3. Be authoritative, and stick to what you know",
-          "body": "Authoritativeness is simply another way of saying, \"how qualified are you to state the information that brought someone to you?\" You wouldn't ask your plumber for advice about your sick cockatiel, Mercutio, but you might ask them what it means when you hear groaning coming from your walls at night. Search engines like Google rank answers from authoritative sources higher than if they're from generalists, so before you start writing articles about SEO for your axe-throwing business, you should write about which finger-foods are the least greasy."
-        },
-        {
-          "subtitle": "4. Analyze trends",
-          "body": "Many successful business owners will tell you that they don't pay attention to trends and that they've always done well regardless, or perhaps as a result. What they're not considering is that trends influence buying decisions every day, and that they simply may have been taking advantage of them without trying. If you find your online presence is a bit weak, go after some trends that change more frequently. These keywords often have lower competition and high search volume, so even though it can be more work to create content for them, you're much more likely to appear, maybe even on a national ranking."
-        },
-        {
-          "subtitle": "5. Check your competitors",
-          "body": "Every business has competitors — even that guy who invented the cheeseburger had to compete with the guy who invented the hamburger. If you're just starting out, there's a good chance your competitors have had a lot more time to establish an online presence than you, but this isn't always a bad thing. You can use tools from sites like ahrefs or Google Ads to see what keywords other websites are ranking for, and if your domain is strong enough, you can go after them too. If it isn't, it can be a great starting point to come up with some adjacent keywords that have a lot less competition. Use what your competitors do well, particularly in blogging or website content, and then do it better."
-        },
-        {
-          "subtitle": "6. Think outside the box",
-          "body": "When coming up with keyword strategies, it's easy to think of the simplest, most immediate concepts first. For example, if you're starting a new outdoor apparel brand, you might go for keywords like \"thermal clothing\", \"outdoorsy t-shirts\", or \"waterproof boots\". These keywords are going to be pretty competitive; you might find yourself up against huge brands that aren't even known for their outdoor apparel, like Nike or Shoes for Crews. Converse-ly (haha), keywords like \"the best wicking fabrics in 2023\" might get you a place at the table, since bigger brands focus more income on merchandising and less on fresh blog content."
-        },
-        {
-          "subtitle": "7. Use them keywords, and use 'em right",
-          "body": "You wouldn't think it, but once you've made your keyword plan, they're easy to forget about. You've planned for your first 6 months, and then your next year after that, and then for the next two years, when you expect to have grown enough to compete with some big dogs. \"Great!\" you say, \"I am a the architect of my reality.\" Perhaps. These plans only exist when you stick to them. When you write your website and articles, include these early keywords when you can, but as you rank for them, move them off your main pages. Make sure that you are competing for keywords that you can achievably rank for, starting small and only moving onto the next level after you rank consistently. Revisit your plans and account for trends, check what works and what didn't, and be ready to change your business strategies or keyword plans to match each other if they start to change."
-        },
-        {
-          "subtitle": "8. Associate With Good Websites",
-          "body": "This one is arguably the hardest, but perhaps most impactful thing that can be done in SEO strategy. Your ability to rank well in search engines is also defined by the number of \"backlinks\" you have AND THEIR QUALITY. This makes logical sense from an advertising standpoint, too. If you receive a link to your website from a New York Times article, imagine the publicity that would entail. Google feels the same. If the websites linking to your domain are extremely authoritative, or exceptionally well-established, you're going to get a boost. If they're not, you get a very tiny boost, or sometimes, a negative hit to your ranking. "
-        },
-        {
-          "subtitle": "9. Cultivate good relationships online",
-          "body": "We can't all count on a mainstream news story featuring our business, but there are many people who write content that to a certain extent is read more consistently than the news: bloggers and influencers. If you have a product, consider offering a free use of it in exchange for a post about how much they liked it, and if you have a service, sponsor a visit from them to experience it. Then you can both post about it — backlinks and publicity for you, publicity and a brand relationship for them. Now if you go this route, don't be a spammer. Nothing gets you blackballed like spamming bloggers and influencers; just imagine the negativity publicity you're setting yourself up for. Instead, choose your ambassadors carefully, and write some thoughtful messages to them that address your desire to collaborate without stating that you expect something for nothing."
-        },
-        {
-          "subtitle": "10. Stay away from schemes",
-          "body": "The world of online marketing, advertising, and SEO are *absolutely rife* with bad faith practices. Some of these are designed to fool Google, and some are designed to fool you. Be very cautious of agencies who demonstrate an enormous increase in backlinks or referencing domains, but are unwilling to show you who these domains are. This can often mean that most of your backlinks are in far-flung domains originating in Nepal or Timbuktu, on web-pages created just to hold thousands of backlinks. Not only do these strategies contribute little to your web presence, they can even hurt it."
-        },
-        {
-          "subtitle": "",
-          "body": "Once you have a great SEO strategy in place, with keyword goals for each quarter, you can branch out into other forms of marketing to support your strategy. Teaming up with influencers, for example, is an excellent way to gain exposure and backlinks at the same time. Conversely, putting your keyword strategy into Google ads can make your ads more efficient, because Google rewards pages that already satisfy searcher intent with a higher ad rank. Whatever strategy you choose, you'll want a lot of time to study ahead of time, or, a really superb and not-too-fancy agency to help you get there. Talk to us at Pleaides and get yourself "
-        }
-      ]
-    }
-  ],
+  "blog": {
+    "headline": "This is where we talk about boring stuff in an interesting way.",
+    "description": "The blog at Pleiades covers a wide array of subjects. This is because we have a wide array of interests here, and a desire to educate not just our customers but our peers and juniors in the industry. You might see articles on weird subjects like Vue or database architecture, but you'll also see a lot about SEO, design, and marketing. Happy trails!",
+    "posts": [
+      {
+        "title": "10 Things Every Business Owner Should Know About SEO",
+        "shortDescription": "",
+        "coverImg": "https://imagedelivery.net/Id169OYcKaUZq2ukOAQIsw/7662d4e1-ee19-4324-f6e8-8fd8118a9000/large",
+        "coverImgAlt": "SEO is the most important consideration of your online advertising strategy",
+        "blocks": [
+          {
+            "subtitle": "1. The first and most important rule of SEO is to give your visitors what they want.",
+            "body": "This isn't what they think they want, or what you think they want, but what they're really, actually looking for. If search engines can't satisfy what we call \"searcher intent,\" people are going to dismiss them as irrelevant; therefore, they have a lot of incentive to make sure that people find what they're looking for, and their algorithms are going to punish search listings that mislead or miscommunicate their content to searchers. A lot of agencies and private individuals go through complicated, roundabout means to achieve better SEO scores, when really, they simply should provide good products, services, or information."
+          },
+          {
+            "subtitle": "2. Prove that you have what visitors want.",
+            "body": "But Pleedy, you say, isn't the only way to do that through visits and long-term website visits? Well, yes. In this industry, what we call a \"high bounce rate\" is usually a sign that you aren't giving searchers what they want, since it means they're only spending a very, very short time on your website before leaving. HOWEVER! You can do other things to prove your worth, the best being comments and reviews. Everyone knows the best way to find a mechanic or a lawyer is to know one that you trust, or find one through someone's recommendation. The internet works the same way. If you can show your trustworthiness and your ability to satisfy people's intent through good reviews, you can build your authoritativeness quickly."
+          },
+          {
+            "subtitle": "3. Be authoritative, and stick to what you know",
+            "body": "Authoritativeness is simply another way of saying, \"how qualified are you to state the information that brought someone to you?\" You wouldn't ask your plumber for advice about your sick cockatiel, Mercutio, but you might ask them what it means when you hear groaning coming from your walls at night. Search engines like Google rank answers from authoritative sources higher than if they're from generalists, so before you start writing articles about SEO for your axe-throwing business, you should write about which finger-foods are the least greasy."
+          },
+          {
+            "subtitle": "4. Analyze trends",
+            "body": "Many successful business owners will tell you that they don't pay attention to trends and that they've always done well regardless, or perhaps as a result. What they're not considering is that trends influence buying decisions every day, and that they simply may have been taking advantage of them without trying. If you find your online presence is a bit weak, go after some trends that change more frequently. These keywords often have lower competition and high search volume, so even though it can be more work to create content for them, you're much more likely to appear, maybe even on a national ranking."
+          },
+          {
+            "subtitle": "5. Check your competitors",
+            "body": "Every business has competitors — even that guy who invented the cheeseburger had to compete with the guy who invented the hamburger. If you're just starting out, there's a good chance your competitors have had a lot more time to establish an online presence than you, but this isn't always a bad thing. You can use tools from sites like ahrefs or Google Ads to see what keywords other websites are ranking for, and if your domain is strong enough, you can go after them too. If it isn't, it can be a great starting point to come up with some adjacent keywords that have a lot less competition. Use what your competitors do well, particularly in blogging or website content, and then do it better."
+          },
+          {
+            "subtitle": "6. Think outside the box",
+            "body": "When coming up with keyword strategies, it's easy to think of the simplest, most immediate concepts first. For example, if you're starting a new outdoor apparel brand, you might go for keywords like \"thermal clothing\", \"outdoorsy t-shirts\", or \"waterproof boots\". These keywords are going to be pretty competitive; you might find yourself up against huge brands that aren't even known for their outdoor apparel, like Nike or Shoes for Crews. Converse-ly (haha), keywords like \"the best wicking fabrics in 2023\" might get you a place at the table, since bigger brands focus more income on merchandising and less on fresh blog content."
+          },
+          {
+            "subtitle": "7. Use them keywords, and use 'em right",
+            "body": "You wouldn't think it, but once you've made your keyword plan, they're easy to forget about. You've planned for your first 6 months, and then your next year after that, and then for the next two years, when you expect to have grown enough to compete with some big dogs. \"Great!\" you say, \"I am a the architect of my reality.\" Perhaps. These plans only exist when you stick to them. When you write your website and articles, include these early keywords when you can, but as you rank for them, move them off your main pages. Make sure that you are competing for keywords that you can achievably rank for, starting small and only moving onto the next level after you rank consistently. Revisit your plans and account for trends, check what works and what didn't, and be ready to change your business strategies or keyword plans to match each other if they start to change."
+          },
+          {
+            "subtitle": "8. Associate With Good Websites",
+            "body": "This one is arguably the hardest, but perhaps most impactful thing that can be done in SEO strategy. Your ability to rank well in search engines is also defined by the number of \"backlinks\" you have AND THEIR QUALITY. This makes logical sense from an advertising standpoint, too. If you receive a link to your website from a New York Times article, imagine the publicity that would entail. Google feels the same. If the websites linking to your domain are extremely authoritative, or exceptionally well-established, you're going to get a boost. If they're not, you get a very tiny boost, or sometimes, a negative hit to your ranking. "
+          },
+          {
+            "subtitle": "9. Cultivate good relationships online",
+            "body": "We can't all count on a mainstream news story featuring our business, but there are many people who write content that to a certain extent is read more consistently than the news: bloggers and influencers. If you have a product, consider offering a free use of it in exchange for a post about how much they liked it, and if you have a service, sponsor a visit from them to experience it. Then you can both post about it — backlinks and publicity for you, publicity and a brand relationship for them. Now if you go this route, don't be a spammer. Nothing gets you blackballed like spamming bloggers and influencers; just imagine the negativity publicity you're setting yourself up for. Instead, choose your ambassadors carefully, and write some thoughtful messages to them that address your desire to collaborate without stating that you expect something for nothing."
+          },
+          {
+            "subtitle": "10. Stay away from schemes",
+            "body": "The world of online marketing, advertising, and SEO are *absolutely rife* with bad faith practices. Some of these are designed to fool Google, and some are designed to fool you. Be very cautious of agencies who demonstrate an enormous increase in backlinks or referencing domains, but are unwilling to show you who these domains are. This can often mean that most of your backlinks are in far-flung domains originating in Nepal or Timbuktu, on web-pages created just to hold thousands of backlinks. Not only do these strategies contribute little to your web presence, they can even hurt it."
+          },
+          {
+            "subtitle": "In Conclusion",
+            "body": "Once you have a great SEO strategy in place, with keyword goals for each quarter, you can branch out into other forms of marketing to support your strategy. For example, teaming up with influencers is an excellent way to gain exposure and backlinks at the same time. Another approach could be putting your keyword strategy into your Google Ads, which can make them more efficient — Google rewards pages that already satisfy searcher intent with a higher ad-rank. Whatever strategy you choose, you'll want a lot of time to study ahead of time, or, a really superb and not-too-fancy agency to help you get there. Talk to us at Pleaides and get yourself ranking!"
+          }
+        ]
+      }
+    ]
+  },
   "contact": [],
   "details": {
     "technologies": [
       {
         "name": "Vue 3",
-        "image": "../src/assets/img/vue.png",
+        "image": "https://imagedelivery.net/Id169OYcKaUZq2ukOAQIsw/3522f6a1-8ddc-48c4-25c9-d64834740000/large",
         "alt": "Vue 3 - The Fastest Javascript Framework"
       },
       {
         "name": "Shopify",
-        "image": "../src/assets/img/shopify.png",
+        "image": "https://imagedelivery.net/Id169OYcKaUZq2ukOAQIsw/2ac3be38-8807-4e7d-73fb-6d08954d5500/large",
         "alt": "Shopify - An Out-of-the-Box Ecommerce Solution"
       },
       {
         "name": "Google Ads",
-        "image": "../src/assets/img/google_ads.svg.png",
+        "image": "https://imagedelivery.net/Id169OYcKaUZq2ukOAQIsw/ee92f503-4859-458d-217a-0b52bee70100/large",
         "alt": "Google Ads - High-Powered Search Engine Marketing"
       },
       {
         "name": "Firebase",
-        "image": "../src/assets/img/firebase.png",
+        "image": "https://imagedelivery.net/Id169OYcKaUZq2ukOAQIsw/5e498206-42f8-4d37-4c98-5ef6a1178500/large",
         "alt": "Firebase - Google Cloud App and Web Hosting"
       },
       {
         "name": "Azure",
-        "image": "../src/assets/img/azure.png",
+        "image": "https://imagedelivery.net/Id169OYcKaUZq2ukOAQIsw/035dd014-b358-413d-891d-196bff978c00/large",
         "alt": "Azure - The Cloud Ecosystem from Microsoft"
       }
     ],
@@ -440,10 +437,9 @@
     "portfolio": [
       {
         "name": "Portsche's Fine Jewelry",
-        "routeName": "Portsche's",
-        "source": "https://portschesfinejewelry.com",
-        "image": "../src/assets/img/port-site.png",
-        "logo": "../src/assets/img/portsches-logo.webp",
+        "destination": "https://portschesfinejewelry.com",
+        "image": "https://imagedelivery.net/Id169OYcKaUZq2ukOAQIsw/1b479c22-2141-485e-910c-49ef7b63ce00/large",
+        "logo": "https://imagedelivery.net/Id169OYcKaUZq2ukOAQIsw/5d7bf56d-20f8-449a-41a0-c0115af0ef00/large",
         "imageAlt": "Portsche's Fine Jewelry - Home Page",
         "talkingPoints": [
           "Shopify Ecommerce",
@@ -455,44 +451,41 @@
       },
       {
         "name": "Electra",
-        "routeName": "Electra",
-        "source": "",
-        "image": "",
-        "logo": "",
-        "imageAlt": "",
+        "destination": "Contact",
+        "image": "https://imagedelivery.net/Id169OYcKaUZq2ukOAQIsw/1948233d-9e3d-484a-8a34-678ab1fa1300/large",
+        "logo": "https://imagedelivery.net/Id169OYcKaUZq2ukOAQIsw/af3ead2d-b14f-4977-1885-0b3e13b25c00/public",
+        "imageAlt": "Live view of our webchat app, Electra",
         "talkingPoints": [
           "Allows calls and texts from clients to any number",
           "Mass-marketing features through both email and text",
           "Created in Vue and Google Cloud Function",
           "Appointment Integration Coming Soon!"
         ],
-        "callToAction": "Use it Yourself"
+        "callToAction": "Inquire Within"
       },
       {
         "name": "The Diamond Index",
-        "routeName": "The Diamond Index",
-        "source": "https://portschesfinejewelry.com/pages/find-a-diamond-1",
-        "image": "",
-        "logo": "",
+        "destination": "https://portschesfinejewelry.com/pages/find-a-diamond-1",
+        "image": "https://imagedelivery.net/Id169OYcKaUZq2ukOAQIsw/eb6041e0-ac93-4578-9624-b05a75adbc00/public",
+        "logo": "https://imagedelivery.net/Id169OYcKaUZq2ukOAQIsw/0075590e-ae84-4dbc-03de-8bff5e113f00/public",
         "imageAlt": "The Diamond Index by Pleiades",
         "talkingPoints": [
           "Hosted without servers in Azure",
           "Custom Development for Use With Stuller",
           "Future Updates Coming Soon"
         ],
-        "callToAction": "Discover Affordable Apps"
+        "callToAction": "Check Out the Index"
       },
       {
         "name": "Want To Show Up Here?",
-        "routeName": "Contact",
-        "source": "https://pleiadesprojectworks.com/contact",
-        "image": "",
+        "destination": "Contact",
+        "image": "https://imagedelivery.net/Id169OYcKaUZq2ukOAQIsw/d64b10b8-01c4-41ba-9d56-9a0e9ef5bb00/public",
         "logo": "",
         "imageAlt": "This could be you",
         "talkingPoints": [
-          "Competitive App Development Rates",
-          "Flexible Hosting and Stack Solutions",
-          "Tech-Support and Dev-Ops Available"
+          "Budget-Friendly Website Design",
+          "In-House Application and Tool Development",
+          "Regular Site Maintainence and Improvements"
         ],
         "callToAction": "Get Started Today"
       }
@@ -589,7 +582,7 @@
     "stories": [
       {
         "title": "How It Started",
-        "image": "../src/assets/img/rocket-launch.avif",
+        "image": "https://imagedelivery.net/Id169OYcKaUZq2ukOAQIsw/6008b518-f362-4cb3-f21f-0dc6413c6200/large",
         "body": "Like most good things, Pleiades happened by accident. In the middle of 2022, two bootcamp grads in Boise, Idaho graduated into the first hiring freeze the tech industry has seen in 15 years. Fortunately, the world didn't stop turning just because the big tech companies thought it might. We were asked to do one thing, then another, and then another, and it wasn't long before we realized that there's plenty of work to be had for people willing to say \"yes\" to whatever needs doing.",
         "imageAlt": "",
         "imagePosition": "50% 0%"

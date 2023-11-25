@@ -28,7 +28,7 @@ export default {
   <!-- <main> -->
   <RouterView />
   <!-- </main> -->
-  <Fab v-if="!mobile" @click="toggleContactCanvas" />
+  <!-- <Fab v-if="!mobile" @click="toggleContactCanvas" /> -->
 
   <Footer />
 </template>

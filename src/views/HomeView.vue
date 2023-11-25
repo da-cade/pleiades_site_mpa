@@ -1,5 +1,7 @@
 <template>
-  <div class="content-width flex flex-col mt-8 gap-16 md:gap-42">
+  <div
+    class="content-width flex flex-col my-8 xl:my-16 gap-8 md:gap-16 2xl:gap-32"
+  >
     <Banner />
     <!-- <Eclipse /> -->
     <ServicesColumn />

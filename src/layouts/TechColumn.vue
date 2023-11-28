@@ -1,13 +1,13 @@
 <template>
   <div class="columnWrapper flex flex-col p-8 rounded-3xl bg-white">
-    <h1 class="mb-4 text-5 mt-2 text-center">
+    <h2 class="mb-4 text-5 mt-2 text-center">
       <b class="text-dark">We </b>
       <b class="dark-side">Use</b>
-    </h1>
+    </h2>
 
     <div
-      :style="`max-height: ${maxHeight - rectHeight}px`"
-      class="tech-column flex flex-col md:p-8 justify-between content-start"
+      :style="`max-height: calc(${maxHeight - rectHeight}px - 2rem)`"
+      class="tech-column flex flex-col p-8 justify-between content-start"
     >
       <Vue3Marquee
         id="service-marquee"

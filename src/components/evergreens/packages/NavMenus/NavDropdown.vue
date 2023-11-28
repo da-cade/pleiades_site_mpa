@@ -52,8 +52,11 @@ export default {
 
 <style lang="scss" scoped>
 .navParentLabel {
+  font-family: geo-light;
+  font-weight: 400;
   border-radius: 12px;
-  // color: white;
+  // color: var(--color-4);
+  color: rgb(239, 239, 239);
   &:hover {
     color: black;
     background: white;
@@ -67,6 +70,7 @@ export default {
 
   .navItem {
     color: white;
+    font-family: geo-light;
     background: rgb(34, 34, 34);
     opacity: 0.95;
     padding: 0.5rem;

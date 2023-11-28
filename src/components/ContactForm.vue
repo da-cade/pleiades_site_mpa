@@ -64,6 +64,7 @@
     <rainbow-button
       role="button"
       v-if="!submitted"
+      :to="''"
       @click="handleSubmit(form)"
       :displayMessage="'Send Us a Message'"
     />
@@ -162,7 +163,7 @@ input {
 
 label {
   visibility: hidden;
-  font-size: 0px;
+  font-size: 1px;
 }
 
 textarea {

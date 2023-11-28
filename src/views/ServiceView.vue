@@ -21,7 +21,7 @@
     </div>
     <StepsLayoutAlternate :steps="service.steps" />
 
-    <div class="contactWrapper w-screen">
+    <div class="contactWrapper">
       <Vue3Marquee
         id="service-marquee"
         class="border-t-4 border-t-white bg-gray-800"
@@ -43,12 +43,12 @@
         </div>
       </Vue3Marquee>
       <div class="titleWrapper p-8 lg:p-16 bg-white">
-        <h1 id="#contact" class="text-black text-center text-6">
+        <h2 id="#contact" class="text-black text-center text-6">
           Give Us a Shout
-        </h1>
+        </h2>
       </div>
       <div
-        class="contactUs bg-white bgImage w-screen"
+        class="contactUs bg-white bgImage"
         :style="`background-image: url(${service.image})`"
       >
         <ContactLayoutHero class="contactLayout content-width" />
@@ -71,6 +71,7 @@ import { Appstate } from "../AppState";
 import RainbowButton from "../components/evergreens/RainbowButton.vue";
 import ContactLayoutHero from "../layouts/ContactLayoutHero.vue";
 import LandingBanner from "../components/LandingBanner.vue";
+import { useMeta } from "vue-meta";
 export default {
   components: {
     PunchOutCard,
@@ -82,6 +83,10 @@ export default {
     LandingBanner,
   },
   setup() {
+    useMeta({
+      title: "Explore Our Services, Like SEO, App & Web Design, and More",
+      htmlAttrs: { lang: "en" },
+    });
     const route = useRoute();
 
     const service = computed(() => {

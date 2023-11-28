@@ -4,10 +4,10 @@
       <div
         class="justify-center items-center flex flex-col left-side p-4 md:p-8 gap-4"
       >
-        <h1 class="text-center text-6">
+        <h2 class="text-center text-6">
           <b>Our </b>
           <b class="dark-side">Work</b>
-        </h1>
+        </h2>
         <h2 class="text-center text-2">Check out our portfolio</h2>
       </div>
       <div class="justify-center bg-black items-center flex w-md-100 g-0">

@@ -118,10 +118,6 @@ export default {
 }
 
 .navParentLabel {
-  &:hover {
-    color: black;
-    background: white;
-  }
   @media screen and (min-width: 1024px) {
     border-radius: 12px;
     // color: white;

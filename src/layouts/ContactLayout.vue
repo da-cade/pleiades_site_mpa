@@ -4,7 +4,7 @@
       <div
         class="contact-info text-white p-4 justify-center items-center flex flex-col w-full"
       >
-        <h2 class="text-white text-4">Pleiades Projectworks</h2>
+        <span class="text-white text-4">Pleiades Projectworks</span>
         <p class="text-1">info@pleiadesprojectworks.com</p>
         <p>Monday - Friday</p>
         <p>9 - 5</p>

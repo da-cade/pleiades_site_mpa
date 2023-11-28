@@ -22,6 +22,12 @@ import TechValuesCard from "../layouts/TechValuesCard.vue";
 import Portfolio from "../components/Portfolio.vue";
 import ContactLayout from "../layouts/ContactLayout.vue";
 import Banner from "../components/Banner.vue";
+import { useMeta } from "vue-meta";
+useMeta({
+  title:
+    "Pleiades Projectworks | Web Design & Development, Digital Marketing, & Much More",
+  htmlAttrs: { lang: "en" },
+});
 </script>
 
 

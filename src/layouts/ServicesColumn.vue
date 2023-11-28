@@ -4,7 +4,7 @@
       id="services"
       class="text-6 mb-4 flex justify-center md:justify-start md:mb-8 xl:mb-16"
     >
-      <h1 class="text-black alata">We Can Do That</h1>
+      <h2 class="text-black alata">We Can Do That</h2>
     </div>
     <div class="about-section">
       <div class="grid grid-cols-1 xl:grid-cols-2 gap-4">

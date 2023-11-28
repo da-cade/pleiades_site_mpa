@@ -6,9 +6,9 @@
   >
     <!-- <img class="img" :src="step.image" :alt="step.imageAlt" /> -->
     <div class="detailsTitle">
-      <h1 class="text-8 bg-white p-2 lg:p-4 raleway font-extrabold">
+      <h3 class="text-8 bg-white p-2 lg:p-4 raleway font-extrabold">
         {{ step.title }}
-      </h1>
+      </h3>
     </div>
     <div class="detailsInfo bg-white p-4 lg:p-8 rounded-3xl">
       <p class="text-1">

@@ -43,6 +43,7 @@ export default {
     watch(
       () => Appstate.value.offCanvasOpen,
       (value, oldValue) => {
+        console.log("ah");
         if (oldValue !== value) {
           if (value) {
             const body = document.querySelector("body");

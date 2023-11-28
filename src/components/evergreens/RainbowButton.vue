@@ -1,11 +1,28 @@
 <template>
-  <a @click="handleClick" class="rainbow rainbow-5">{{ displayMessage }}</a>
+  <a
+    v-if="to.startsWith('http')"
+    :href="to"
+    target="blank"
+    class="rainbow rainbow-5"
+    >{{ displayMessage }}</a
+  >
+
+  <router-link
+    v-else-if="to.startsWith('#')"
+    :to="{ hash: to }"
+    class="rainbow rainbow-5"
+    >{{ displayMessage }}</router-link
+  >
+  <router-link
+    v-else
+    :to="{ name: to, params: params }"
+    class="rainbow rainbow-5"
+    >{{ displayMessage }}</router-link
+  >
 </template>
 
 
 <script>
-import { computed } from "vue";
-import { useRoute, useRouter } from "vue-router";
 export default {
   props: {
     displayMessage: {
@@ -21,21 +38,8 @@ export default {
       required: false,
     },
   },
-  setup(props) {
-    const router = useRouter();
-    return {
-      router: useRouter(),
-      handleClick() {
-        if (props.to.startsWith("#", 0)) {
-          router.push({ hash: props.to });
-        } else if (props.to.startsWith("http")) {
-          window.open(props.to, "_blank");
-        } else {
-          router.push({ name: props.to, params: props.params });
-        }
-      },
-      computedDestination: computed(() => {}),
-    };
+  setup() {
+    return {};
   },
 };
 </script>

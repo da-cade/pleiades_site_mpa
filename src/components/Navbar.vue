@@ -15,7 +15,7 @@
     </div>
   </nav>
 
-  <OffCanvas :contentClasses="mobile ? 'mobileOffcanvas' : 'contactOffcanvas'">
+  <!-- <OffCanvas :contentClasses="mobile ? 'mobileOffcanvas' : 'contactOffcanvas'">
     <template #offcanvas-header-slot>
       <div
         v-if="contactOffcanvas"
@@ -36,7 +36,7 @@
       <ContactForm v-if="contactOffcanvas" class="bg-white rounded-3xl" />
       <MobileNavMenu v-if="mobileOffcanvas" />
     </template>
-  </OffCanvas>
+  </OffCanvas> -->
 </template>
 
 

@@ -6,20 +6,11 @@
     :description="service.pitch"
     :buttonMessage="service.callToAction"
   />
-  <div class="contactWrapper">
-    <div class="titleWrapper p-8 lg:p-16 bg-white">
-      <h1 id="#contact" class="text-black text-center text-6">
-        Schedule Your Free Audit Today
-      </h1>
-    </div>
-    <div
-      class="contactUs bg-white bgImage w-screen"
-      :style="`background-image: url(${service.image})`"
-    >
-      <ContactLayoutHero class="contactLayout content-width" />
-    </div>
-    <!-- <MobileStepsLayout v-else /> -->
-  </div>
+  <ContactWrapper
+    :anchorId="'#contact'"
+    :backgroundImage="service.image"
+    :description="'Schedule Your Free Audit Today'"
+  />
 </template>
 
 
@@ -29,9 +20,15 @@ import LandingBanner from "../components/LandingBanner.vue";
 import * as template from "../templates/main.json";
 import { useRoute } from "vue-router";
 import ContactLayoutHero from "../layouts/ContactLayoutHero.vue";
+import { useMeta } from "vue-meta";
+import ContactWrapper from "../layouts/ContactWrapper.vue";
 export default {
-  components: { LandingBanner, ContactLayoutHero },
+  components: { LandingBanner, ContactLayoutHero, ContactWrapper },
   setup() {
+    useMeta({
+      title: "Get the Insights You Need With a Free Website Audit",
+      htmlAttrs: { lang: "en" },
+    });
     const route = useRoute();
     const service = computed(() => {
       return template.services.find((s) => s.name == route.name);

@@ -60,6 +60,8 @@ export default {
 
 .bigTitle {
   line-height: 1;
-  // white-space: nowrap;
+  @media screen and (min-width: 1024px) {
+    white-space: nowrap;
+  }
 }
 </style>

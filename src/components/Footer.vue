@@ -8,7 +8,7 @@
         class="navGroup md:order-2 flex flex-col md:flex-row flex-wrap justify-between"
       >
         <NavItem
-          class="w-fit navColor content-center bg-black hover:text-blue-800 justify-left"
+          class="w-fit navColor content-center bg-black justify-left"
           v-for="route in routes"
           :key="route.routeName"
           :route="route"
@@ -29,7 +29,7 @@
     </div>
     <div class="footer-section p-4 md:px-16">
       <div class="contact-info text-white text-1">
-        <h1 class="text-3">Do an animation here</h1>
+        <!-- <h1 class="text-3">Do an animation here</h1> -->
         <p class="">info@pleiadesprojectworks.com</p>
         <p>Monday - Friday</p>
         <p>9 - 5</p>
@@ -106,9 +106,9 @@ footer {
 }
 
 .navColor {
-  color: #366991;
+  color: white;
   &:hover {
-    color: white;
+    color: var(--color-4);
   }
 }
 </style>

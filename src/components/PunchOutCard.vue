@@ -6,7 +6,7 @@
       <PunchOut :title="instance.title" class="circleSize" />
       <div class="bodyWrapper flex flex-col justify-center mb-4 p-2">
         <div class="bodyContent rounded-3xl bg-gray-300 p-4">
-          <h4 class="text-2 mb-3">{{ instance.subtitle }}</h4>
+          <h3 class="text-2 mb-3">{{ instance.subtitle }}</h3>
           <p class="text-1">{{ instance.body }}</p>
         </div>
       </div>

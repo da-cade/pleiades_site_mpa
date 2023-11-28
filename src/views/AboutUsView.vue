@@ -33,7 +33,7 @@
           :style="`background-image: url(${about.coverImg1}); background-position: ${about.imagePosition1}`"
         >
           <div class="aboutTitle">
-            <h1 class="text-12 raleway font-extrabold">Some Stories</h1>
+            <h2 class="text-12 raleway font-extrabold">Some Stories</h2>
           </div>
         </swiper-slide>
         <swiper-slide
@@ -103,7 +103,7 @@
           :style="`background-image: url(${about.coverImg3}); background-position: ${about.imagePosition3}`"
         >
           <div class="aboutTitle">
-            <h1 class="text-12 raleway font-extrabold">FAQ</h1>
+            <h2 class="text-12 raleway font-extrabold">FAQ</h2>
           </div>
         </swiper-slide>
         <swiper-slide
@@ -199,6 +199,7 @@ import "swiper/scss/keyboard";
 import ValueCard from "../components/ValueItem.vue";
 import FaqItem from "../components/FaqItem.vue";
 import StoryItem from "../components/StoryItem.vue";
+import { useMeta } from "vue-meta";
 export default {
   components: {
     Swiper,
@@ -209,6 +210,10 @@ export default {
     StoryItem,
   },
   setup() {
+    useMeta({
+      title: "Learn About How Pleiades Became a Digital Development Agency",
+      htmlAttrs: { lang: "en" },
+    });
     const toggleScrollable = ref("");
     const swiper = ref();
     function touchingTop() {
